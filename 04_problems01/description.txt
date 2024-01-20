@@ -1,0 +1,11 @@
+EN
+-----
+Yakuphan said that a novel is 5 pages more each day than he read the previous day. 
+reading. Yakuphan, who started by reading 10 pages on the first day, has a 1,000-page novel. 
+Code the program in C language that finds the completion time in a day.
+
+TR
+-----
+Yakuphan, bir romanın her gün bir önceki gün okuduğu sayfadan 5 sayfa fazlasını 
+okumaktadır. İlk gün 10 sayfa okuyarak başlayan Yakuphan' ın 1.000 sayfalık bir romanı kaç 
+günde bitireceğini bulan programı C dilinde kodlayınız.
