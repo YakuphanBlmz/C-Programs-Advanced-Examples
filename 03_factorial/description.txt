@@ -1,0 +1,9 @@
+EN
+-----
+C program that calculates the factorial of an integer to be entered from the keyboard using while loop 
+using
+
+TR
+-----
+Klavyeden girilecek bir tamsayının faktöryelini hesaplayan C programını while döngüsünü 
+kullanarak yapınız.
