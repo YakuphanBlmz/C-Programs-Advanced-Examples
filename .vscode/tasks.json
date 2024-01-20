@@ -1,6 +1,7 @@
 {
     "tasks": [
         {
+            
             "type": "cppbuild",
             "label": "C/C++: gcc.exe etkin dosyayı derle",
             "command": "C:\\MinGW\\bin\\gcc.exe",
