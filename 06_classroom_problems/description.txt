@@ -1,0 +1,11 @@
+EN
+-----
+In a class of 20 students, the grades of the students in a lesson will be entered on the keyboard. Grades 
+after entering the class average, the average of the class, the highest and lowest grades in the class, and the 
+Write the code of the program in C language.
+
+TR
+-----
+20 kişilik bir sınıfta öğrencilerin bir dersten aldığı notlar klavyeden girilecektir. Notlar 
+girildikten sonra, sınıfın ortalamasını, sınıftaki en yüksek ve en düşük notu bulan ve ekranda 
+gösteren programın kodunu C diliyle yazınız.
