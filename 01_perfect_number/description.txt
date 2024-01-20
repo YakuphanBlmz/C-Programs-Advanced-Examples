@@ -1,12 +1,12 @@
 EN
----- 
+-----
 A number whose sum of all positive integer factors except itself is equal to itself 
 is called a perfect number. For example, the sum of the positive factors of the number 28 excluding itself 
 Since 1+2+4+7+14 = 28, 28 is a perfect number. According to this, the number entered on the keyboard 
 Write a C program that tells whether a number is a perfect number.
 
 TR
-----
+-----
 Kendisi hariç bütün pozitif tamsayı çarpanlarının toplamı kendisine eşit olan sayılara 
 mükemmel sayı denir. Örneğin, 28 sayısının kendisi hariç pozitif çarpanları toplamı 
 1+2+4+7+14 = 28 olduğundan 28 sayısı mükemmel bir sayıdır. Buna göre klavyeden girilen 

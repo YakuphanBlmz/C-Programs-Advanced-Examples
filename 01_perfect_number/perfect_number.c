@@ -20,5 +20,6 @@ int main() {
         printf("Not Perfect Number\n");
     }
 
+
     return 0;
 }
