@@ -1,0 +1,9 @@
+EN
+-----
+A rule that shows all numbers with three-digit digits that are different from each other on the screen 
+Write a C program that tells how many numbers are appropriate.
+
+TR
+-----
+Üç basamaklı rakamları birbirinden farklı tüm sayıları ekranda gösteren ve bu kurala 
+uygun kaç tane sayı olduğunu söyleyen C programını yazınız.
