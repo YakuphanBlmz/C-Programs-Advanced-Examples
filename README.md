@@ -2,12 +2,12 @@
 
 This repository contains sample questions for exam preparation in the C programming language. You can use these questions to practice for your exams, to reinforce the basics of the C language and to measure your own level of knowledge.
 
-## How to Use 
+ ## How to use?
 
-- Each question contains C files named `question-1.c`, `question-2.c`, etc.
-- The solutions to the questions are in files named `solution-1.c`, `solution-2.c`, etc.
-- Before solving the questions, you can examine the relevant file in the `soru` directory and develop your own solution.
-- After completing your solution, you can check the file in the `solution` directory and compare it with other solutions.
+- Each question and its explanation are in folders named `01_xxxx`, `02_xxxx`, etc.
+- The solutions to the questions are in files with `.c` extension inside the folders named `01_xxxx`, `cozum-2.c`, etc.
+- Before solving the questions, you can examine the `description.txt` document in each folder and develop your own solution.
+- After you have completed your solution, you can check the `xxxx.c` file.
 
 ## Topics Covered by the Questions
 
@@ -35,10 +35,10 @@ Bu depo, C programlama dilinde sınavlara hazırlık amacıyla kullanılacak ör
 
 ## Nasıl Kullanılır?
 
-- Her bir soru, `soru-1.c`, `soru-2.c`, vb. şeklinde adlandırılmış C dosyaları içerir.
-- Soruların çözümleri, `cozum-1.c`, `cozum-2.c`, vb. adlı dosalarda bulunmaktadır.
-- Soruları çözmeden önce `soru` dizinindeki ilgili dosyayı inceleyebilir ve kendi çözümünüzü geliştirebilirsiniz.
-- Çözümünüzü tamamladıktan sonra, `cozum` dizinindeki dosyayı kontrol edebilir ve diğer çözümlerle karşılaştırabilirsiniz.
+- Her bir soru ve açıklaması, `01_xxxx`, `02_xxxx`, vb. şeklinde adlandırılmış klasörlerin içindedir.
+- Soruların çözümleri, `01_xxxx`, `cozum-2.c`, vb. adlı dosyaların içindeki `.c` uzantılı dosyalarda bulunmaktadır.
+- Soruları çözmeden önce her bir klasörün içindeki `description.txt` belgesini inceleyebilir ve kendi çözümünüzü geliştirebilirsiniz.
+- Çözümünüzü tamamladıktan sonra, `xxxx.c` dosyasını kontrol edebilirsiniz.
 
 ## Soruların Kapsadığı Konular
 
