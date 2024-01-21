@@ -1,0 +1,7 @@
+EN
+-----
+Write the C code that finds the odd and even numbers between 1 and 100 and prints how many there are.
+
+TR
+-----
+1 ile 100 arasındaki tek ve çift sayıları bulan ve kaç tane olduğunu yazdıran C kodunu yazın.

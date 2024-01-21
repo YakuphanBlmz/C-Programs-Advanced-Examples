@@ -1,0 +1,7 @@
+EN
+-----
+Suppose there is a person with an initial weight of 100 kilograms and an initial height of 20 centimeters. Every month, their height increases by 10%, and their weight increases by 5%. The goal is to determine the number of months it takes for the person's height to exceed 150 centimeters and their weight to exceed 30 kilograms. Write a C program to calculate how many months it will take for the person to reach these conditions.
+
+TR
+-----
+Başlangıç ağırlığı 100 kilogram ve başlangıç boyu 20 santimetre olan bir kişi olduğunu varsayalım. Her ay boyu %10, kilosu ise %5 oranında artmaktadır. Amaç, kişinin boyunun 150 santimetreyi ve kilosunun 30 kilogramı aşması için kaç ay geçmesi gerektiğini belirlemektir. Kişinin bu koşullara ulaşmasının kaç ay süreceğini hesaplamak için bir C programı yazın.
