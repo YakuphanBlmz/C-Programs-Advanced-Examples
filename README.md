@@ -1,5 +1,4 @@
-# EN
-# C Programming Exam Preparation Repo 
+# EN - C Programming Exam Preparation Repo 
 
 This repository contains sample questions for exam preparation in the C programming language. You can use these questions to practice for your exams, to reinforce the basics of the C language and to measure your own level of knowledge.
 
@@ -30,8 +29,7 @@ If you want to add your own questions or contribute to existing questions, pleas
 I hope this repository will help you improve your skills in the C programming language and better prepare for exams. Good work!
 
 
-# TR 
-# C Programlama Sınavı Hazırlık Repo
+# TR - C Programlama Sınavı Hazırlık Repo
 
 Bu depo, C programlama dilinde sınavlara hazırlık amacıyla kullanılacak örnek sorular içermektedir. Sınavlarınız için pratik yapmak, C dilindeki temel konuları pekiştirmek ve kendi bilgi seviyenizi ölçmek için bu soruları kullanabilirsiniz.
 
