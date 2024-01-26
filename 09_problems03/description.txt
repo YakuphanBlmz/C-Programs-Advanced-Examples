@@ -1,0 +1,48 @@
+EN
+-----
+Define an array of integers. Then assign 10 elements to the array. Send the assigned elements to a function. Write a C program that writes the arithmetic mean, standard deviation, maximum element, minimum element and the sum of the digits of the result of the sum of the highest 3 grades and the lowest 3 grades to the screen.
+Each operation will be defined in a function. 
+
+Information : 
+Steps to follow when calculating the standard deviation:
+1) Find the arithmetic mean of the data.
+2) Difference between each data and the arithmetic mean 
+is found.
+3) Square each of the differences and obtain 
+the resulting numbers are summed.
+4) This sum is divided by the number of data minus 1 and 
+is the square root of the section.
+
+Information : 
+Total points divided by the number of points 
+divided by the arithmetic 
+the mean is the average of each point in the score distribution. 
+included in the calculation, other 
+more adequate than centralized agglomeration measures 
+is a statistic.
+
+
+
+TR
+-----
+Bir tamsayı dizisi tanımlayın. Ardından dizinin içerisine 10 adet eleman atayın. Atadığınız elemanları bir fonksiyona gönderin. Gönderdiğiniz fonksiyonda 10 adet elemanın aritmetik ortalamasını ,standart sapmasını, maximum elemanını, minimum elemanını ve en yüksek 3 not ile en düşük 3 notun toplamının elde edilen sonucunun basamaklarının toplamını ekrana yazan C programını yazınız.
+Her bir işlem bir fonksiyonda tanımlanacaktır. 
+
+Bilgi : 
+Standart sapma hesaplanırken izlenecek adımlar:
+1) Verilerin aritmetik ortalaması bulunur.
+2) Her bir veri ile aritmetik ortalama arasındaki fark 
+bulunur.
+3) Bulunan farkların her birinin karesi alınır ve elde 
+edilen sayılar toplanır.
+4) Bu toplam, veri sayısının 1 eksiğine bölünür ve 
+bölümün karekökü bulunur.
+
+Bilgi : 
+Toplam puanların puan sayısına 
+bölünmesiyle elde edilen aritmetik 
+ortalama, puan dağılımındaki her puanın 
+hesaplamaya dahil edilmesi nedeniyle diğer 
+merkezi yığılma ölçülerine göre daha yeterli 
+bir istatistiktir.
+
