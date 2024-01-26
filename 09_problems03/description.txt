@@ -22,6 +22,10 @@ more adequate than centralized agglomeration measures
 is a statistic.
 
 
+Information : 
+It can also be called geometric mean, compound annual growth rate or time-weighted rate of return. It is best suited for serial correlation. It is necessary for many transactions in finance, including bond returns and stock returns. This averaging process, which should be established at primary school age, is very useful in subjects such as math problems and higher mathematics.
+Geometric and arithmetic averaging can sometimes be confused. When taking the geometric mean, the numbers must be multiplied and then the root must be taken to the degree of how many numbers there are. In the arithmetic calculation method, it will be sufficient to add the numbers and divide by the number of numbers.
+
 
 TR
 -----
@@ -46,3 +50,6 @@ hesaplamaya dahil edilmesi nedeniyle diğer
 merkezi yığılma ölçülerine göre daha yeterli 
 bir istatistiktir.
 
+Bilgi : 
+Geometrik ortalama, bileşik yıllık büyüme oranı ya da zaman ağırlıklı getiri oranı olarak da isimlendirilebilir. Seri korelasyon için en uygun yöntemdir. Finansmanda tahvil getirileri, hisse senedi getirileri dahil çok sayıda işlem için gereklidir. İlköğretim çağında temeli atılması gereken bu ortalama işlemi, matematik problemleri, yüksek matematik gibi konularda oldukça işe yarar nitelik taşımaktadır.
+Geometrik ve aritmetik ortalama kimi zaman karıştırılabilmektedir. Geometrik ortalama alınırken sayıların çarpılması, sonrasında da kaç tane sayı ise o derecede kökünün alınması gerekir. Aritmetik hesaplama yönteminde ise sayılarının toplanması ve kaç adet sayı ise o rakama bölünmesi yeterli olacaktır.
