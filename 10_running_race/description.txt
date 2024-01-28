@@ -1,0 +1,44 @@
+EN
+-----
+On a summer day in Erzurum, a running competition is organized. 
+There are 200 competitors participating in the running competition. 
+The first three winners will be awarded prizes. 
+The contact numbers of the competitors are recorded (e.g. 1st person, 2nd person, 3rd person ...). 
+Each contestant is also given a jersey. The jerseys are given starting from the 1st person up to the 200th person. 
+The shirts are numbered up to the number 200. 
+It is planned that the 1st person will be given jersey number one, the 2nd person will be given jersey number two and the 200th person will be given the last jersey, the jersey with the number 200. 
+However, due to some confusion, the first contestant was given the jersey numbered 200 and the last contestant was given the jersey numbered 1 in descending order. (For example, the 200th person was given the jersey numbered 1, the 199th person was given the jersey numbered 2, ... the 1st person was given the jersey numbered 200.) 
+The first three winners of the contest were the 25th, 59th and 143rd person, respectively. 
+Accordingly, you are expected to consider the following questions in this context and do each of them in C language in functions. 
+
+a) Write a function to find the jersey numbers of the winners of the contest. 
+Note that the next time such a contest is organized, the jersey numbers of the first three winners may change.
+
+b) Find the difference between the largest and the smallest jersey numbers of the winners and print the jersey number of the loser on the screen. 
+
+c) The losers of the competition are expected to receive a participation t-shirt as a consolation. 
+In this case, the losers are expected to receive a red shirt if their shirt number is odd and a blue shirt if their shirt number is even. 
+Write the function that finds how many blue t-shirts and how many red t-shirts should be given.
+
+
+TR
+-----
+Erzurum'un bir yaz gününde, bir koşu yarışması düzenleniyor. Koşu yarışmasına katılan 200 yarışmacı oluyor. 
+Yarışmada kazanan ilk üç kişiye ödül verilecektir. 
+Yarışmacıların kişi numaraları kayıt edilmiştir. (Örneğin 1.kişi , 2.kişi, 3.kişi ...).
+Ayrıca her yarışmacıya formalar veriliyor. 
+Verilen formalar 1.kişiden başlayarak, 200. kişiye kadar veriliyor. Formalar 200 numaralı sayıya kadar numaralandırılmıştır. 
+1. kişiye , bir numaralı forma, 2. kişiye iki numaralı forma şeklinde verilmesi ve 200. kişiye de sonuncu formayı yani 200 yazılı formanın verilmesi planlanılmaktadır.
+Fakat bir karışıklıktan dolayı ilk yarışmacıya 200 numaralı forma verilerek azalan bir biçimde, son yarışmacıya da 1 numaralı forma verilmiştir. (Örneğin 200.kişiye 1 yazılı forma , 199.kişiye 2 yazılı forma, ... 1.kişiye 200 yazılı forma) 
+Yarışmayı kazanan ilk üç kişi sırasıyla, 25.kişi,  59. kişi ve  143. kişi olmuştur. 
+Buna göre aşağıda verilecek olan soruları, bu bağlamda ele alıp, her birini fonksiyonlarda C diliyle yapmanız beklenmektedir. 
+
+a) Yarışmayı kazanan kişilerin forma numaralarının bulunmasını sağlayan fonksiyonu yazınız. 
+Bir daha böyle bir yarışma düzenlendiğinde, yarışmayı kazanabilecek ilk üç kişinin forma numaralarının değişebileceğini unutmayın.
+
+b) Yarışmayı kazanan kişilerin forma numaralarının en büyüğü ile en küçüğü arasında kaç fark olduğunu bulun ve bu farkın hangi kaybeden kişinin forma numarasına denk geldiğini ekrana yazdırın. 
+
+c) Yarışmayı kaybeden kişilerin teselli olarak katılım tişörtü alması bekleniliyor. 
+Bu durumda kaybeden kişilerin forma numaraları tek sayı ise kırmızı , çift sayı ise mavi tişört verilmesi bekleniliyor. 
+Kaç adet mavi tişört ve kaç adet kırmızı tişört verilmesi gerekildiğini bulan fonksiyonu yazınız.
+
