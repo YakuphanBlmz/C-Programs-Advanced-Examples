@@ -1,0 +1,11 @@
+EN
+
+Given an integer array and its size, write a C program to find the sum of all even numbers present in the array. If no even numbers are found, the sum should be 0.
+
+Your program should define an array, iterate through it, identify even numbers, and accumulate their sum. Finally, print the total sum.
+
+TR
+
+Verilen bir tamsayı dizisi ve dizinin boyutu için, dizideki tüm çift sayıların toplamını bulan bir C programı yazın. Eğer dizide çift sayı yoksa, toplam 0 olmalıdır.
+
+Programınız bir dizi tanımlamalı, diziyi dolaşmalı, çift sayıları belirlemeli ve bunların toplamını biriktirmelidir. Son olarak, toplamı ekrana yazdırın.

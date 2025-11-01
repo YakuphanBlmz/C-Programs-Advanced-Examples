@@ -1,1 +1,1 @@
-Yeni C alıştırması eklendi: restoran_yonetimi_kalicilik
+Yeni C alıştırması (EASY) eklendi: sum_of_even_numbers_in_array
