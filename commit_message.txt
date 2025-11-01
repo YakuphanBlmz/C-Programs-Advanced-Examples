@@ -1,1 +1,0 @@
-Create solution for 12_HARD_hard_dynamic_matrix_operations
