@@ -1,0 +1,11 @@
+EN
+
+Write a C program that takes an array of integers and calculates the sum of all even numbers present in the array. The program should then print the final sum to the console.
+
+For example, if the array is `{10, 5, 2, 8, 7, 4, 1}`, the even numbers are `10, 2, 8, 4`. Their sum would be `10 + 2 + 8 + 4 = 24`.
+
+TR
+
+Bir tamsayı dizisi alan ve dizideki tüm çift sayıların toplamını hesaplayan bir C programı yazın. Program son toplamı konsola yazdırmalıdır.
+
+Örneğin, dizi `{10, 5, 2, 8, 7, 4, 1}` ise, çift sayılar `10, 2, 8, 4`'tür. Bunların toplamı `10 + 2 + 8 + 4 = 24` olacaktır.
