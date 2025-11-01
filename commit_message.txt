@@ -1,0 +1,1 @@
+Yeni C alıştırması eklendi: restoran_yonetimi_kalicilik
