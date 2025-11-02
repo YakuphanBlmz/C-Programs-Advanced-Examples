@@ -28,10 +28,17 @@ This repository contains sample questions for exam preparation in the C programm
 
 ## 🚀 How to Use
 
-1.  Navigate to a question folder (e.g., `01_Basic_Data_Types`, `02_Loops`, etc.).
+1.  Navigate to a question folder (e.g., `01_MEDIUM_perfect_number`, `04_EASY_problems01`, etc.).
 2.  Read the `description.txt` file in the folder to understand the problem.
 3.  Try to write your own solution in a new `.c` file.
 4.  Once you're done, you can compare your solution with the provided solution file(s) (e.g., `solution.c`, `example_solution.c`) in the same folder.
+
+## 💡 Difficulty Levels
+
+Questions are categorized by difficulty, indicated by a prefix in the folder name (e.g., `04_EASY_...`, `01_MEDIUM_...`, `xx_HARD_...`).
+
+-   **EASY & MEDIUM:** If you are a beginner, we recommend starting with the `EASY` and `MEDIUM` folders to build a strong foundation.
+-   **HARD:** For those who want to advance their C programming skills, the `HARD` folders will provide a good challenge.
 
 ## 📚 Topics Covered
 
@@ -68,10 +75,17 @@ Bu depo, C programlama dilinde sınavlara hazırlık amacıyla kullanılacak ör
 
 ## 🚀 Nasıl Kullanılır?
 
-1.  Bir soru klasörüne gidin (örn: `01_Temel_Veri_Tipleri`, `02_Donguler`, vb.).
+1.  Bir soru klasörüne gidin (örn: `01_MEDIUM_perfect_number`, `04_EASY_problems01`, vb.).
 2.  Soruyu anlamak için klasör içindeki `description.txt` dosyasını okuyun.
 3.  Kendi çözümünüzü yeni bir `.c` dosyasına yazmayı deneyin.
 4.  Tamamladığınızda, çözümünüzü aynı klasördeki mevcut çözüm dosyası/dosyaları (örn: `cozum.c`, `ornek_cozum.c`) ile karşılaştırabilirsiniz.
+
+## 💡 Zorluk Seviyeleri
+
+Sorular, klasör adlarındaki öneklerle (örn: `04_EASY_...`, `01_MEDIUM_...`, `xx_HARD_...`) zorluk seviyelerine göre kategorize edilmiştir.
+
+-   **EASY & MEDIUM:** Eğer yeni başlıyorsanız, sağlam bir temel oluşturmak için `EASY` ve `MEDIUM` klasörlerinden başlamanızı tavsiye ederiz.
+-   **HARD:** C programlamada ileri seviyeye gelmek isteyenler ise `HARD` klasörlerindeki sorularla kendini deneyebilir.
 
 ## 📚 Soruların Kapsadığı Konular
 
