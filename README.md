@@ -7,23 +7,23 @@
 <div align="center">
   <h3>
     <a href="#-c-programming-exam-preparation-en">
-      🇬🇧 English
+      English (EN)
     </a>
     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-c-programlama-sınavı-hazırlık-tr">
-      🇹🇷 Türkçe
+      Türkçe (TR)
     </a>
   </h3>
 </div>
 
 ---
 
-# 🇬🇧 C Programming Exam Preparation (EN)
+# C Programming Exam Preparation (EN)
 
 This repository contains sample questions for exam preparation in the C programming language. You can use these questions to practice for your exams, to reinforce the basics of the C language and to measure your own level of knowledge.
 
 <div align="right">
-  <a href="#-c-programlama-sınavı-hazırlık-tr">Read in Turkish (TR) 🇹🇷</a>
+  <a href="#-c-programlama-sınavı-hazırlık-tr">Read in Turkish (TR)</a>
 </div>
 
 ## 🚀 How to Use
@@ -58,12 +58,12 @@ I hope this repository will help you improve your skills in the C programming la
 
 ---
 
-# 🇹🇷 C Programlama Sınavı Hazırlık (TR)
+# C Programlama Sınavı Hazırlık (TR)
 
 Bu depo, C programlama dilinde sınavlara hazırlık amacıyla kullanılacak örnek sorular içermektedir. Sınavlarınız için pratik yapmak, C dilindeki temel konuları pekiştirmek ve kendi bilgi seviyenizi ölçmek için bu soruları kullanabilirsiniz.
 
 <div align="right">
-  <a href="#-c-programming-exam-preparation-en">Read in English (EN) 🇬🇧</a>
+  <a href="#-c-programming-exam-preparation-en">Read in English (EN)</a>
 </div>
 
 ## 🚀 Nasıl Kullanılır?
