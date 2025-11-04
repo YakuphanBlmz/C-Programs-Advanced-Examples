@@ -1,0 +1,15 @@
+EN
+
+This problem requires you to implement a simple product inventory management system. You will define a `struct` to represent a product, which should include fields for a unique integer `id`, a product `name` (as a fixed-size character array), and an integer `quantity`.
+
+Your program should maintain a fixed-size array of these `Product` structs in memory, acting as the current inventory. The core functionality involves adding new products to this inventory, displaying the current list of products, and critically, saving the entire inventory to a binary file and loading it back from the same file. When saving, all current product data should be written efficiently to the file. When loading, the program should read the data from the file and populate the in-memory inventory array.
+
+You must adhere to strict constraints: avoid the use of any explicit pointers (beyond what is implicit in array declarations or file handles) and dynamic memory allocation (`malloc`, `free`). All product names must be stored in fixed-size character arrays within the struct. The maximum number of products in the inventory should be defined as a constant. The solution should demonstrate how to correctly use `struct`, `typedef`, and basic file I/O operations (`fopen`, `fwrite`, `fread`, `fclose`) to persist and retrieve structured data.
+
+TR
+
+Bu problem, basit bir ürün envanter yönetim sistemi uygulamanızı gerektiriyor. Bir ürünü temsil etmek için bir `struct` tanımlayacaksınız. Bu `struct`, benzersiz bir tam sayı `id`, ürün `adı` (sabit boyutlu bir karakter dizisi olarak) ve bir tam sayı `miktar` alanlarını içermelidir.
+
+Programınız, mevcut envanter olarak hafızada bu `Product` struct'larından oluşan sabit boyutlu bir dizi tutmalıdır. Temel işlevsellik, envantere yeni ürünler eklemeyi, mevcut ürün listesini görüntülemeyi ve en önemlisi, tüm envanteri ikili bir dosyaya kaydetmeyi ve aynı dosyadan geri yüklemeyi içerir. Kaydetme işlemi sırasında, tüm mevcut ürün verileri dosyaya verimli bir şekilde yazılmalıdır. Yükleme işlemi sırasında ise, program dosyadan verileri okumalı ve hafızadaki envanter dizisini doldurmalıdır.
+
+Sıkı kurallara uymanız gerekmektedir: açık işaretçiler (dizi tanımlamalarında veya dosya tanıtıcılarında örtük olanlar dışında) ve dinamik bellek tahsisi (`malloc`, `free`) kesinlikle kullanılmamalıdır. Tüm ürün adları, struct içinde sabit boyutlu karakter dizilerinde saklanmalıdır. Envanterdeki maksimum ürün sayısı bir sabit olarak tanımlanmalıdır. Çözüm, yapılandırılmış verileri kalıcı hale getirmek ve almak için `struct`, `typedef` ve temel dosya G/Ç işlemleri (`fopen`, `fwrite`, `fread`, `fclose`) kullanımını doğru bir şekilde göstermelidir.
