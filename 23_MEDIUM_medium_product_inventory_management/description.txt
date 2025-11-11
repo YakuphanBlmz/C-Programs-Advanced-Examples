@@ -1,0 +1,15 @@
+EN
+
+This problem asks you to develop a simple product inventory management system using the C programming language. You will define a `Product` structure to encapsulate details for each product, including an integer ID, a character array for the name, an integer for the quantity, and a float for the price. The system needs to be capable of loading initial product data from a text file, displaying the current inventory to the user, and allowing updates to the quantity of specific products.
+
+Upon execution, the program should first attempt to load existing product data from a file named `inventory.txt`. Each line in this file will represent a single product, with its ID, name, quantity, and price separated by spaces. After successfully loading the data (or initializing an empty inventory if the file is not found), the program should present a menu to the user. Options will include displaying all products, finding a product by its ID to update its quantity, or exiting the application. When the user chooses to exit, the system must save the entire current state of the inventory back to the `inventory.txt` file.
+
+A crucial constraint for this problem is the strict prohibition of pointers and dynamic memory allocation functions like `malloc` or `free`. You must utilize fixed-size arrays for storing product names within the structure and for holding the collection of `Product` structures that form your inventory. This challenge tests your understanding of structures, file I/O operations, and array manipulation without advanced memory management.
+
+TR
+
+Bu problemde, C programlama dilini kullanarak basit bir ürün envanter yönetim sistemi geliştirmeniz istenmektedir. Her bir ürünün detaylarını (bir tam sayı ID'si, isim için bir karakter dizisi, miktar için bir tam sayı ve fiyat için bir ondalık sayı) kapsayacak bir `Product` yapısı tanımlayacaksınız. Sistem, başlangıç ürün verilerini bir metin dosyasından yükleyebilmeli, mevcut envanteri kullanıcıya gösterebilmeli ve belirli ürünlerin miktarını güncelleyebilmelidir.
+
+Program çalıştırıldığında, öncelikle `inventory.txt` adlı bir dosyadan mevcut ürün verilerini yüklemeye çalışmalıdır. Bu dosyadaki her satır, ID, isim, miktar ve fiyat bilgileri boşluklarla ayrılmış olarak tek bir ürünü temsil edecektir. Veriler başarıyla yüklendikten sonra (veya dosya bulunamazsa boş bir envanter başlatıldıktan sonra), program kullanıcıya bir menü sunmalıdır. Seçenekler arasında tüm ürünleri gösterme, bir ürünü ID'sine göre bulup miktarını güncelleme veya uygulamadan çıkış yapma yer alacaktır. Kullanıcı çıkış yapmayı seçtiğinde, sistem envanterin mevcut tüm durumunu `inventory.txt` dosyasına geri kaydetmelidir.
+
+Bu problem için önemli bir kısıtlama, işaretçi kullanımının ve `malloc` veya `free` gibi dinamik bellek tahsis fonksiyonlarının kesinlikle yasaklanmasıdır. Ürün adlarını yapının içinde depolamak için ve envanteri oluşturan `Product` yapıları koleksiyonunu tutmak için sabit boyutlu diziler kullanmalısınız. Bu meydan okuma, yapılar, dosya G/Ç işlemleri ve gelişmiş bellek yönetimi olmadan dizi manipülasyonu hakkındaki anlayışınızı test edecektir.
