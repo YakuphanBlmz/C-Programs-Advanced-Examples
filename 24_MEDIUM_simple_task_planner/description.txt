@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simplified daily task planner application in C. This application will manage a fixed number of tasks, each identified by a unique ID, a brief description, a priority level, and a completion status. Your program should define a `struct` named `Task` using `typedef` to encapsulate these properties.
+
+The program should first initialize an array of `Task` structs with some sample data. After initialization, it must display all tasks, showing their ID, description, priority, and current completion status. Following this, the program should allow marking a specific task as completed. For simplicity, the task to be marked complete will be hardcoded in the solution (e.g., task with ID 2). Finally, the program should display the list of tasks again to show the updated status of the completed task.
+
+Crucially, you must ensure that your solution does not use any pointers for data storage within the struct or for dynamic memory allocation. All data should be managed using fixed-size arrays and direct struct variables. The primary goal is to demonstrate effective use of structs and typedefs for data organization and basic array manipulation in C without venturing into advanced memory management.
+
+TR
+
+C dilinde basitleştirilmiş bir günlük görev planlayıcı uygulaması geliştirmekle görevlisiniz. Bu uygulama, benzersiz bir kimlik (ID), kısa bir açıklama, bir öncelik düzeyi ve bir tamamlanma durumu ile tanımlanan sabit sayıda görevi yönetecek. Programınız, bu özellikleri kapsamak üzere `typedef` kullanarak `Task` adında bir `struct` tanımlamalıdır.
+
+Program, ilk olarak bazı örnek verilerle `Task` yapılarını içeren bir diziyi başlatmalıdır. Başlatmanın ardından, tüm görevleri kimliklerini, açıklamalarını, önceliklerini ve mevcut tamamlanma durumlarını göstererek listelemelidir. Daha sonra, program belirli bir görevi tamamlandı olarak işaretlemeye izin vermelidir. Basitlik açısından, tamamlandı olarak işaretlenecek görev çözümde sabit kodlanmış olacaktır (örneğin, ID'si 2 olan görev). Son olarak, tamamlanan görevin güncellenmiş durumunu göstermek için görev listesini tekrar görüntülemelidir.
+
+Önemli olarak, çözümünüzün yapı içinde veri depolamak için veya dinamik bellek tahsisi için hiçbir işaretçi kullanmadığından emin olmalısınız. Tüm veriler, sabit boyutlu diziler ve doğrudan yapı değişkenleri kullanılarak yönetilmelidir. Temel amaç, ileri düzey bellek yönetimine girmeden C'de veri organizasyonu ve temel dizi manipülasyonu için yapıların ve `typedef`'lerin etkili kullanımını göstermektir.
