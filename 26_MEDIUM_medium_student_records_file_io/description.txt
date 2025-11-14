@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple C program to manage student records. Each student record should include an ID, a name, and a grade. Your program needs to perform two main operations: first, it should allow the user to input data for a fixed number of students and save these records into a binary file. Second, it should then read all student records from the same binary file and display them on the console.
+
+To achieve this, you must define a structure for `Student` using `typedef`. This structure should contain an integer for the student ID, a character array for the student's name (ensure it can hold names up to a reasonable length, e.g., 49 characters plus null terminator), and an integer for their grade. The program should prompt the user for the number of students to enter, then iteratively collect their details.
+
+After collecting all student data, write each `Student` structure directly to a binary file named "students.dat". Finally, open "students.dat" again, read all records back into an array of `Student` structures, and print each student's ID, name, and grade to the standard output. Ensure your solution avoids dynamic memory allocation and explicit pointer variables for data management.
+
+TR
+
+Öğrenci kayıtlarını yönetmek için basit bir C programı geliştirmekle görevlisiniz. Her öğrenci kaydı bir kimlik numarası (ID), bir isim ve bir not içermelidir. Programınız iki ana işlem gerçekleştirmelidir: ilk olarak, kullanıcının belirli sayıda öğrencinin verilerini girmesine izin vermeli ve bu kayıtları ikili (binary) bir dosyaya kaydetmelidir. İkinci olarak, aynı ikili dosyadan tüm öğrenci kayıtlarını okumalı ve bunları konsolda görüntülemelidir.
+
+Bunu başarmak için, `typedef` kullanarak bir `Student` yapısı tanımlamanız gerekmektedir. Bu yapı, öğrenci kimliği için bir tamsayı, öğrencinin adı için bir karakter dizisi (adların belirli bir uzunluğa kadar, örneğin 49 karakter artı null sonlandırıcı, tutulabildiğinden emin olun) ve notu için bir tamsayı içermelidir. Program, kullanıcıdan girilecek öğrenci sayısını istemeli, ardından ayrıntıları sırayla toplamalıdır.
+
+Tüm öğrenci verileri toplandıktan sonra, her bir `Student` yapısını doğrudan "students.dat" adlı ikili bir dosyaya yazın. Son olarak, "students.dat" dosyasını tekrar açın, tüm kayıtları bir `Student` yapıları dizisine geri okuyun ve her öğrencinin kimliğini, adını ve notunu standart çıktıya yazdırın. Çözümünüzün dinamik bellek ayırmasından ve veri yönetimi için açık işaretçi değişkenlerinden kaçındığından emin olun.
