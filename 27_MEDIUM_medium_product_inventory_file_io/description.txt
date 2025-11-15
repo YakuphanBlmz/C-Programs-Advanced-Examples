@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a small inventory management system using C. Your program will allow a user to input details for a fixed number of products, store these details in a data structure, write them to a binary file, and then read them back from the file to display them.
+
+First, define a `struct` named `Product` using `typedef`. This structure should contain fields for `id` (integer), `name` (a character array for the product's name, e.g., 50 characters), `price` (float), and `stock` (integer). Your program should then declare an array of `Product` structs to hold a small, fixed number of products (e.g., 3 products).
+
+The program should prompt the user to enter details for each product. After collecting all product details, these records must be written sequentially to a binary file named `products.bin`. Finally, the program should reopen `products.bin`, read all the product records back into a *new* array of `Product` structs, and print the details of each product to the console. Ensure proper file handling by checking for successful file opening and closing files when operations are complete.
+
+TR
+
+C programlama dilini kullanarak küçük bir envanter yönetim sistemi geliştirmekle görevlisiniz. Programınız, kullanıcının sabit sayıda ürün için ayrıntıları girmesine izin verecek, bu ayrıntıları bir veri yapısında saklayacak, ikili bir dosyaya yazacak ve ardından bu dosyadan geri okuyarak görüntüleyecektir.
+
+Öncelikle, `typedef` kullanarak `Product` adında bir `struct` tanımlayın. Bu yapı, `id` (tam sayı), `name` (ürün adı için bir karakter dizisi, örn: 50 karakter), `price` (ondalık sayı) ve `stock` (tam sayı) alanlarını içermelidir. Programınız daha sonra küçük, sabit sayıda ürünü (örn: 3 ürün) tutmak için bir `Product` yapıları dizisi bildirmelidir.
+
+Program, kullanıcıdan her bir ürün için ayrıntıları girmesini istemelidir. Tüm ürün ayrıntıları toplandıktan sonra, bu kayıtlar sırayla `products.bin` adlı ikili bir dosyaya yazılmalıdır. Son olarak, program `products.bin` dosyasını tekrar açmalı, tüm ürün kayıtlarını *yeni* bir `Product` yapıları dizisine okumalı ve her ürünün ayrıntılarını konsola yazdırmalıdır. Dosya açılışının başarılı olup olmadığını kontrol ederek ve işlemler tamamlandığında dosyaları kapatarak doğru dosya yönetimini sağlayın.
