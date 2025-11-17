@@ -1,0 +1,15 @@
+EN
+
+You are tasked with creating a basic inventory management system for a small shop. The system needs to keep track of various products, each identified by a unique ID, a descriptive name, and its current stock quantity. Your program should be able to add new products to the inventory, list all currently stored products, and allow users to search for a specific product using its unique ID.
+
+To manage the product data efficiently, you must define a `struct` called `Product` which will contain fields for the product ID (an integer), product name (a fixed-size character array), and quantity (an integer). Use `typedef` to create an alias for this struct, making the code cleaner. The inventory itself will be stored as a fixed-size array of these `Product` structs, with a predefined maximum capacity.
+
+Your program should present a simple menu to the user: 1. Add Product, 2. List Products, 3. Find Product, 4. Exit. Implement the functionality for each option, ensuring that product IDs are unique when adding new products and that the inventory does not exceed its maximum capacity. For product names, assume single-word inputs.
+
+TR
+
+Küçük bir mağaza için temel bir envanter yönetim sistemi oluşturmanız isteniyor. Sistem, her biri benzersiz bir kimlik (ID), açıklayıcı bir ad ve mevcut stok miktarı ile tanımlanan çeşitli ürünleri takip etmelidir. Programınız, envantere yeni ürünler ekleyebilmeli, mevcut tüm ürünleri listeleyebilmeli ve kullanıcıların ürünün benzersiz ID'sini kullanarak belirli bir ürünü aramasına izin vermelidir.
+
+Ürün verilerini verimli bir şekilde yönetmek için, ürün ID'si (tam sayı), ürün adı (sabit boyutlu karakter dizisi) ve miktar (tam sayı) alanlarını içerecek `Product` adında bir `struct` tanımlamanız gerekmektedir. Bu `struct` için bir takma ad oluşturmak ve kodu daha okunur hale getirmek için `typedef` kullanın. Envanterin kendisi, bu `Product` struct'larından oluşan, önceden tanımlanmış maksimum kapasiteli sabit boyutlu bir dizi olarak saklanacaktır.
+
+Programınız kullanıcıya basit bir menü sunmalıdır: 1. Ürün Ekle, 2. Ürünleri Listele, 3. Ürün Bul, 4. Çıkış. Her seçenek için işlevselliği uygulayın ve yeni ürün eklerken ürün ID'lerinin benzersiz olmasını ve envanterin maksimum kapasitesini aşmamasını sağlayın. Ürün adları için tek kelimelik girişler varsayın.
