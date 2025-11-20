@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student grade management system in C. The system needs to store basic information about students, including their ID, name, and a numerical grade. To persist this data across program executions, you will utilize binary file operations.
+
+First, define a `Student` structure using `typedef`. This structure should encompass an integer field for `studentId`, a character array for `name` (e.g., capable of storing up to 50 characters), and an integer field for `grade`. You will then initialize an array of `Student` objects with some predefined sample data. This entire array of student records must be written to a binary file named `students.dat`.
+
+After successfully writing the data to the file, your program must then read all the student records back from `students.dat` into a new array. Once all records are loaded into memory, you are required to perform two main tasks: calculate the average grade of all students and identify the student who achieved the highest grade. Finally, print the calculated average grade to two decimal places, and then display the ID, name, and grade of the top-performing student. Remember, the use of explicit pointer variables for memory management or dynamic memory allocation (like `malloc` or `free`) is strictly prohibited.
+
+TR
+
+C dilinde basit bir öğrenci not yönetim sistemi geliştirmeniz istenmektedir. Sistem, öğrencilerin kimlik numarası (ID), adı ve sayısal notu gibi temel bilgileri saklamalıdır. Program çalıştırmaları arasında bu verileri kalıcı hale getirmek için ikili dosya işlemleri kullanılacaktır.
+
+Öncelikle, `typedef` kullanarak bir `Student` yapısı tanımlayın. Bu yapı, `studentId` için bir tamsayı alanı, `name` için bir karakter dizisi (örneğin 50 karaktere kadar saklayabilen) ve `grade` için bir tamsayı alanı içermelidir. Daha sonra, önceden tanımlanmış örnek verilerle doldurulmuş bir `Student` nesneleri dizisi oluşturacaksınız. Bu öğrenci kayıtlarının tamamı `students.dat` adlı ikili bir dosyaya yazılmalıdır.
+
+Verileri dosyaya başarıyla yazdıktan sonra, programınız tüm öğrenci kayıtlarını `students.dat` dosyasından yeni bir diziye geri okumalıdır. Tüm kayıtlar belleğe yüklendikten sonra iki ana görev gerçekleştirmeniz gerekmektedir: tüm öğrencilerin not ortalamasını hesaplamak ve en yüksek notu alan öğrenciyi belirlemek. Son olarak, hesaplanan not ortalamasını virgülden sonra iki basamak olacak şekilde ve ardından en başarılı öğrencinin ID'sini, adını ve notunu ekrana yazdırın. Bellek yönetimi için açıkça işaretçi değişkenlerinin veya dinamik bellek ayırmanın (`malloc` veya `free` gibi) kesinlikle yasak olduğunu unutmayın.
