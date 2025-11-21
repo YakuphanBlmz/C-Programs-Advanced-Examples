@@ -1,0 +1,15 @@
+EN
+
+You are tasked with implementing a highly dynamic two-dimensional integer array, often referred to as a 'jagged array' or 'table', using only raw pointers and dynamic memory management in C. The strict constraint is that you *cannot* use `struct` or `typedef` declarations. This means you must manage all aspects of your dynamic table using separate, dynamically allocated arrays for the table itself, and for its metadata (like row lengths and capacities).
+
+Your system must demonstrate robust handling of memory allocation, deallocation, and resizing. Specifically, you will need to manage an `int**` to represent the table of integers, an `int*` to store the current number of elements in each row, and another `int*` to store the allocated capacity for each row. The number of rows in the table, and the number of elements within each row, can both change during runtime, requiring frequent use of `realloc`.
+
+The challenge lies in orchestrating these dynamic operations safely and efficiently. You will need to use `malloc` for initial allocations, `realloc` for growing (and potentially shrinking) both the main array of row pointers and individual rows, and `free` to prevent memory leaks during row removal and final cleanup. Pay close attention to pointer arithmetic, null checks after `malloc`/`realloc`, and ensuring all dynamically allocated memory is eventually freed. This exercise will test your deep understanding of C pointers, multi-level dynamic memory allocation, and careful resource management.
+
+TR
+
+C programlama dilinde, yalnızca ham işaretçiler ve dinamik bellek yönetimi kullanarak, 'jagged array' veya 'tablo' olarak adlandırılan oldukça dinamik bir iki boyutlu tamsayı dizisi uygulamanız istenmektedir. Katı kural, `struct` veya `typedef` bildirimlerini *kullanamamanızdır*. Bu, dinamik tablonuzun tüm yönlerini, tablonun kendisi için ve meta verileri (satır uzunlukları ve kapasiteleri gibi) için ayrı, dinamik olarak ayrılmış diziler kullanarak yönetmeniz gerektiği anlamına gelir.
+
+Sisteminiz, bellek tahsisi, serbest bırakılması ve yeniden boyutlandırma işlemlerini sağlam bir şekilde ele almalıdır. Özellikle, tamsayı tablosunu temsil etmek için bir `int**`, her satırdaki mevcut eleman sayısını saklamak için bir `int*` ve her satır için ayrılan kapasiteyi saklamak için başka bir `int*` yönetmeniz gerekecektir. Tablodaki satır sayısı ve her satırdaki eleman sayısı çalışma zamanında değişebilir, bu da sık sık `realloc` kullanımını gerektirir.
+
+Zorluk, bu dinamik işlemleri güvenli ve verimli bir şekilde düzenlemekte yatmaktadır. Başlangıç tahsisleri için `malloc`, hem satır işaretçilerinin ana dizisini hem de tek tek satırları büyütmek (ve potansiyel olarak küçültmek) için `realloc` ve satır silme ile son temizlik sırasında bellek sızıntılarını önlemek için `free` kullanmanız gerekecektir. İşaretçi aritmetiğine, `malloc`/`realloc` sonrası null kontrolüne ve tüm dinamik olarak ayrılmış belleğin sonunda serbest bırakıldığından emin olmaya özellikle dikkat edin. Bu alıştırma, C işaretçileri, çok seviyeli dinamik bellek tahsisi ve dikkatli kaynak yönetimi konusundaki derin anlayışınızı test edecektir.
