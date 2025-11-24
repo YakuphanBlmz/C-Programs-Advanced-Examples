@@ -1,0 +1,31 @@
+EN
+
+In C programming, it's common practice to use `struct` definitions to create complex data types, especially for data structures like linked lists. However, this problem challenges you to operate at a much lower level of abstraction, directly manipulating memory and pointers to implement a fundamental data structure.
+
+Your task is to implement a singly linked list *without using any `struct` or `typedef` definitions*. Instead, each 'node' in your linked list must be represented by a block of dynamically allocated memory. This memory block will store an integer value and a pointer to the next 'node'. You will need to carefully manage memory allocation, deallocation, and pointer arithmetic to correctly interpret and manipulate these memory blocks as nodes.
+
+The structure of each 'node' in memory should be implicitly defined as follows: the first `sizeof(int)` bytes will store the integer data, and immediately following that, the next `sizeof(void*)` bytes will store the pointer to the next 'node'. You will rely heavily on `void*` pointers for generic memory addresses, `char*` for byte-level arithmetic, and `pointer to pointer` (`void**`) to modify the head of the list. This approach demands a deep understanding of memory layout and explicit type casting to correctly store and retrieve data and pointers within raw memory blocks. You are essentially building a custom memory layout for your nodes without the convenience of language constructs like `struct`.
+
+You must implement the following functions:
+1.  `void add_to_head(void** head_ref, int value)`: Allocates a new node, stores the given `value`, links it to the current head of the list, and updates `head_ref` to point to the new node. Proper error handling for `malloc` failure should be included.
+2.  `int remove_from_head(void** head_ref)`: Removes the head node, frees its memory, updates `head_ref` to the next node, and returns the integer value that was stored in the removed head node. If the list is empty, it should report an error and terminate the program.
+3.  `void print_list(void* head)`: Iterates through the list and prints all integer values stored in the nodes, separated by spaces.
+4.  `void free_list(void** head_ref)`: Iterates through the entire list, freeing each node's dynamically allocated memory, and finally sets `*head_ref` to `NULL` to indicate an empty list.
+
+Your `main` function should demonstrate the usage of these functions by adding multiple elements, printing the list after various operations, removing elements, and finally freeing all allocated memory.
+
+TR
+
+C programlamada, bağlı listeler gibi veri yapıları için karmaşık veri türleri oluşturmak amacıyla `struct` tanımları kullanmak yaygın bir uygulamadır. Ancak bu problem, temel bir veri yapısını uygulamak için belleği ve işaretçileri doğrudan manipüle ederek çok daha düşük bir soyutlama seviyesinde çalışmanızı gerektiriyor.
+
+Göreviniz, *hiçbir `struct` veya `typedef` tanımı kullanmadan* tek yönlü bir bağlı liste uygulamaktır. Bunun yerine, bağlı listenizdeki her 'düğüm' dinamik olarak ayrılmış bir bellek bloğuyla temsil edilmelidir. Bu bellek bloğu, bir tamsayı değeri ve bir sonraki 'düğümü' işaret eden bir işaretçi içerecektir. Bu bellek bloklarını düğüm olarak doğru bir şekilde yorumlamak ve manipüle etmek için bellek ayırma, serbest bırakma ve işaretçi aritmetiğini dikkatlice yönetmeniz gerekecektir.
+
+Hafızadaki her 'düğümün' yapısı örtük olarak aşağıdaki gibi tanımlanmalıdır: İlk `sizeof(int)` bayt, tamsayı verisini saklayacak ve hemen ardından, sonraki `sizeof(void*)` bayt, bir sonraki 'düğümü' işaret eden işaretçiyi saklayacaktır. Genel bellek adresleri için yoğun bir şekilde `void*` işaretçilerine, bayt düzeyinde aritmetik için `char*` işaretçilerine ve listenin başını değiştirmek için `işaretçinin işaretçisine` (`void**`) güveneceksiniz. Bu yaklaşım, ham bellek blokları içinde veri ve işaretçileri doğru bir şekilde depolamak ve almak için bellek düzeni ve açık tür dönüştürme hakkında derin bir anlayış gerektirir. Temel olarak, `struct` gibi dil yapılarını kullanmadan düğümleriniz için özel bir bellek düzeni oluşturacaksınız.
+
+Aşağıdaki fonksiyonları uygulamanız gerekmektedir:
+1.  `void add_to_head(void** head_ref, int value)`: Yeni bir düğüm tahsis eder, verilen `value` değerini saklar, mevcut listenin başına bağlar ve `head_ref`'i yeni düğümü işaret edecek şekilde günceller. `malloc` hatası için uygun hata işleme dahil edilmelidir.
+2.  `int remove_from_head(void** head_ref)`: Baştaki düğümü kaldırır, belleğini serbest bırakır, `head_ref`'i bir sonraki düğüme günceller ve kaldırılan baştaki düğümde saklanan tamsayı değerini döndürür. Liste boşsa, bir hata bildirmeli ve programı sonlandırmalıdır.
+3.  `void print_list(void* head)`: Listeyi dolaşır ve düğümlerde depolanan tüm tamsayı değerlerini boşluklarla ayırarak yazdırır.
+4.  `void free_list(void** head_ref)`: Tüm listeyi dolaşır, her düğümün dinamik olarak ayrılmış belleğini serbest bırakır ve son olarak boş bir listeyi belirtmek için `*head_ref`'i `NULL` olarak ayarlar.
+
+`main` fonksiyonunuz, birden çok öğe ekleyerek, çeşitli işlemlerden sonra listeyi yazdırarak, öğeleri kaldırarak ve son olarak ayrılan tüm belleği serbest bırakarak bu fonksiyonların kullanımını göstermelidir.
