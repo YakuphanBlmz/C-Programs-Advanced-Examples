@@ -1,0 +1,15 @@
+EN
+
+In C programming, it's common to manage collections of related data using structures. For this problem, you need to develop a program that organizes student information and then sorts them based on a specific criterion. You will define a structure named `Student` which contains fields for the student's name, ID, and grade.
+
+Your task is to create an array of `Student` structures, initialize it with a predefined set of student data, and then sort this array. The sorting should arrange students in descending order based on their `grade`. After sorting, the program should print the details of each student in the newly sorted order.
+
+Ensure that your solution strictly avoids the use of pointers (explicit `*` syntax for variables or function parameters) and dynamic memory allocation (`malloc`, `free`). All operations, including sorting, must be performed directly within the `main` function using standard array indexing.
+
+TR
+
+C programlamada, ilgili veri koleksiyonlarını yönetmek için yapıları (struct) kullanmak yaygındır. Bu problem için, öğrenci bilgilerini düzenleyen ve ardından belirli bir kritere göre sıralayan bir program geliştirmeniz gerekmektedir. Öğrencinin adı, kimliği ve notu için alanlar içeren `Student` adında bir yapı tanımlayacaksınız.
+
+Göreviniz, `Student` yapılarından oluşan bir dizi oluşturmak, bu diziyi önceden tanımlanmış bir öğrenci veri setiyle başlatmak ve ardından bu diziyi sıralamaktır. Sıralama, öğrencileri `grade` (not) değerlerine göre azalan sırada düzenlemelidir. Sıralandıktan sonra, program her öğrencinin ayrıntılarını yeni sıralanmış düzende yazdırmalıdır.
+
+Çözümünüzün kesinlikle işaretçi (değişkenler veya fonksiyon parametreleri için açık `*` sözdizimi) ve dinamik bellek tahsisi (`malloc`, `free`) kullanmaktan kaçındığından emin olun. Sıralama dahil tüm işlemler, standart dizi indeksleme kullanılarak doğrudan `main` fonksiyonu içinde gerçekleştirilmelidir.
