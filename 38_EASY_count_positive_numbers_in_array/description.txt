@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes an array of integers and counts how many of them are positive. A number is considered positive if it is greater than zero. The program should then print the total count of positive numbers found in the array.
+
+TR
+
+Bir tam sayı dizisi alan ve bu dizideki kaç sayının pozitif olduğunu sayan bir C programı yazın. Bir sayı, sıfırdan büyükse pozitif kabul edilir. Program, dizide bulunan pozitif sayıların toplam sayısını ekrana yazdırmalıdır.
