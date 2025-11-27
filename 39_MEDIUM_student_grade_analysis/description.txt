@@ -1,0 +1,11 @@
+EN
+
+You are tasked with developing a simple C program for a school to manage student academic records. The program should be able to store information for a fixed number of students, calculate their average grades, and identify the student with the highest overall average.
+
+Each student record must include a unique ID, their single-word name (up to 49 characters), and grades for three different subjects. You must use a `struct` and `typedef` to define the `Student` data type. The program should prompt the user to enter data for 3 students, then compute and display each student's average grade. Finally, it should output the name and ID of the student who achieved the highest average score among all entered students. Remember, you are not allowed to use pointers for dynamic memory allocation or any advanced memory management techniques. All data should be stored in fixed-size arrays and struct variables.
+
+TR
+
+Bir okul için öğrenci akademik kayıtlarını yöneten basit bir C programı geliştirmekle görevlisiniz. Program, sabit sayıda öğrenci için bilgileri saklamalı, ortalama notlarını hesaplamalı ve en yüksek genel ortalamaya sahip öğrenciyi belirlemelidir.
+
+Her öğrenci kaydı, benzersiz bir kimlik numarası, tek kelimelik adları (en fazla 49 karakter) ve üç farklı ders için notlarını içermelidir. Öğrenci veri tipini tanımlamak için `struct` ve `typedef` kullanmalısınız. Program, kullanıcıdan 3 öğrenci için veri girmesini istemeli, ardından her öğrencinin ortalama notunu hesaplayıp göstermelidir. Son olarak, girilen tüm öğrenciler arasında en yüksek ortalama puana ulaşan öğrencinin adını ve kimlik numarasını çıktısını vermelidir. Dinamik bellek tahsisi için işaretçiler veya herhangi bir gelişmiş bellek yönetimi tekniği kullanmanıza izin verilmemektedir. Tüm veriler sabit boyutlu dizilerde ve struct değişkenlerinde saklanmalıdır.
