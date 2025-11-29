@@ -1,0 +1,7 @@
+EN
+
+Write a C program that reads 5 integer numbers into an array. After reading the numbers, calculate and print the sum of all even numbers present in the array.
+
+TR
+
+Bir C programı yazın. Bu program, 5 adet tam sayıyı bir diziye okuyacaktır. Sayıları okuduktan sonra, dizideki tüm çift sayıların toplamını hesaplayın ve ekrana yazdırın.
