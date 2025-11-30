@@ -1,0 +1,31 @@
+EN
+
+You are tasked with implementing a highly dynamic, two-dimensional 'jagged' array (an array of arrays where each inner array can have a different length) using only raw pointers and dynamic memory allocation. The primary challenge stems from the strict constraint that you cannot use `struct` or `typedef` to manage the properties of each row, such as its length. Instead, you must devise a clever pointer-based strategy to store and retrieve the length of each inner array.
+
+Your solution must manage memory meticulously using `malloc`, `realloc`, and `free`. Specifically, for each individual row, its allocated memory block must implicitly store its length (number of actual data elements) at the very beginning of the block. For instance, if a row needs to store 'k' integers, you would allocate `(k + 1) * sizeof(int)`, store 'k' in the first `int` position, and then provide a pointer to the `(int*)block + 1` position as the effective start of the data for that row. This approach necessitates careful pointer arithmetic when accessing data, retrieving length, or deallocating memory.
+
+The core operations you need to implement and demonstrate in your solution include:
+1.  **Initialization**: Create a jagged array with an initial number of rows, where each row has a predefined, potentially different, length and arbitrary integer data.
+2.  **Row Resizing**: Implement a function that can resize an existing row (change its number of columns) at a specified index. This will require `realloc` on the individual row's memory block and updating its implicit length.
+3.  **Row Insertion**: Implement a function that can insert a new row at an arbitrary index within the existing jagged array. This will necessitate `realloc` for the main array of pointers, shifting existing row pointers, and creating a new row with its data.
+4.  **Row Deletion**: Implement a function that can remove an existing row at a specified index. This involves properly freeing the memory for the deleted row, shifting subsequent row pointers, and potentially shrinking the main array of pointers using `realloc`.
+5.  **Display**: A function to print the current state of the jagged array, clearly indicating the elements of each row.
+6.  **Deallocation**: Thoroughly free all allocated memory at the end of the program to prevent memory leaks.
+
+This problem tests your deep understanding of pointer arithmetic, dynamic memory management with `realloc` for both arrays of pointers and individual data blocks, and your ability to design robust data structures without high-level abstractions like `struct`. Pay close attention to boundary conditions and the correct handling of `NULL` pointers returned by `realloc` (though for the solution demonstration, you can assume successful allocation for brevity if desired).
+
+TR
+
+Yalnızca ham işaretçiler ve dinamik bellek tahsisi kullanarak, oldukça dinamik, iki boyutlu 'düzensiz' bir dizi (her bir iç dizinin farklı bir uzunluğa sahip olabileceği diziler dizisi) uygulamanız isteniyor. Temel zorluk, her bir satırın uzunluğu gibi özelliklerini yönetmek için `struct` veya `typedef` kullanamama kısıtlamasından kaynaklanmaktadır. Bunun yerine, her bir iç dizinin uzunluğunu depolamak ve almak için akıllıca işaretçi tabanlı bir strateji geliştirmelisiniz.
+
+Çözümünüz, `malloc`, `realloc` ve `free` kullanarak belleği titizlikle yönetmelidir. Özellikle, her bir ayrı satır için, tahsis edilen bellek bloğu, gerçek veri öğelerinin sayısını, bloğun en başında zımni olarak saklamalıdır. Örneğin, bir satırın 'k' tamsayı depolaması gerekiyorsa, `(k + 1) * sizeof(int)` kadar bellek ayırırsınız, 'k' değerini ilk `int` konumuna depolarsınız ve ardından `(int*)block + 1` konumuna bir işaretçi vererek o satırın verilerinin etkin başlangıcını belirtirsiniz. Bu yaklaşım, verilere erişirken, uzunluğu alırken veya belleği serbest bırakırken dikkatli işaretçi aritmetiği gerektirir.
+
+Çözümünüzde uygulamanız ve göstermeniz gereken temel işlemler şunlardır:
+1.  **Başlatma**: Başlangıçta belirli sayıda satır içeren, her satırı önceden tanımlanmış, potansiyel olarak farklı bir uzunluğa ve rastgele tamsayı verilerine sahip olan düzensiz bir dizi oluşturun.
+2.  **Satır Yeniden Boyutlandırma**: Belirtilen bir dizindeki mevcut bir satırı (sütun sayısını değiştirmek için) yeniden boyutlandırabilen bir işlev uygulayın. Bu, bireysel satırın bellek bloğunda `realloc` yapılmasını ve zımni uzunluğunun güncellenmesini gerektirecektir.
+3.  **Satır Ekleme**: Mevcut düzensiz diziye keyfi bir dizine yeni bir satır ekleyebilen bir işlev uygulayın. Bu, ana işaretçi dizisi için `realloc` yapılmasını, mevcut satır işaretçilerinin kaydırılmasını ve verileriyle birlikte yeni bir satır oluşturulmasını gerektirecektir.
+4.  **Satır Silme**: Belirtilen bir dizindeki mevcut bir satırı kaldırabilen bir işlev uygulayın. Bu, silinen satır için belleğin doğru şekilde serbest bırakılmasını, sonraki satır işaretçilerinin kaydırılmasını ve potansiyel olarak ana işaretçi dizisinin `realloc` kullanılarak küçültülmesini içerir.
+5.  **Görüntüleme**: Düzensiz dizinin mevcut durumunu, her satırın öğelerini açıkça göstererek yazdırmak için bir işlev.
+6.  **Bellek Serbest Bırakma**: Bellek sızıntılarını önlemek için programın sonunda tahsis edilen tüm belleği tamamen serbest bırakın.
+
+Bu problem, işaretçi aritmetiği, hem işaretçi dizileri hem de bireysel veri blokları için `realloc` ile dinamik bellek yönetimi ve `struct` gibi üst düzey soyutlamalar olmadan sağlam veri yapıları tasarlama yeteneğinizin derinlemesine anlaşılmasını test eder. Sınır koşullarına ve `realloc` tarafından döndürülen `NULL` işaretçilerinin doğru şekilde ele alınmasına (çözüm gösterimi için, istenirse kısalık adına başarılı tahsis varsayılabilir) özel dikkat gösterin.
