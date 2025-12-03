@@ -1,0 +1,27 @@
+EN
+
+You are tasked with managing a complex, dynamically allocated, three-dimensional-like data structure using only raw pointers and dynamic memory allocation functions in C. This structure is best visualized as a 2D grid where each cell itself contains a pointer to a dynamically sized 1D array of integers.
+
+Specifically, you need to manage `int*** grid`, where `grid` points to an array of `int**` (representing rows), `grid[i]` points to an array of `int*` (representing columns within row `i`), and `grid[i][j]` points to a `int*` (representing a dynamically sized 1D array of integers).
+
+Your program must implement and utilize functions for:
+1.  **Initial Allocation:** `create_3d_like_grid(int rows, int cols, const int* inner_sizes_flat)`: Allocates the entire structure. For each cell `[r][c]`, it allocates an inner 1D array of size `inner_sizes_flat[r * cols + c]` and initializes its elements.
+2.  **Inner Array Resizing:** `resize_inner_array(int*** grid, int r, int c, int new_inner_size)`: Resizes the 1D array pointed to by `grid[r][c]` using `realloc`. Elements beyond the old size should be uninitialized; existing elements should be preserved.
+3.  **Outer Grid Resizing:** `resize_outer_grid(int**** grid_ptr, int old_rows, int old_cols, int new_rows, int new_cols, const int* new_inner_sizes_flat)`: Resizes the main 2D grid. This function must handle both increasing and decreasing the number of rows and columns. When shrinking, it must correctly free memory for removed rows and columns. When expanding, it must allocate new rows and columns, and for each newly created cell, it must allocate its inner 1D array with a size specified by `new_inner_sizes_flat[r * new_cols + c]` and initialize its elements. The `grid_ptr` parameter is a pointer to the main `int***` grid, allowing the top-level pointer to be updated if `realloc` moves the memory block.
+4.  **Full Deallocation:** `free_3d_like_grid(int*** grid, int rows, int cols)`: Deallocates all dynamically allocated memory in the correct order to prevent memory leaks.
+
+The challenge lies in the meticulous management of multiple levels of indirection and dynamic memory. Error handling for `malloc` and `realloc` failures should be considered where appropriate (returning 0 or NULL). The main function should demonstrate the allocation, resizing operations, and final deallocation of such a structure.
+
+TR
+
+C programlama dilinde yalnızca ham işaretçiler ve dinamik bellek ayırma fonksiyonları kullanarak karmaşık, dinamik olarak tahsis edilmiş, üç boyutlu benzeri bir veri yapısını yönetmeniz istenmektedir. Bu yapı en iyi şekilde, her bir hücresinin dinamik boyutlu bir 1D tamsayı dizisine işaret eden bir işaretçi içerdiği bir 2D ızgara olarak görselleştirilebilir.
+
+Özellikle, `int*** grid` yapısını yönetmeniz gerekmektedir; burada `grid`, `int**` dizisine (satırları temsil eder) işaret eder, `grid[i]`, `i`'inci satırdaki sütunları temsil eden bir `int*` dizisine işaret eder ve `grid[i][j]`, dinamik boyutlu bir 1D tamsayı dizisini temsil eden bir `int*`'e işaret eder.
+
+Programınız aşağıdaki işlevleri uygulamalı ve kullanmalıdır:
+1.  **Başlangıç Tahsisi:** `create_3d_like_grid(int rows, int cols, const int* inner_sizes_flat)`: Tüm yapıyı tahsis eder. Her `[r][c]` hücresi için, `inner_sizes_flat[r * cols + c]` boyutunda bir iç 1D dizi tahsis eder ve elemanlarını başlatır.
+2.  **İç Dizi Yeniden Boyutlandırma:** `resize_inner_array(int*** grid, int r, int c, int new_inner_size)`: `grid[r][c]` tarafından işaret edilen 1D diziyi `realloc` kullanarak yeniden boyutlandırır. Eski boyutun ötesindeki elemanlar başlatılmamış olmalı; mevcut elemanlar korunmalıdır.
+3.  **Dış Izgara Yeniden Boyutlandırma:** `resize_outer_grid(int**** grid_ptr, int old_rows, int old_cols, int new_rows, int new_cols, const int* new_inner_sizes_flat)`: Ana 2D ızgarayı yeniden boyutlandırır. Bu fonksiyon, satır ve sütun sayısını artırma ve azaltma durumlarını ele almalıdır. Küçültme yaparken, kaldırılan satırlar ve sütunlar için belleği doğru bir şekilde serbest bırakmalıdır. Genişletme yaparken, yeni satır ve sütunlar tahsis etmeli ve her yeni oluşturulan hücre için, `new_inner_sizes_flat[r * new_cols + c]` tarafından belirtilen boyutta kendi iç 1D dizisini tahsis edip elemanlarını başlatmalıdır. `grid_ptr` parametresi, `realloc` bellek bloğunu taşısa bile üst düzey işaretçinin güncellenmesine izin veren ana `int***` ızgara işaretçisine bir işaretçidir.
+4.  **Tam Bellek Serbest Bırakma:** `free_3d_like_grid(int*** grid, int rows, int cols)`: Bellek sızıntılarını önlemek için dinamik olarak tahsis edilmiş tüm belleği doğru sırayla serbest bırakır.
+
+Meydan okuma, birden çok düzeydeki dolaylılığı ve dinamik belleği titizlikle yönetmekte yatmaktadır. `malloc` ve `realloc` hataları için uygun hata işleme (0 veya NULL döndürme) dikkate alınmalıdır. `main` fonksiyonu, böyle bir yapının tahsisini, yeniden boyutlandırma işlemlerini ve son serbest bırakılmasını göstermelidir.
