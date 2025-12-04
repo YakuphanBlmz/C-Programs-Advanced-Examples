@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a C program to help a teacher analyze student performance. The program should manage records for a fixed number of students. Each student record must contain their unique `ID` (an integer), their `name` (a character array), and their `score` (an integer) in a particular subject.
+
+Your program should first define a `struct` named `Student` to encapsulate these pieces of information, and use a `typedef` to simplify its usage. You will then need to declare a fixed-size array of `Student` structures to store the records for a predefined maximum number of students (e.g., 5 students).
+
+The program must: 1. Prompt the user to enter the `ID`, `name`, and `score` for each of the specified number of students. 2. Calculate the average score of all students. 3. Finally, iterate through the student records and print the `ID`, `name`, and `score` of every student whose score is strictly *above* the calculated average. Ensure no pointers (explicit `*` declarations) or dynamic memory allocation (`malloc`/`free`) are used in your solution.
+
+TR
+
+Bir öğretmenin öğrenci performansını analiz etmesine yardımcı olacak bir C programı geliştirmeniz isteniyor. Program, sabit sayıda öğrencinin kaydını yönetmelidir. Her öğrenci kaydı, öğrencinin benzersiz `ID`'sini (bir tamsayı), `adını` (bir karakter dizisi) ve belirli bir dersteki `puanını` (bir tamsayı) içermelidir.
+
+Programınız öncelikle bu bilgileri kapsayacak `Student` adında bir `struct` tanımlamalı ve kullanımını kolaylaştırmak için bir `typedef` kullanmalıdır. Ardından, önceden belirlenmiş maksimum sayıda öğrencinin (örneğin, 5 öğrenci) kayıtlarını depolamak için sabit boyutlu bir `Student` yapıları dizisi bildirmelisiniz.
+
+Program şunları yapmalıdır: 1. Kullanıcıdan belirtilen sayıdaki her öğrenci için `ID`, `ad` ve `puan` girmesini istemelidir. 2. Tüm öğrencilerin ortalama puanını hesaplamalıdır. 3. Son olarak, öğrenci kayıtları arasında gezinerek, puanı hesaplanan ortalamanın kesinlikle *üzerinde* olan her öğrencinin `ID`'sini, `adını` ve `puanını` yazdırmalıdır. Çözümünüzde işaretçi (açık `*` bildirimleri) veya dinamik bellek ayırma (`malloc`/`free`) kullanılmadığından emin olun.
