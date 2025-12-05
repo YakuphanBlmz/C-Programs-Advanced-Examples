@@ -1,0 +1,11 @@
+EN
+
+A small inventory management system needs to store and retrieve product information. Your task is to implement a C program that uses a `struct` to define a product record, including an ID, name, price, and quantity. The program should first create a few sample product records and write them into a binary file.
+
+After successfully writing the data, the program must then reopen the same binary file, read all the product records back, and display their details on the console. This exercise emphasizes the use of `typedef` for defining custom data types, `struct` for grouping related data, and basic file I/O operations (`fopen`, `fwrite`, `fread`, `fclose`) to persist and retrieve structured data without relying on dynamic memory allocation or explicit pointers. Ensure that product names are stored as fixed-size character arrays within the struct.
+
+TR
+
+Küçük bir envanter yönetim sisteminin ürün bilgilerini saklaması ve geri alması gerekmektedir. Göreviniz, bir ürün kaydını tanımlamak için `struct` kullanan bir C programı uygulamaktır. Bu kayıt bir ID, isim, fiyat ve miktar içerecektir. Program öncelikle birkaç örnek ürün kaydı oluşturmalı ve bunları ikili bir dosyaya yazmalıdır.
+
+Verileri başarıyla yazdıktan sonra, program aynı ikili dosyayı tekrar açmalı, tüm ürün kayıtlarını okumalı ve ayrıntılarını konsolda göstermelidir. Bu alıştırma, özel veri tiplerini tanımlamak için `typedef`, ilgili verileri gruplamak için `struct` ve yapılandırılmış verileri dinamik bellek ayırma veya açık işaretçiler kullanmadan kalıcı hale getirmek ve geri almak için temel dosya I/O işlemleri (`fopen`, `fwrite`, `fread`, `fclose`) kullanımını vurgulamaktadır. Ürün isimlerinin struct içinde sabit boyutlu karakter dizileri olarak saklandığından emin olun.
