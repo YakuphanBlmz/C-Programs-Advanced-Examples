@@ -1,0 +1,7 @@
+EN
+
+Write a C program that calculates the sum of all even numbers present in a given integer array. The program should iterate through the array, check each element for evenness, and accumulate the sum of only the even elements. For example, if the array is `{10, 5, 20, 15, 30}`, the output should be `60` (10 + 20 + 30).
+
+TR
+
+Verilen bir tam sayı dizisindeki tüm çift sayıların toplamını hesaplayan bir C programı yazın. Program, diziyi döngüyle gezmeli, her elemanın çift olup olmadığını kontrol etmeli ve yalnızca çift elemanların toplamını biriktirmelidir. Örneğin, dizi `{10, 5, 20, 15, 30}` ise, çıktı `60` (10 + 20 + 30) olmalıdır.
