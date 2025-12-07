@@ -1,0 +1,7 @@
+EN
+
+Write a C program that initializes an integer array with predefined values. The program should then iterate through the array and count how many elements are even numbers. Finally, print the total count of even numbers found in the array.
+
+TR
+
+Önceden tanımlanmış değerlere sahip bir tamsayı dizisini başlatan bir C programı yazın. Program, diziyi yinelemeli olarak gezip kaç tane elemanın çift sayı olduğunu saymalıdır. Son olarak, dizide bulunan çift sayıların toplam sayısını ekrana yazdırın.
