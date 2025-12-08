@@ -1,0 +1,15 @@
+EN
+
+This problem requires you to implement a basic student record management system using C structs and file I/O. You will define a `Student` struct containing an ID, name, and grade. Your program should first create a small, fixed number of student records and store them in an array.
+
+Next, you will write these student records from the array into a binary file named `students.dat`. After successfully writing, the program should then read all the records back from the *same* binary file into another array of `Student` structs. Finally, your program must display all the read student records and allow the user to search for a specific student by their ID, printing their details if found.
+
+Remember to handle file operations carefully, checking for potential errors during opening. The use of pointers and dynamic memory allocation is strictly forbidden, so all data structures should be of fixed size. This problem focuses on demonstrating the practical application of `struct` definitions, `typedef`, and sequential binary file input/output operations.
+
+TR
+
+Bu problemde, C dilinde `struct` yapıları ve dosya işlemleri kullanarak basit bir öğrenci kayıt yönetim sistemi uygulamanız istenmektedir. Bir öğrenci kimliği, adı ve notunu içeren bir `Student` yapısı tanımlayacaksınız. Programınız öncelikle belirli ve sabit sayıda öğrenci kaydı oluşturmalı ve bunları bir dizi içinde saklamalıdır.
+
+Daha sonra, bu öğrenci kayıtlarını diziden `students.dat` adlı ikili bir dosyaya yazmanız gerekmektedir. Yazma işlemi başarıyla tamamlandıktan sonra, program aynı ikili dosyadan tüm kayıtları okuyarak başka bir `Student` yapıları dizisine aktarmalıdır. Son olarak, programınız okunan tüm öğrenci kayıtlarını görüntülemeli ve kullanıcının bir öğrenciyi kimliğine göre arayarak, bulunursa detaylarını ekrana yazdırmasına olanak tanımalıdır.
+
+Dosya işlemlerini dikkatlice yapmayı ve dosya açma sırasında olası hataları kontrol etmeyi unutmayın. İşaretçilerin ve dinamik bellek tahsisinin kullanımı kesinlikle yasaktır, bu nedenle tüm veri yapıları sabit boyutlu olmalıdır. Bu problem, `struct` tanımlamaları, `typedef` ve ardışık ikili dosya giriş/çıkış işlemlerinin pratik uygulamasını göstermeyi amaçlamaktadır.
