@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a basic student record management system in C. The system should be capable of storing student information, including a unique ID, their name, and a test score. All student data must be persisted to a binary file to ensure that the records are not lost when the program terminates.
+
+Your program should first define a structure to represent a student. After defining the structure, you will create a small, fixed number of student records within your program. These initial records should then be written entirely to a binary file named 'students.dat'. Following the write operation, your program must demonstrate successful persistence by clearing the in-memory student data and then reading the records back from 'students.dat' into a new set of student structures.
+
+Finally, the program should display the loaded student information to the console. It's crucial that this implementation avoids any use of dynamic memory allocation (malloc, free) or explicit pointers, relying instead on fixed-size arrays and direct structure manipulation for data storage and file operations.
+
+TR
+
+C dilinde basit bir öğrenci kayıt yönetim sistemi geliştirmeniz isteniyor. Sistem, öğrencilerin benzersiz kimlik numarası (ID), adı ve test puanı dahil olmak üzere bilgilerini saklayabilmelidir. Tüm öğrenci verileri, program sonlandığında kayıtların kaybolmamasını sağlamak için ikili bir dosyaya kalıcı olarak kaydedilmelidir.
+
+Programınız öncelikle bir öğrenciyi temsil edecek bir yapı (struct) tanımlamalıdır. Yapıyı tanımladıktan sonra, programınız içinde sabit sayıda öğrenci kaydı oluşturacaksınız. Bu başlangıç kayıtları, 'students.dat' adında ikili bir dosyaya tamamen yazılmalıdır. Yazma işleminden sonra, programınız bellek içindeki öğrenci verilerini temizleyerek ve ardından kayıtları 'students.dat' dosyasından yeni bir öğrenci yapıları setine okuyarak başarılı kalıcılığı göstermelidir.
+
+Son olarak, program yüklenen öğrenci bilgilerini konsola yazdırmalıdır. Bu uygulamanın, dinamik bellek ayırma (malloc, free) veya açık işaretçiler (pointers) kullanmaktan kaçınması, bunun yerine veri depolama ve dosya işlemleri için sabit boyutlu diziler ve doğrudan yapı manipülasyonu kullanması çok önemlidir.
