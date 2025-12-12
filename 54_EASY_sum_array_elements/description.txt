@@ -1,0 +1,7 @@
+EN
+
+Write a C program that calculates the sum of all integer elements in a given array. For example, if the array is `{1, 2, 3, 4, 5}`, the sum should be `15`.
+
+TR
+
+Verilen bir tam sayı dizisindeki tüm elemanların toplamını hesaplayan bir C programı yazın. Örneğin, dizi `{1, 2, 3, 4, 5}` ise, toplam `15` olmalıdır.
