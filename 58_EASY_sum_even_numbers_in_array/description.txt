@@ -1,0 +1,7 @@
+EN
+
+Given an array of integers, calculate and print the sum of all even numbers present in the array. You should iterate through the array, identify even numbers using the modulo operator, and accumulate their sum.
+
+TR
+
+Verilen bir tamsayı dizisindeki tüm çift sayıların toplamını hesaplayıp ekrana yazdırın. Dizi üzerinde döngü kurarak ilerlemeli, mod operatörünü kullanarak çift sayıları belirlemeli ve toplamlarını biriktirmelisiniz.
