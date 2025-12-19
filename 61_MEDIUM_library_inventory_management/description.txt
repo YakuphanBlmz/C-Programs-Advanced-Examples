@@ -1,0 +1,15 @@
+EN
+
+A local library needs a simple system to manage its book inventory. You are tasked with developing a C program that utilizes structures and typed definitions to organize book data. Each book will have an ID, title, author, price, and the current stock count.
+
+Your program should define a `Book` structure and use a `typedef` for it. You will then create a fixed-size array of `Book` objects to store the library's inventory. The core functionality involves two main operations: updating the stock for a specific book and calculating the total monetary value of all books currently in the library's stock.
+
+Implement a function that takes the book array, its size, a book ID, and a new stock quantity. This function should find the book with the matching ID and update its `stock` field. Additionally, implement another function that iterates through all books in the inventory, calculates `price * stock` for each book, and returns the sum, representing the total value of the library's entire book collection. The `main` function should demonstrate these functionalities by initializing some book data, performing a stock update, and then printing the total inventory value.
+
+TR
+
+Yerel bir kütüphane, kitap envanterini yönetmek için basit bir sisteme ihtiyaç duymaktadır. Yapı (struct) ve tip tanımlamalarını (typedef) kullanarak kitap verilerini organize eden bir C programı geliştirmeniz istenmektedir. Her kitap bir kimlik (ID), başlık, yazar, fiyat ve mevcut stok miktarına sahip olacaktır.
+
+Programınız bir `Book` yapısı tanımlamalı ve bunun için bir `typedef` kullanmalıdır. Ardından, kütüphanenin envanterini depolamak için sabit boyutlu bir `Book` nesneleri dizisi oluşturmalısınız. Temel işlevsellik iki ana işlemi içermektedir: belirli bir kitabın stoğunu güncelleme ve kütüphanenin stoğundaki tüm kitapların toplam parasal değerini hesaplama.
+
+Kitap dizisini, boyutunu, bir kitap kimliğini ve yeni stok miktarını alan bir fonksiyon yazmalısınız. Bu fonksiyon, eşleşen kimliğe sahip kitabı bulmalı ve `stock` alanını güncellemelidir. Ayrıca, envanterdeki tüm kitapları dolaşan, her kitap için `fiyat * stok` hesaplamasını yapan ve kütüphanenin tüm kitap koleksiyonunun toplam değerini temsil eden toplamı döndüren başka bir fonksiyon daha implemente etmelisiniz. `main` fonksiyonu, bazı kitap verilerini başlatarak, bir stok güncellemesi yaparak ve ardından toplam envanter değerini yazdırarak bu işlevleri göstermelidir.
