@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes a non-negative integer as input and calculates the sum of its digits. For example, if the input is 123, the output should be 6 (1 + 2 + 3).
+
+TR
+
+C dilinde, negatif olmayan bir tam sayı alan ve basamaklarının toplamını hesaplayan bir program yazın. Örneğin, girdi 123 ise, çıktı 6 (1 + 2 + 3) olmalıdır.
