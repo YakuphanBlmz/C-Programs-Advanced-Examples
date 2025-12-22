@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a basic inventory management system for a small store. The system should allow users to add new product information to a storage file and then view all existing products along with their total inventory value.
+
+Each product will have a unique ID, a name (up to 49 characters), a price, and a quantity in stock. You must define a `struct` named `Product` using `typedef` to represent this information. The product data will be stored in a binary file named "products.dat".
+
+Your program should first prompt the user to enter details for a new product, which will then be appended to "products.dat". After adding the product, the program should read all product records from "products.dat", display each product's details to the console, and finally calculate and print the total monetary value of all items currently in stock. Ensure proper error handling for file operations.
+
+TR
+
+Küçük bir mağaza için temel bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, kullanıcıların yeni ürün bilgilerini bir depolama dosyasına eklemesine ve ardından mevcut tüm ürünleri toplam envanter değeriyle birlikte görüntülemesine olanak sağlamalıdır.
+
+Her ürünün benzersiz bir kimliği, bir adı (en fazla 49 karakter), bir fiyatı ve stoktaki miktarı olacaktır. Bu bilgiyi temsil etmek için `typedef` kullanarak `Product` adında bir `struct` tanımlamalısınız. Ürün verileri "products.dat" adlı ikili bir dosyada saklanacaktır.
+
+Programınız önce kullanıcıdan yeni bir ürünün ayrıntılarını girmesini istemeli ve bu ayrıntılar "products.dat" dosyasına eklenmelidir. Ürün eklendikten sonra, program "products.dat" dosyasındaki tüm ürün kayıtlarını okumalı, her ürünün ayrıntılarını konsola yazdırmalı ve son olarak stokta bulunan tüm ürünlerin toplam parasal değerini hesaplayıp yazdırmalıdır. Dosya işlemleri için uygun hata denetimini sağlayın.
