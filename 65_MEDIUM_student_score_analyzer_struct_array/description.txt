@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student score analysis system for a small class. The system needs to manage student records, each containing an ID, name, and score. Your program should be able to store a fixed number of student records and identify the student with the highest score.
+
+Implement a `typedef struct Student` to represent each student, including fields for an integer `id`, a character array `name` (to hold up to 50 characters), and an integer `score`. You must then declare a fixed-size array of these `Student` structs within your `main` function to store the class's records. Populate this array with some sample student data.
+
+Finally, write logic to iterate through the student array and determine which student has achieved the highest score. Print the ID, name, and score of this top-performing student. Ensure your solution avoids dynamic memory allocation and explicit pointer usage.
+
+TR
+
+Küçük bir sınıf için basit bir öğrenci puan analiz sistemi geliştirmekle görevlisiniz. Sistem, her biri bir kimlik, ad ve puan içeren öğrenci kayıtlarını yönetmelidir. Programınız, sabit sayıda öğrenci kaydını saklayabilmeli ve en yüksek puana sahip öğrenciyi belirleyebilmelidir.
+
+Her bir öğrenciyi temsil etmek üzere bir `typedef struct Student` tanımlayın; bu yapı bir tam sayı `id`, bir karakter dizisi `name` (50 karaktere kadar) ve bir tam sayı `score` alanları içermelidir. Daha sonra, `main` fonksiyonunuz içinde bu `Student` yapılarından oluşan sabit boyutlu bir dizi bildirin ve sınıfın kayıtlarını bu dizide depolayın. Bu diziyi bazı örnek öğrenci verileriyle doldurun.
+
+Son olarak, öğrenci dizisi üzerinde yineleyerek en yüksek puanı alan öğrencinin kim olduğunu belirleyecek bir mantık yazın. Bu en başarılı öğrencinin kimliğini, adını ve puanını ekrana yazdırın. Çözümünüzün dinamik bellek tahsisinden ve açık işaretçi kullanımından kaçındığından emin olun.
