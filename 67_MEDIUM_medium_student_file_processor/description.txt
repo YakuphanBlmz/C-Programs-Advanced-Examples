@@ -1,0 +1,15 @@
+EN
+
+In C programming, managing collections of related data efficiently is a common task. Structures provide a powerful way to group different data types under a single name. This problem challenges you to implement a basic student record management system using structures and file I/O operations.
+
+Your task is to first define a `Student` structure using `typedef`, which will hold a student's ID, name, and score. You will then populate an array of these structures with some sample student data. The program should write these student records into a binary file named `students.dat`. After successfully writing the data, your program must read all the student records back from `students.dat`.
+
+Finally, after reading all data from the file, you need to calculate and display the average score of all students. Additionally, you must identify and print the details of the student who achieved the highest score. It is crucial that your solution adheres to specific constraints: avoid using any explicit pointer declarations (e.g., `int *ptr`) or dynamic memory allocation functions like `malloc` or `free` in your C code.
+
+TR
+
+C programlamada, ilgili veri koleksiyonlarını etkili bir şekilde yönetmek yaygın bir görevdir. Yapılar (struct'lar), farklı veri türlerini tek bir isim altında gruplamak için güçlü bir yol sağlar. Bu problem, struct'ları ve dosya G/Ç işlemlerini kullanarak temel bir öğrenci kayıt yönetim sistemi uygulamanızı gerektirmektedir.
+
+Göreviniz, ilk olarak bir öğrencinin ID'si, adı ve puanını tutacak bir `Student` yapısı tanımlamak ve `typedef` kullanmaktır. Daha sonra, bu yapıların bir dizisini bazı örnek öğrenci verileriyle dolduracaksınız. Programınız bu öğrenci kayıtlarını `students.dat` adlı ikili bir dosyaya yazmalıdır. Verileri başarıyla yazdıktan sonra, programınız `students.dat` dosyasından tüm öğrenci kayıtlarını geri okumalıdır.
+
+Son olarak, dosyadan tüm verileri okuduktan sonra, tüm öğrencilerin ortalama puanını hesaplamanız ve görüntülemeniz gerekmektedir. Ek olarak, en yüksek puanı alan öğrenciyi belirlemeli ve ayrıntılarını yazdırmalısınız. Çözümünüzün belirli kısıtlamalara uyması çok önemlidir: C kodunuzda açıkça işaretçi bildirimleri (örneğin, `int *ptr`) veya `malloc` veya `free` gibi dinamik bellek ayırma işlevlerini kullanmaktan kaçınmalısınız.
