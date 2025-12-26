@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a C program to manage a small number of student records using `struct` and `typedef`. The program should first prompt the user to enter details for a predefined maximum number of students (e.g., 3 students). For each student, you need to collect their ID (integer), Name (string, no spaces), Major (string, no spaces), and GPA (floating point number). These details should be stored in an array of `Student` structures.
+
+After collecting all student data, the program must write this entire array of student records into a binary file named "students.dat". This ensures that the data is persistent. Finally, the program should demonstrate data retrieval by reading all the student records from "students.dat" back into a new array of `Student` structures and then displaying each student's information to the console.
+
+Your solution must strictly avoid the use of pointers (except when implicitly used by array indexing or file I/O functions with addresses of structs, but no pointer variables declared or dereferenced explicitly for dynamic memory) and dynamic memory allocation functions like `malloc` or `free`. Use fixed-size character arrays within your `struct` for strings.
+
+TR
+
+C programlama dilinde `struct` ve `typedef` kullanarak küçük bir öğrenci kayıt sistemini yönetmekle görevlisiniz. Program, öncelikle kullanıcıdan önceden tanımlanmış maksimum sayıda (örneğin 3 öğrenci) öğrenci için detayları girmesini istemelidir. Her öğrenci için, kimlik numarası (tam sayı), Adı (string, boşluksuz), Bölümü (string, boşluksuz) ve GPA'sı (ondalıklı sayı) toplanmalıdır. Bu detaylar, bir `Student` yapıları dizisinde saklanmalıdır.
+
+Tüm öğrenci verileri toplandıktan sonra, program bu öğrenci kayıtları dizisinin tamamını "students.dat" adında ikili bir dosyaya yazmalıdır. Bu, verilerin kalıcı olmasını sağlayacaktır. Son olarak, program, "students.dat" dosyasından tüm öğrenci kayıtlarını yeni bir `Student` yapıları dizisine geri okuyarak ve ardından her öğrencinin bilgilerini konsola görüntüleyerek veri alımını göstermelidir.
+
+Çözümünüzde kesinlikle işaretçiler (dizi indekslemesi veya dosya G/Ç fonksiyonlarının yapıların adresleriyle örtülü olarak kullanılması dışında, açıkça işaretçi değişkenleri tanımlanmamalı veya dinamik bellek için işaretçi çözümlenmemelidir) ve `malloc` veya `free` gibi dinamik bellek ayırma fonksiyonları kullanılmamalıdır. Yapınızın içindeki stringler için sabit boyutlu karakter dizileri kullanın.
