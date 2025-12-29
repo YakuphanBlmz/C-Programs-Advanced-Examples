@@ -1,0 +1,15 @@
+EN
+
+A store wants to manage its product inventory using a simple C program. Your program must use a `struct Product` to store product information (`id`, `name`, `price`, `stock`) and employ the `typedef` keyword for convenience. A maximum of 10 products can be stored in the system at any given time.
+
+The program should be able to read existing product data from a text file (e.g., `products.txt`) when it starts and save any updated or new product data back to this file upon exiting. Users should have options to list all existing products, add a new product to the inventory, or search for a specific product by its ID.
+
+This problem will help you reinforce your understanding of C structures (`struct`), `typedef` usage, and fundamental file I/O operations (reading from and writing to text files). You must carefully manage a fixed-size array of products without utilizing dynamic memory allocation (`malloc`/`free`) or explicit pointer arithmetic for array manipulation.
+
+TR
+
+Bir mağaza, ürün envanterini basit bir C programı ile yönetmek istiyor. Programınızın, ürün bilgilerini (`id`, `ad`, `fiyat`, `stok`) saklamak için `struct Product` yapısını ve kolaylık sağlaması için `typedef` anahtar kelimesini kullanması gerekmektedir. Sistemde aynı anda en fazla 10 ürün saklanabilir.
+
+Program, başlangıçta mevcut ürün verilerini bir metin dosyasından (örneğin, `products.txt`) okuyabilmeli ve programdan çıkarken güncel veya yeni eklenen ürün verilerini bu dosyaya geri kaydedebilmelidir. Kullanıcılar, tüm mevcut ürünleri listeleme, envantere yeni bir ürün ekleme veya belirli bir ID'ye sahip ürünü arama seçeneklerine sahip olmalıdır.
+
+Bu problem, C'deki yapılar (`struct`), `typedef` kullanımı ve temel dosya giriş/çıkış (metin dosyalarından okuma ve yazma) işlemlerini pekiştirmenize yardımcı olacaktır. Dinamik bellek yönetimi (`malloc`/`free`) veya dizi manipülasyonu için açık işaretçi aritmetiği kullanmadan sabit boyutlu bir ürün dizisini dikkatlice yönetmelisiniz.
