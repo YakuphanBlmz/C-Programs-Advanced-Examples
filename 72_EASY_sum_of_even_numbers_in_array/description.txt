@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes an integer array and its size as input. The program should calculate and print the sum of all even numbers present in the array. For example, if the array is {1, 2, 3, 4, 5}, the sum of even numbers is 2 + 4 = 6.
+
+TR
+
+Verilen bir tamsayı dizisini ve boyutunu girdi olarak alan bir C programı yazın. Program, dizide bulunan tüm çift sayıların toplamını hesaplamalı ve ekrana yazdırmalıdır. Örneğin, dizi {1, 2, 3, 4, 5} ise, çift sayıların toplamı 2 + 4 = 6 olacaktır.
