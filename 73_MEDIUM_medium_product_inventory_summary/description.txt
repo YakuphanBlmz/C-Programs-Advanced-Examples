@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system in C. The system needs to read product data from a binary file, perform calculations, and generate a report.
+
+First, define a `struct` called `Product` using `typedef`. This structure should contain an integer `id`, a character array `name` (to hold product names up to 49 characters plus null terminator), a floating-point `price`, and an integer `stock` quantity.
+
+Your program should read a fixed number of product records (e.g., `MAX_PRODUCTS = 3`) from a binary file named "products.bin". After successfully reading the data, calculate the total inventory value, which is the sum of (price * stock) for all products. Finally, print a formatted summary of each product and the overall total inventory value to the console. Additionally, save a simplified report to a text file named "inventory_report.txt", listing each product's ID, Name, and its individual total value (price * stock).
+
+TR
+
+C programlama dili kullanarak basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Bu sistem, ürün verilerini ikili bir dosyadan okuyacak, hesaplamalar yapacak ve bir rapor oluşturacaktır.
+
+Öncelikle, `typedef` kullanarak `Product` adında bir `struct` tanımlayın. Bu yapı bir tam sayı `id`, (ürün adları için 49 karakter artı null sonlandırıcıya kadar) bir karakter dizisi `name`, bir kayan noktalı `price` ve bir tam sayı `stock` miktarını içermelidir.
+
+Programınız, "products.bin" adında bir ikili dosyadan sabit sayıda ürün kaydı (örneğin, `MAX_PRODUCTS = 3`) okumalıdır. Verileri başarıyla okuduktan sonra, tüm ürünler için (fiyat * stok) toplamı olan genel envanter değerini hesaplayın. Son olarak, her bir ürünün ve genel toplam envanter değerinin biçimlendirilmiş bir özetini konsola yazdırın. Ek olarak, "inventory_report.txt" adında bir metin dosyasına basitleştirilmiş bir rapor kaydedin; bu raporda her ürünün ID'si, Adı ve kendi bireysel toplam değeri (fiyat * stok) listelenmelidir.
