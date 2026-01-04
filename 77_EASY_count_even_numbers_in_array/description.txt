@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes an integer array as input and counts how many even numbers are present within it. The program should iterate through the array elements using a loop and use the modulo operator to check for evenness for each element.
+
+TR
+
+Bir C programı yazın. Bu program, bir tamsayı dizisini girdi olarak alsın ve içinde kaç tane çift sayı olduğunu saysın. Program, dizi elemanları üzerinde bir döngü kullanarak gezinmeli ve her bir elemanın çift olup olmadığını kontrol etmek için modulo operatörünü kullanmalıdır.
