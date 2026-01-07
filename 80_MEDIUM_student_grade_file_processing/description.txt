@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student grade management system in C. The system should read student information from an input file, calculate the average grade of all students, and then identify students who performed above this average. Finally, it should write the overall average grade and the details of the high-achieving students to an output file.
+
+Your program will define a `Student` structure using `typedef`, which includes an integer `id`, a character array `name` (for up to 49 characters plus null terminator), and an integer `grade`. The input file, named `students.txt`, will contain one student's data per line, formatted as `ID Name Grade` (e.g., `101 Alice 85`). Your program should be able to handle up to `MAX_STUDENTS` (e.g., 100) records.
+
+After reading all valid student records, calculate the average grade. Then, iterate through the students again to find those whose individual grade is strictly greater than the calculated average. Write the average grade to the first line of an output file named `results.txt`, followed by each high-achieving student's `ID`, `Name`, and `Grade` on separate lines. Remember to handle file operations carefully and ensure no explicit pointer variables or dynamic memory allocation are used.
+
+TR
+
+C dilinde basit bir öğrenci not yönetim sistemi geliştirmeniz isteniyor. Sistem, öğrenci bilgilerini bir giriş dosyasından okuyacak, tüm öğrencilerin not ortalamasını hesaplayacak ve ardından bu ortalamanın üzerinde performans gösteren öğrencileri belirleyecektir. Son olarak, genel not ortalamasını ve başarılı öğrencilerin ayrıntılarını bir çıkış dosyasına yazacaktır.
+
+Programınız, bir `typedef` kullanarak bir `Student` yapısı tanımlayacak; bu yapı, bir tam sayı `id`, bir karakter dizisi `name` (en fazla 49 karakter ve sonlandırıcı null için) ve bir tam sayı `grade` içerecektir. `students.txt` adlı giriş dosyası, her satırda bir öğrencinin verisini `ID İsim Not` formatında içerecektir (örn: `101 Ayşe 85`). Programınız en fazla `MAX_STUDENTS` (örn: 100) kaydı işleyebilmelidir.
+
+Tüm geçerli öğrenci kayıtlarını okuduktan sonra, not ortalamasını hesaplayın. Ardından, bireysel notu hesaplanan ortalamadan kesinlikle daha yüksek olan öğrencileri bulmak için öğrencileri tekrar döngüye alın. Ortalama notu `results.txt` adlı çıkış dosyasının ilk satırına yazın, ardından her başarılı öğrencinin `ID'si`, `İsmi` ve `Notu`nu ayrı satırlara yazın. Dosya işlemlerini dikkatli bir şekilde yapmayı ve açıkça işaretçi değişkenleri veya dinamik bellek tahsisatı kullanmadığınızdan emin olun.
