@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes 5 integer inputs from the user and stores them in an array. The program should then iterate through the array to count how many of these numbers are even and how many are odd. Finally, print the total count of even numbers and odd numbers to the console.
+
+TR
+
+Kullanıcıdan 5 adet tam sayı girdisi alıp bunları bir diziye kaydeden bir C programı yazın. Program, daha sonra dizi üzerinde dönerek bu sayılardan kaç tanesinin çift, kaç tanesinin tek olduğunu saymalıdır. Son olarak, çift sayıların ve tek sayıların toplam sayısını konsola yazdırın.
