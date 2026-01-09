@@ -1,0 +1,7 @@
+EN
+
+Write a C program that calculates and prints the sum of all integer elements in a predefined array. The program should iterate through the array and accumulate the sum, then display the final result.
+
+TR
+
+Önceden tanımlanmış bir dizideki tüm tam sayı elemanlarının toplamını hesaplayan ve ekrana yazdıran bir C programı yazın. Program, dizi üzerinde dönmeli, toplamı biriktirmeli ve son sonucu görüntülemelidir.
