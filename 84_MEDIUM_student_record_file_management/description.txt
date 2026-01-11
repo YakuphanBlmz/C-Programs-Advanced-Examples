@@ -1,0 +1,15 @@
+EN
+
+You are tasked with creating a simple student database application in C. The application should be able to store and retrieve student information from a binary file. Each student record must contain an integer `id`, a string `name` (maximum 49 characters plus null terminator), and a floating-point `score`.
+
+Your program should define a structure using `typedef` to represent a student. It should provide functionality to first add several student records to a designated binary file and then read all existing records from the same file, printing their details to the console. Ensure proper file handling, including opening the file in the correct mode and closing it after operations.
+
+This problem focuses on the practical application of C `struct` and `typedef` for data organization, combined with fundamental binary file input/output operations. Pay close attention to error handling for file operations and the correct use of `fwrite` and `fread` with structures. Remember, no explicit pointers or dynamic memory allocation (malloc/free) should be used in your solution.
+
+TR
+
+C programlama dilinde basit bir öğrenci veritabanı uygulaması oluşturmanız isteniyor. Uygulama, öğrenci bilgilerini ikili bir dosyadan depolayabilmeli ve alabilmelidir. Her öğrenci kaydı bir tamsayı `id`, bir karakter dizisi `name` (maksimum 49 karakter artı null sonlandırıcı) ve bir ondalık `score` içermelidir.
+
+Programınız, bir öğrenciyi temsil etmek için `typedef` kullanarak bir yapı tanımlamalıdır. Belirlenen ikili dosyaya önce birkaç öğrenci kaydı ekleme ve ardından aynı dosyadan tüm mevcut kayıtları okuyarak detaylarını konsola yazdırma işlevselliği sağlamalıdır. Dosyayı doğru modda açmak ve işlemlerden sonra kapatmak dahil olmak üzere uygun dosya yönetimini sağlayın.
+
+Bu problem, C dilindeki `struct` ve `typedef` yapılarının veri organizasyonu için pratik uygulamasını, temel ikili dosya giriş/çıkış işlemleriyle birleştirerek odaklanmaktadır. Dosya işlemleri için hata yönetimine ve `fwrite` ile `fread` fonksiyonlarının yapılarla doğru kullanımına özellikle dikkat edin. Çözümünüzde açık işaretçi veya dinamik bellek ayırma (malloc/free) kullanılmamalıdır.
