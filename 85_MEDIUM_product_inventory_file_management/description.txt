@@ -1,0 +1,15 @@
+EN
+
+A small electronics store needs a simple system to manage its product inventory. Your task is to implement a C program that uses a `struct` to define a `Product` and `typedef` to simplify its usage. Each product should have an ID (integer), a name (string, e.g., an array of characters), and a quantity (integer).
+
+The program should first initialize a small array of these `Product` structs with some sample data. Then, it must write this entire array of products to a binary file named `inventory.dat`. After successfully writing, the program should close the file.
+
+Finally, the program needs to open the `inventory.dat` file in read mode, read all the product data back into a new array of `Product` structs, and then print the details (ID, Name, Quantity) of each product to the console. Ensure that no pointers or dynamic memory allocation (like `malloc` or `free`) are used throughout the solution. All data structures should be declared as static or automatic variables.
+
+TR
+
+Küçük bir elektronik mağazasının ürün envanterini yönetmek için basit bir sisteme ihtiyacı var. Göreviniz, bir `struct` kullanarak bir `Product` tanımlayan ve kullanımını basitleştirmek için `typedef` kullanan bir C programı uygulamaktır. Her ürünün bir kimliği (tam sayı), bir adı (dize, örneğin bir karakter dizisi) ve bir miktarı (tam sayı) olmalıdır.
+
+Program ilk olarak bu `Product` yapılarını içeren küçük bir diziyi bazı örnek verilerle başlatmalıdır. Daha sonra, ürünlerin tamamını `inventory.dat` adlı ikili bir dosyaya yazmalıdır. Başarılı bir şekilde yazdıktan sonra program dosyayı kapatmalıdır.
+
+Son olarak, program `inventory.dat` dosyasını okuma modunda açmalı, tüm ürün verilerini yeni bir `Product` yapıları dizisine geri okumalı ve ardından her ürünün ayrıntılarını (Kimlik, Ad, Miktar) konsola yazdırmalıdır. Çözüm boyunca işaretçiler veya dinamik bellek ayırma (`malloc` veya `free` gibi) kullanılmadığından emin olun. Tüm veri yapıları statik veya otomatik değişkenler olarak bildirilmelidir.
