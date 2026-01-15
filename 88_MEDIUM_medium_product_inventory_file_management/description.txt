@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small store. The system needs to keep track of various products, including their unique ID, name, price, and current stock level. All product data will be stored in a file, and the program should be able to load this data, perform some basic analysis, and save updated data back.
+
+Your program must define a `Product` structure using `typedef` to represent each item in the inventory. This structure should contain fields for product ID (integer), name (a fixed-size character array), price (float), and stock quantity (integer). The system should be capable of reading an initial inventory list from a text file, where each line represents a product with comma-separated values. After loading, the program should calculate the total value of all products in stock and identify the product with the lowest stock level.
+
+Finally, after performing these operations, the program should update the stock of a specific product (e.g., by ID) and then write the complete, updated inventory data to a new output file. You must ensure that no dynamic memory allocation (malloc/free) or explicit pointer variables (apart from standard file pointers) are used. The maximum number of products the system can handle should be a predefined constant.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmekle görevlisiniz. Sistem, ürünlerin benzersiz kimliklerini, adlarını, fiyatlarını ve mevcut stok seviyelerini takip etmelidir. Tüm ürün verileri bir dosyada saklanacak ve program bu veriyi yükleyebilmeli, bazı temel analizler yapabilmeli ve güncellenmiş veriyi tekrar kaydedebilmelidir.
+
+Programınız, envanterdeki her bir ürünü temsil etmek için `typedef` kullanarak bir `Product` yapısı tanımlamalıdır. Bu yapı, ürün kimliği (tam sayı), adı (sabit boyutlu bir karakter dizisi), fiyatı (float) ve stok miktarı (tam sayı) için alanlar içermelidir. Sistem, her satırın virgülle ayrılmış değerlere sahip bir ürünü temsil ettiği bir metin dosyasından başlangıç envanter listesini okuyabilmelidir. Yüklendikten sonra, program stoktaki tüm ürünlerin toplam değerini hesaplamalı ve en düşük stok seviyesine sahip ürünü belirlemelidir.
+
+Son olarak, bu işlemleri gerçekleştirdikten sonra program belirli bir ürünün (örneğin ID'si ile) stoğunu güncellemeli ve ardından güncellenmiş envanter verilerinin tamamını yeni bir çıktı dosyasına yazmalıdır. Dinamik bellek ayırma (malloc/free) veya açık işaretçi değişkenleri (standart dosya işaretçileri dışında) kullanmadığınızdan emin olmalısınız. Sistemin yönetebileceği maksimum ürün sayısı önceden tanımlanmış bir sabit olmalıdır.
