@@ -1,0 +1,7 @@
+EN
+
+Write a C program that counts the number of even integers in a predefined array. The program should iterate through the array, using a loop and an if statement to check each element. Utilize the modulo operator (%) to determine if an integer is even. Finally, print the total count of even numbers found.
+
+TR
+
+Önceden tanımlanmış bir dizideki çift sayıların sayısını bulan bir C programı yazın. Program, bir döngü ve bir if ifadesi kullanarak dizi elemanları üzerinde dönmeli ve her bir elemanı kontrol etmelidir. Bir tamsayının çift olup olmadığını belirlemek için mod operatörünü (%) kullanın. Son olarak, bulunan çift sayıların toplam sayısını ekrana yazdırın.
