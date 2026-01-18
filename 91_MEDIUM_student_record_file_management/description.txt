@@ -1,0 +1,15 @@
+EN
+
+In this problem, you will create a C program to manage a small set of student records. You need to define a `Student` structure using `typedef` to represent each student, including their ID, name, and score. The program should first populate an array of these `Student` structures with some initial data. For the student's name, ensure you use a fixed-size character array within the struct, rather than a pointer. This approach helps in avoiding dynamic memory allocation, which is not permitted in this exercise. 
+
+Once the data is prepared, your program must write this entire array of student records into a binary file named "students.dat". After successfully writing the data, the program should then open the "students.dat" file again, but this time for reading. It will read all the student records back into a *separate* array of `Student` structures. This demonstrates how data can be persistently stored and retrieved from external files.
+
+Finally, after loading the student data from the file, your program must identify and print the name of the student who achieved the highest score among all the records read. This exercise emphasizes the use of user-defined data types (`struct`, `typedef`) and fundamental file input/output operations for persistent data storage without utilizing pointers or dynamic memory management.
+
+TR
+
+Bu problemde, küçük bir öğrenci kaydı kümesini yönetecek bir C programı oluşturacaksınız. Her öğrenciyi temsil etmek için, kimlik numarası, adı ve puanı içeren bir `Student` yapısı `typedef` kullanarak tanımlamanız gerekmektedir. Programınız önce bu `Student` yapılarından oluşan bir diziyi başlangıç verileriyle doldurmalıdır. Öğrencinin adı için, struct içinde sabit boyutlu bir karakter dizisi kullanmaya özen gösterin, işaretçi kullanmayın. Bu yaklaşım, bu alıştırmada izin verilmeyen dinamik bellek tahsisinden kaçınmaya yardımcı olur.
+
+Veriler hazırlandıktan sonra, programınız bu öğrenci kayıtları dizisinin tamamını "students.dat" adlı ikili bir dosyaya yazmalıdır. Verileri başarıyla yazdıktan sonra, program "students.dat" dosyasını bu kez okuma için tekrar açmalıdır. Dosyadaki tüm öğrenci kayıtlarını *ayrı* bir `Student` yapıları dizisine geri okuyacaktır. Bu, verilerin harici dosyalarda nasıl kalıcı olarak saklanıp alınabileceğini göstermektedir.
+
+Son olarak, öğrenci verilerini dosyadan yükledikten sonra, programınız okunan tüm kayıtlar arasından en yüksek puanı alan öğrencinin adını bulmalı ve ekrana yazdırmalıdır. Bu alıştırma, kullanıcı tanımlı veri türlerinin (`struct`, `typedef`) ve kalıcı veri depolama için temel dosya giriş/çıkış işlemlerinin, işaretçiler veya dinamik bellek yönetimi kullanılmadan nasıl yapılabileceğini vurgulamaktadır.
