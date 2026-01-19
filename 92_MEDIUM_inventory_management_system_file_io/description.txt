@@ -1,0 +1,15 @@
+EN
+
+You are tasked with creating a simple inventory management system for a small store. The system needs to handle product information, including an ID, a name, and its price. Your program should first allow the user to input details for a fixed number of products.
+
+After collecting this data, the program must save all product records into a binary file. Once the data is saved, the program should then read all product records back from the same binary file into memory.
+
+Finally, it must identify and display the details of the product with the highest price among all the loaded products. You must use a `struct` to represent a product and a `typedef` to define a convenient alias for this `struct`. Ensure that all file operations are performed correctly using `fopen`, `fwrite`, `fread`, and `fclose`. Remember, dynamic memory allocation (e.g., `malloc` or `free`) and explicit pointer arithmetic are not allowed.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim sistemi oluşturmanız gerekiyor. Bu sistem, bir ürünün ID'si, adı ve fiyatı gibi ürün bilgilerini yönetebilmelidir. Programınız ilk olarak, kullanıcıdan sabit sayıda ürünün detaylarını girmesini istemelidir.
+
+Bu veriler toplandıktan sonra, program tüm ürün kayıtlarını ikili (binary) bir dosyaya kaydetmelidir. Veriler kaydedildikten sonra, program aynı ikili dosyadan tüm ürün kayıtlarını tekrar belleğe okumalıdır.
+
+Son olarak, yüklenen tüm ürünler arasında en yüksek fiyata sahip ürünü tanımlamalı ve detaylarını görüntülemelidir. Bir ürünü temsil etmek için `struct` yapısını kullanmalı ve bu `struct` için uygun bir takma ad (alias) tanımlamak amacıyla `typedef` kullanmalısınız. Tüm dosya işlemlerinin `fopen`, `fwrite`, `fread` ve `fclose` kullanılarak doğru bir şekilde yapıldığından emin olun. Dinamik bellek ayırma (örneğin, `malloc` veya `free`) ve açık işaretçi aritmetiği kullanımına izin verilmemektedir.
