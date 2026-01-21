@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student grade tracking system in C. The system should manage a fixed number of students, each identified by a unique ID, a name, and a numerical grade. Your program will need to define a structure to hold this student information and use a `typedef` alias for convenience.
+
+The core functionality of the program will involve adding new students to a class roster, displaying the details of all registered students, searching for a specific student by their ID, and calculating the average grade of all students currently in the system. Since dynamic memory allocation is not permitted, you must use a fixed-size array to store the student records.
+
+Ensure your solution handles potential scenarios such as trying to add a student when the class is full or searching for a student ID that does not exist. The output should be clearly formatted, presenting the student details and the calculated average grade.
+
+TR
+
+C programlama dilinde basit bir öğrenci not takip sistemi geliştirmeniz isteniyor. Sistem, her biri benzersiz bir kimlik (ID), bir isim ve sayısal bir not ile tanımlanan belirli sayıda öğrenciyi yönetmelidir. Programınız, bu öğrenci bilgilerini tutmak için bir yapı tanımlamalı ve kolaylık sağlamak amacıyla bu yapı için bir `typedef` takma adı kullanmalıdır.
+
+Programın temel işlevleri, sınıf listesine yeni öğrenciler eklemek, kayıtlı tüm öğrencilerin ayrıntılarını görüntülemek, kimlik numarasına göre belirli bir öğrenciyi aramak ve sistemdeki tüm öğrencilerin ortalama notunu hesaplamak olacaktır. Dinamik bellek tahsisine izin verilmediği için, öğrenci kayıtlarını depolamak için sabit boyutlu bir dizi kullanmanız gerekmektedir.
+
+Çözümünüz, sınıf doluyken öğrenci eklemeye çalışma veya var olmayan bir öğrenci kimliğini arama gibi potansiyel senaryoları ele almalıdır. Çıktı, öğrenci ayrıntılarını ve hesaplanan ortalama notu açıkça biçimlendirilmiş bir şekilde sunmalıdır.
