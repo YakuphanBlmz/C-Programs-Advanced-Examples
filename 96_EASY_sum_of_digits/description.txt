@@ -1,0 +1,7 @@
+EN
+
+Write a C program that reads a non-negative integer from the user and calculates the sum of its digits. For example, if the input is 123, the output should be 6 (1+2+3). Your program should handle single-digit numbers as well.
+
+TR
+
+Kullanıcıdan negatif olmayan bir tam sayı okuyan ve bu sayının basamaklarını toplayan bir C programı yazın. Örneğin, girdi 123 ise, çıktı 6 olmalıdır (1+2+3). Programınız tek basamaklı sayıları da doğru şekilde işlemelidir.
