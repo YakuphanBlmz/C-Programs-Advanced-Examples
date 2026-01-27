@@ -1,0 +1,7 @@
+EN
+
+Write a C program that counts the number of even integers in a given array. The program should iterate through the array and use a conditional statement to check for even numbers, incrementing a counter for each one found. Finally, print the total count of even numbers.
+
+TR
+
+Verilen bir tam sayı dizisindeki çift sayıların sayısını bulan bir C programı yazın. Program, dizi üzerinde dönmeli ve çift sayıları kontrol etmek için bir koşullu ifade kullanmalı, bulunan her çift sayı için bir sayacı artırmalıdır. Son olarak, toplam çift sayı sayısını ekrana yazdırın.
