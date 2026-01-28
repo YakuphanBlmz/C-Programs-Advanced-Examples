@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes an integer array of a fixed size. The program should calculate and print the sum of all even numbers present in the array. If no even numbers are found, the sum should be 0.
+
+TR
+
+Sabit boyutlu bir tam sayı dizisi alan bir C programı yazın. Program, dizide bulunan tüm çift sayıların toplamını hesaplamalı ve ekrana yazdırmalıdır. Eğer dizide hiç çift sayı bulunmazsa, toplam 0 olmalıdır.
