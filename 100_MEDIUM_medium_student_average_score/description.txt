@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student grading system. Your program needs to manage a predefined set of student records, each containing a unique student ID, their name, and a numerical score. All student data will be stored in an array of structures.
+
+First, you must define a structure, let's call it `Student`, that includes fields for `studentId` (an integer), `name` (a character array for up to 50 characters, including null terminator), and `score` (an integer representing their grade from 0 to 100). Use `typedef` to create an alias for this structure, making the code cleaner.
+
+Your program should then initialize an array of `Student` structures with some sample data. The core task is to calculate the average score of all students. After computing the average, the program must iterate through the student records again and print the `name` of every student who scored above this calculated average. Ensure your output clearly identifies these high-achieving students.
+
+TR
+
+Basit bir öğrenci not sistemi geliştirmekle görevlendirildiniz. Programınız, her biri benzersiz bir öğrenci kimliği, adı ve sayısal bir puan içeren önceden tanımlanmış bir öğrenci kaydı kümesini yönetmelidir. Tüm öğrenci verileri, yapılar dizisinde saklanacaktır.
+
+Öncelikle, `Student` adında bir yapı tanımlamanız gerekmektedir. Bu yapı, `studentId` (bir tam sayı), `name` (boş sonlandırıcı dahil 50 karaktere kadar bir karakter dizisi) ve `score` (0 ile 100 arasında bir notu temsil eden bir tam sayı) alanlarını içermelidir. Kodunuzu daha anlaşılır hale getirmek için bu yapı için bir `typedef` kullanarak bir takma ad oluşturun.
+
+Programınız daha sonra bazı örnek verilerle `Student` yapılarından oluşan bir diziyi başlatmalıdır. Temel görev, tüm öğrencilerin ortalama puanını hesaplamaktır. Ortalama hesaplandıktan sonra, program öğrenci kayıtları arasında tekrar gezinmeli ve hesaplanan ortalamanın üzerinde puan alan her öğrencinin `name` bilgisini ekrana yazdırmalıdır. Çıktınızın bu yüksek başarılı öğrencileri açıkça tanımladığından emin olun.
