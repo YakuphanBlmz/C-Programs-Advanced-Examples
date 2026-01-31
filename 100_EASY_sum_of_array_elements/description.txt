@@ -1,0 +1,7 @@
+EN
+
+Write a C program that initializes an integer array with 5 predefined elements. The program should then iterate through the array, calculate the sum of all its elements, and finally print the total sum to the console.
+
+TR
+
+C programı yazarak 5 adet önceden tanımlanmış elemanla bir tamsayı dizisi başlatın. Program, dizideki tüm elemanların toplamını hesaplamalı ve nihai toplamı konsola yazdırmalıdır.
