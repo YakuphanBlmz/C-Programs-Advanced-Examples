@@ -1,7 +1,7 @@
 EN
 
-Given an integer array `arr` of size `N`, write a C program to calculate the sum of all its elements. The program should first read the integer `N`, then read `N` integers into the array, and finally print the total sum of these elements.
+Write a C program that calculates the sum of all integer elements in a given array. The program should initialize an array with some integer values and then compute and print their total sum.
 
 TR
 
-Boyutu `N` olan bir tam sayı dizisi `arr` verildiğinde, tüm elemanlarının toplamını hesaplayan bir C programı yazın. Program önce `N` tam sayısını okumalı, ardından `N` tane tam sayıyı diziye okumalı ve son olarak bu elemanların toplamını ekrana yazdırmalıdır.
+Verilen bir tam sayı dizisindeki tüm elemanların toplamını hesaplayan bir C programı yazın. Program, bir diziyi bazı tam sayı değerleriyle başlatmalı ve ardından toplamlarını hesaplayıp ekrana yazdırmalıdır.
