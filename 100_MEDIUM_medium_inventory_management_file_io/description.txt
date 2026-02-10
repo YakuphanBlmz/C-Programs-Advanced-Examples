@@ -1,0 +1,15 @@
+EN
+
+You are tasked with managing a small inventory for a local shop. The shop sells various products, and each product has a unique ID, a name, a price, and a quantity in stock. You need to use a `struct` to represent these product details.
+
+Your program should first initialize a fixed set of products and store them in an array of these product structs. Then, you will write these product details to a binary file named "inventory.dat". This ensures that the inventory data persists even after the program closes.
+
+Finally, your program must read the product details back from "inventory.dat" into a new array of product structs. After successfully reading the data, calculate and display the total value of all products currently in stock (i.e., sum of `price * quantity` for each product). Ensure all file operations are handled correctly, and remember not to use any dynamic memory allocation or complex pointer manipulations.
+
+TR
+
+Yerel bir dükkan için küçük bir envanteri yönetmekle görevlendirildiniz. Dükkan çeşitli ürünler satmaktadır ve her ürünün benzersiz bir kimliği, bir adı, bir fiyatı ve stoktaki miktarı vardır. Bu ürün detaylarını temsil etmek için bir `struct` kullanmanız gerekmektedir.
+
+Programınız ilk olarak sabit bir ürün setini başlatmalı ve bunları ürün struct'larından oluşan bir dizide saklamalıdır. Daha sonra, bu ürün detaylarını "inventory.dat" adlı ikili bir dosyaya yazmanız gerekecektir. Bu, program kapandıktan sonra bile envanter verilerinin kalıcı olmasını sağlar.
+
+Son olarak, programınız "inventory.dat" dosyasından ürün detaylarını yeni bir ürün struct'ları dizisine geri okumalıdır. Verileri başarıyla okuduktan sonra, stoktaki tüm ürünlerin toplam değerini (yani, her ürün için `fiyat * miktar`ın toplamını) hesaplayın ve görüntüleyin. Tüm dosya işlemlerinin doğru şekilde ele alındığından ve dinamik bellek ayırma veya karmaşık işaretçi manipülasyonları kullanmadığınızdan emin olun.
