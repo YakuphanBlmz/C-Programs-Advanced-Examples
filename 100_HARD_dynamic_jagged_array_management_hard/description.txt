@@ -1,0 +1,27 @@
+EN
+
+In C programming, managing dynamic, multi-dimensional data structures without the aid of higher-level abstractions like `struct` or `typedef` presents a significant challenge. This problem focuses on implementing a "jagged array" – an array of arrays where each inner array can have a different length – entirely using raw pointers and dynamic memory management functions. You are tasked with creating a system that can dynamically grow and shrink both the number of rows and the size of individual rows, simulating a flexible two-dimensional data container.
+
+The core difficulty lies in meticulously managing multiple parallel dynamic arrays to maintain the state of your jagged array. You will need an `int**` to store pointers to each row's data. Crucially, because `struct` is forbidden, you must independently manage an `int*` array to keep track of the *current capacities* of each row and another `int*` array for the *current number of elements* in each row. Furthermore, the overall capacity for the number of rows itself must also be dynamically managed. This requires careful use of `malloc`, `realloc`, and `free` for all these interconnected arrays, handling potential memory allocation failures gracefully.
+
+Your C solution must demonstrate the following operations within the `main` function:
+1.  **Initialization:** Set up an empty jagged array system, ensuring all pointers are `NULL` and sizes/capacities are zero.
+2.  **Add Row:** Dynamically increase the number of rows. This involves `reallocating` the `int**` and its parallel `int*` arrays (for row capacities and sizes), then `mallocating` memory for the new row's data and updating its capacity and size.
+3.  **Add Element to Row:** Append an integer value to a specific row. This will likely require `reallocating` that particular row's `int*` array if its current capacity is reached.
+4.  **Remove Row:** Free the memory associated with a specific row, then shift subsequent rows to fill the gap, and `reallocate` the main `int**` and parallel arrays to potentially shrink their overall capacity.
+5.  **Print:** Display the current contents of the entire jagged array, showing each row and its elements.
+6.  **Cleanup:** Ensure all dynamically allocated memory (for `int**`, all `int*` rows, and the parallel `int*` arrays for capacities/sizes) is properly freed to prevent memory leaks. The problem explicitly forbids the use of `struct`, `typedef`, and file I/O, pushing you to rely solely on fundamental C pointer and memory allocation concepts. This problem serves as a rigorous test of your understanding of low-level memory management and pointer arithmetic.
+
+TR
+
+C programlamada, `struct` veya `typedef` gibi üst düzey soyutlamalar olmadan dinamik, çok boyutlu veri yapılarını yönetmek önemli bir zorluktur. Bu problem, tamamen ham işaretçiler ve dinamik bellek yönetimi işlevleri kullanarak bir "düzensiz dizi" (jagged array) – yani her bir iç dizinin farklı uzunlukta olabileceği bir dizi dizisi – uygulamaya odaklanmaktadır. Hem satır sayısını hem de tek tek satırların boyutunu dinamik olarak artırabilen ve azaltabilen, esnek bir iki boyutlu veri kapsayıcısını simüle eden bir sistem oluşturmanız istenmektedir.
+
+Düzensiz dizinizin durumunu korumak için birden fazla paralel dinamik diziyi titizlikle yönetmeniz, problemin temel zorluğunu oluşturmaktadır. Her satırın verilerine işaretçileri saklamak için bir `int**`'e ihtiyacınız olacak. `struct` kullanımının yasak olması kritik bir kısıtlamadır; bu nedenle, her satırın *mevcut kapasitelerini* takip etmek için bağımsız bir `int*` dizisini ve her satırdaki *mevcut eleman sayısını* tutmak için başka bir `int*` dizisini ayrı ayrı yönetmelisiniz. Ayrıca, genel satır sayısı kapasitesinin de dinamik olarak yönetilmesi gerekmektedir. Bu durum, bu birbirine bağlı tüm diziler için `malloc`, `realloc` ve `free` işlevlerinin dikkatli kullanımını ve potansiyel bellek tahsis hatalarını zarafetle ele almayı gerektirir.
+
+C çözümünüz, `main` fonksiyonu içinde aşağıdaki işlemleri göstermelidir:
+1.  **Başlatma:** Boş bir düzensiz dizi sistemini kurun, tüm işaretçilerin `NULL` olduğundan ve boyut/kapasitelerin sıfır olduğundan emin olun.
+2.  **Satır Ekleme:** Dinamik olarak satır sayısını artırın. Bu, `int**` ve buna paralel `int*` dizilerinin (satır kapasiteleri ve boyutları için) yeniden tahsis edilmesini, ardından yeni satırın verileri için bellek ayrılmasını ve kapasite ile boyutunun güncellenmesini içerir.
+3.  **Satıra Eleman Ekleme:** Belirli bir satıra bir tamsayı değeri ekleyin. Mevcut kapasitesi dolarsa, bu büyük olasılıkla o satırın `int*` dizisinin yeniden tahsis edilmesini gerektirecektir.
+4.  **Satır Kaldırma:** Belirli bir satırla ilişkili belleği serbest bırakın, ardından boşluğu doldurmak için sonraki satırları kaydırın ve genel kapasiteyi potansiyel olarak küçültmek için ana `int**` ve paralel dizileri yeniden tahsis edin.
+5.  **Yazdırma:** Düzensiz dizinin mevcut içeriğini, her satırı ve elemanlarını göstererek görüntüleyin.
+6.  **Bellek Temizliği:** Bellek sızıntılarını önlemek için dinamik olarak tahsis edilen tüm belleğin (`int**`, tüm `int*` satırlar ve kapasiteler/boyutlar için paralel `int*` dizileri) düzgün bir şekilde serbest bırakıldığından emin olun. Problem açıkça `struct`, `typedef` ve dosya I/O kullanımını yasaklamakta, sizi yalnızca temel C işaretçi ve bellek tahsis kavramlarına güvenmeye zorlamaktadır. Bu problem, düşük seviyeli bellek yönetimi ve işaretçi aritmetiği anlayışınızın titiz bir testidir.
