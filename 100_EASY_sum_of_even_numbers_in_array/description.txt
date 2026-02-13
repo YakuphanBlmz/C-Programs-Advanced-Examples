@@ -1,0 +1,7 @@
+EN
+
+Write a C program that calculates the sum of all even numbers present in a predefined integer array. The program should iterate through the array, identify even numbers using the modulo operator, and accumulate their sum. Finally, print the total sum to the console.
+
+TR
+
+Önceden tanımlanmış bir tamsayı dizisindeki tüm çift sayıların toplamını hesaplayan bir C programı yazın. Program, dizi üzerinde döngü yaparak, modulo operatörünü kullanarak çift sayıları belirlemeli ve bunların toplamını biriktirmelidir. Son olarak, toplamı konsola yazdırın.
