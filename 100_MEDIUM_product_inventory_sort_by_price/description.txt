@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small store. The system needs to keep track of various products, each identified by a unique ID, a name, and a price. To effectively manage the inventory, you need to store these product details in a structured way and be able to sort them based on their price.
+
+Your program should define a structure named `Product` using `typedef`, which will hold an integer `id`, a character array for `name`, and a floating-point number for `price`. You must then create a fixed-size array of these `Product` structures and initialize it with some sample data. The core task is to sort this array of products in ascending order based on their prices.
+
+After sorting, the program should print the details of each product (ID, Name, and Price) to the console, ensuring they appear in the newly sorted order. It's crucial that this problem is solved without using any explicit pointer variables or dynamic memory allocation functions like `malloc` or `free`.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz gerekiyor. Sistem, benzersiz bir kimlik (ID), bir ad ve bir fiyat ile tanımlanan çeşitli ürünleri takip etmelidir. Envanteri etkili bir şekilde yönetmek için, bu ürün detaylarını yapılandırılmış bir şekilde saklamanız ve fiyatlarına göre sıralayabilmeniz gerekmektedir.
+
+Programınız, bir `int id`, bir `char` dizisi için `name` ve bir `float price` tutacak olan `Product` adında bir yapıyı `typedef` kullanarak tanımlamalıdır. Daha sonra, bu `Product` yapılarından sabit boyutlu bir dizi oluşturmalı ve bazı örnek verilerle başlatmalısınız. Temel görev, bu ürün dizisini fiyatlarına göre artan sırada sıralamaktır.
+
+Sıralama işleminden sonra, program sıralanmış düzende her bir ürünün ayrıntılarını (ID, Ad ve Fiyat) konsola yazdırmalıdır. Bu problemin açıkça işaretçi değişkenleri veya `malloc` veya `free` gibi dinamik bellek ayırma fonksiyonları kullanılmadan çözülmesi çok önemlidir.
