@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a C program to analyze student performance data. The program should read student records from a predefined text file, calculate the average score of all students, and identify the student who achieved the highest score.
+
+Each line in the input file `students.txt` will contain a student's ID (integer), name (string without spaces), and score (integer), separated by spaces. For example: `101 Alice 85`. You must use a `struct` to represent student information and `typedef` to define a `Student` type.
+
+Your program should open the `students.txt` file, read all student records into an array of `Student` structs, then process this data to compute the average score and find the top-scoring student. Finally, print the calculated average score and the ID, name, and score of the student with the highest score to the console. Ensure your program handles the file operations correctly, including opening and closing the file.
+
+TR
+
+Öğrenci performans verilerini analiz etmek için bir C programı geliştirmeniz istenmektedir. Program, önceden tanımlanmış bir metin dosyasından öğrenci kayıtlarını okumalı, tüm öğrencilerin ortalama puanını hesaplamalı ve en yüksek puanı alan öğrenciyi belirlemelidir.
+
+`students.txt` adlı giriş dosyasındaki her satır, bir öğrencinin Kimlik Numarası (tam sayı), Adı (boşluksuz metin) ve Puanı (tam sayı) içerecek ve boşluklarla ayrılmış olacaktır. Örneğin: `101 Alice 85`. Öğrenci bilgilerini temsil etmek için bir `struct` kullanmalı ve `typedef` ile bir `Student` tipi tanımlamalısınız.
+
+Programınız `students.txt` dosyasını açmalı, tüm öğrenci kayıtlarını bir `Student` yapısı dizisine okumalı, ardından bu verileri işleyerek ortalama puanı hesaplamalı ve en yüksek puanı alan öğrenciyi bulmalıdır. Son olarak, hesaplanan ortalama puanı ve en yüksek puanı alan öğrencinin Kimlik Numarası, Adı ve Puanını konsola yazdırmalısınız. Programınızın dosya açma ve kapatma dahil olmak üzere dosya işlemlerini doğru şekilde yönettiğinden emin olun.
