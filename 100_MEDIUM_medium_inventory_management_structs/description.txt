@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small shop. The system should be able to store information about a fixed number of products. For each product, you need to store its unique ID, name (a string), current stock quantity, and price.
+
+Your program must define a structure to represent a product using `typedef`. The inventory itself should be managed using a fixed-size array of these product structures. The system should allow adding new products to the inventory (up to a predefined maximum limit) and displaying a list of all currently stored products.
+
+The core challenge involves correctly utilizing `struct` and `typedef` for data organization and managing a collection of items in a fixed-size array. Crucially, your solution must avoid any explicit use of pointers (e.g., `*` operator for declarations or dereferencing, `&` for address-of other than printing addresses with `%p` which is not needed here) and dynamic memory allocation (e.g., `malloc`, `free`). All data structures should be declared on the stack or as global variables.
+
+TR
+
+Küçük bir dükkan için basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, sabit sayıda ürün hakkında bilgi depolayabilmelidir. Her ürün için benzersiz kimliğini, adını (bir karakter dizisi), mevcut stok miktarını ve fiyatını saklamanız gerekmektedir.
+
+Programınız, bir ürünü temsil etmek için `typedef` kullanarak bir yapı (struct) tanımlamalıdır. Envanterin kendisi, bu ürün yapılarının sabit boyutlu bir dizisi kullanılarak yönetilmelidir. Sistem, envantere yeni ürünler eklemeye (önceden tanımlanmış bir maksimum sınıra kadar) ve mevcut tüm ürünlerin bir listesini görüntülemeye izin vermelidir.
+
+Temel zorluk, veri organizasyonu için `struct` ve `typedef`'ı doğru bir şekilde kullanmak ve sabit boyutlu bir dizideki öğe koleksiyonunu yönetmektir. Çözümünüz kesinlikle herhangi bir açık işaretçi kullanımı (örneğin, bildirimler veya dereferanslama için `*` operatörü, adres alma için `&` (burada ihtiyaç duyulmayan `%p` ile adres yazdırmak harici)) ve dinamik bellek ayırma (örneğin, `malloc`, `free`) içermemelidir. Tüm veri yapıları yığında veya global değişkenler olarak bildirilmelidir.
