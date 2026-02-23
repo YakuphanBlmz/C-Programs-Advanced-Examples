@@ -1,0 +1,11 @@
+EN
+
+In this problem, you will manage a small library's book collection using C structs. You need to define a `Book` structure that stores information about a book, including its title, author, publication year, and current stock count. The program should maintain a fixed-size array of `Book` structs, representing the library's collection.
+
+Your task is to implement two main functionalities. First, create a function that can update the stock of a specific book given its title. If the book is found, its stock should be updated; otherwise, a message indicating that the book was not found should be displayed. Second, implement another function that prints the details (title, author, year, stock) of all books currently in the library collection. Ensure that no pointers or dynamic memory allocation are used throughout your solution, adhering strictly to array indexing for accessing elements and fixed-size character arrays within the struct for strings.
+
+TR
+
+Bu problemde, C dilinde `struct` yapılarını kullanarak küçük bir kütüphanenin kitap koleksiyonunu yöneteceksiniz. Her bir kitabın başlığını, yazarını, yayın yılını ve mevcut stok sayısını saklayacak bir `Book` yapısı tanımlamanız gerekmektedir. Program, kütüphanenin koleksiyonunu temsil eden, sabit boyutlu bir `Book` yapıları dizisini kullanmalıdır.
+
+Temel olarak iki ana işlevsellik uygulamanız istenmektedir. İlk olarak, belirli bir başlığa sahip kitabın stoğunu güncelleyebilen bir fonksiyon yazmalısınız. Kitap bulunursa stoğu güncellenmeli, aksi takdirde kitabın bulunamadığını belirten bir mesaj gösterilmelidir. İkinci olarak, kütüphane koleksiyonundaki tüm kitapların ayrıntılarını (başlık, yazar, yıl, stok) ekrana yazdıran başka bir fonksiyon daha uygulamanız gerekmektedir. Çözümünüz boyunca kesinlikle işaretçi veya dinamik bellek tahsisi kullanmadığınızdan, elemanlara erişim için yalnızca dizi indekslemesini ve `struct` içindeki stringler için sabit boyutlu karakter dizilerini kullandığınızdan emin olun.
