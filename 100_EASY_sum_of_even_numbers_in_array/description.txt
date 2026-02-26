@@ -1,9 +1,7 @@
 EN
 
-Write a C program that takes an array of integers and calculates the sum of all even numbers within that array. The program should then print the total sum.
-Example: For the array {1, 2, 3, 4, 5, 6}, the sum of even numbers is 2 + 4 + 6 = 12.
+Write a C program that calculates the sum of all even numbers in a given integer array. The program should iterate through the array, identify even numbers, and accumulate their sum, finally printing the total sum.
 
 TR
 
-Bir C programı yazın. Bu program, bir tamsayı dizisini almalı ve bu dizideki tüm çift sayıların toplamını hesaplamalıdır. Program daha sonra toplamı ekrana yazdırmalıdır.
-Örnek: {1, 2, 3, 4, 5, 6} dizisi için, çift sayıların toplamı 2 + 4 + 6 = 12'dir.
+Verilen bir tamsayı dizisindeki tüm çift sayıların toplamını hesaplayan bir C programı yazın. Program, dizi üzerinde dönmeli, çift sayıları belirlemeli ve bunların toplamını biriktirmeli, sonunda toplamı yazdırmalıdır.
