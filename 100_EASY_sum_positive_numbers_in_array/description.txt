@@ -1,0 +1,7 @@
+EN
+
+Write a C program that calculates the sum of all positive integers in a given array. The array `int numbers[] = {10, -5, 20, 0, -15, 30};` will be provided. Your program should iterate through the array, identify positive numbers (greater than 0), and add them to a running total. Finally, print the total sum to the console.
+
+TR
+
+Verilen bir dizideki tüm pozitif tam sayıların toplamını hesaplayan bir C programı yazın. `int numbers[] = {10, -5, 20, 0, -15, 30};` dizisi size sağlanacaktır. Programınız, dizi üzerinde döngü yaparak pozitif sayıları (0'dan büyük) belirlemeli ve bunları bir toplam değerine eklemelidir. Son olarak, toplamı konsola yazdırmalısınız.
