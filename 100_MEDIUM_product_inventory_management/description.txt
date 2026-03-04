@@ -1,0 +1,15 @@
+EN
+
+As a manager of a small retail shop, you need to keep track of your product inventory. You have a list of products, each with a unique ID, name, unit price, and current stock quantity. Your task is to process this inventory data.
+
+The program should read product details from an input file named `input.txt`. For each product, you need to calculate its total inventory value (unit price multiplied by quantity). After processing all products, you are required to identify and save only those products whose total inventory value exceeds a certain predefined threshold to an output file named `output.txt`.
+
+Your solution must define a `struct` to store product information and use `typedef` for convenience. The input file will contain one product per line, formatted as: `ID Name Price Quantity`. The output file should list the filtered products, each on a new line, including their ID, Name, Price, Quantity, and calculated Total Value. Ensure your code handles a maximum of 100 products and that product names are single words up to 49 characters.
+
+TR
+
+Küçük bir perakende mağazasının yöneticisi olarak, ürün envanterinizi takip etmeniz gerekmektedir. Her biri benzersiz bir kimliğe, adına, birim fiyatına ve mevcut stok miktarına sahip ürünlerinizin bir listesi bulunmaktadır. Göreviniz bu envanter verilerini işlemektir.
+
+Program, `input.txt` adlı bir giriş dosyasından ürün ayrıntılarını okumalıdır. Her ürün için, toplam envanter değerini (birim fiyatı çarpı miktar) hesaplamanız gerekmektedir. Tüm ürünleri işledikten sonra, yalnızca toplam envanter değeri belirli bir önceden tanımlanmış eşiği aşan ürünleri `output.txt` adlı bir çıkış dosyasına kaydetmelisiniz.
+
+Çözümünüz, ürün bilgilerini depolamak için bir `struct` tanımlamalı ve kolaylık sağlamak için `typedef` kullanmalıdır. Giriş dosyası her satırda bir ürün içerecek ve formatı şöyle olacaktır: `ID Ad Fiyat Miktar`. Çıkış dosyası ise filtrelenmiş ürünleri, her biri yeni bir satırda olmak üzere, ID, Ad, Fiyat, Miktar ve hesaplanan Toplam Değer bilgilerini içerecek şekilde listelemelidir. Kodunuzun maksimum 100 ürünü işleyebildiğinden ve ürün adlarının en fazla 49 karakterden oluşan tek kelimeler olduğundan emin olun.
