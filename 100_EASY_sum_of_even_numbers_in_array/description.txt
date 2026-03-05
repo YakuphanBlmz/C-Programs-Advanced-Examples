@@ -1,7 +1,7 @@
 EN
 
-Write a C program that reads 5 integer numbers into an array. The program should then calculate and print the sum of only the even numbers present in the array.
+Given an integer array, write a C program to calculate the sum of all even numbers present in the array.
 
 TR
 
-C programlama dilinde, 5 adet tam sayıyı bir diziye okuyan bir program yazın. Program daha sonra dizideki yalnızca çift sayıların toplamını hesaplamalı ve ekrana yazdırmalıdır.
+Bir tam sayı dizisi verildiğinde, dizideki tüm çift sayıların toplamını hesaplayan bir C programı yazın.
