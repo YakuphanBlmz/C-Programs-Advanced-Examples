@@ -1,0 +1,15 @@
+EN
+
+In this problem, you will develop a C program to manage student academic records using `struct` and `typedef`. Your program should define a structure to store information about a student, including a unique student ID, their name, and an array of three subject grades. You will use `typedef` to create an alias for this structure for convenience.
+
+The program must first prompt the user to enter data for a predefined, fixed number of students (e.g., 3 students). For each student, the user will input their ID, name, and three individual grades. After all student data has been collected, the program will calculate the average grade for each student based on their three subject grades.
+
+Finally, your program should identify and print the details (ID, name, and calculated average grade) of the student who achieved the highest average grade among all students. Remember, the use of pointers and dynamic memory allocation (like `malloc` or `free`) is strictly forbidden for this problem.
+
+TR
+
+Bu problemde, `struct` ve `typedef` kullanarak öğrenci akademik kayıtlarını yönetecek bir C programı geliştireceksiniz. Programınız, bir öğrencinin benzersiz öğrenci kimliği, adı ve üç ders notunu içeren bir dizi gibi bilgileri depolamak için bir yapı tanımlamalıdır. Bu yapıya kolaylık sağlamak amacıyla bir takma ad oluşturmak için `typedef` kullanacaksınız.
+
+Program ilk olarak kullanıcıdan önceden tanımlanmış, sabit sayıda öğrenci (örneğin 3 öğrenci) için veri girmesini istemelidir. Her öğrenci için kullanıcı, kimliğini, adını ve üç ayrı notunu girecektir. Tüm öğrenci verileri toplandıktan sonra, program her öğrencinin üç ders notuna göre ortalama notunu hesaplayacaktır.
+
+Son olarak, programınız tüm öğrenciler arasında en yüksek ortalama notu elde eden öğrencinin ayrıntılarını (kimliği, adı ve hesaplanan ortalama notu) belirlemeli ve yazdırmalıdır. Bu problem için işaretçi ve dinamik bellek ayırma (örneğin `malloc` veya `free`) kullanımının kesinlikle yasak olduğunu unutmayın.
