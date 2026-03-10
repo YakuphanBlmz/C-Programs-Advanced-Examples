@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main() {
-    int numbers[5] = {10, 3, 7, 12, 5};
+    int arr[] = {10, 5, 8, 12, 3, 7, 6, 15, 20};
+    int n = sizeof(arr) / sizeof(arr[0]);
     int sum_of_evens = 0;
-    int i;
-    for (i = 0; i < 5; i++) {
-        if (numbers[i] % 2 == 0) {
-            sum_of_evens += numbers[i];
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) {
+            sum_of_evens += arr[i];
         }
     }
-    printf("Dizideki cift sayilarin toplami: %d\n", sum_of_evens);
+    printf("Sum of even numbers: %d\n", sum_of_evens);
     return 0;
 }
