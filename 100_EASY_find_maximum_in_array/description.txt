@@ -1,0 +1,7 @@
+EN
+
+Write a C program that reads a series of integers into an array and then finds the largest number among them. The program should first read the size of the array, then the elements of the array one by one, and finally print the maximum element found.
+
+TR
+
+C programı yazarak bir diziye bir dizi tam sayı okuyun ve ardından bu sayılar arasındaki en büyük sayıyı bulun. Program önce dizinin boyutunu, sonra dizinin elemanlarını tek tek okumalı ve son olarak bulunan en büyük elemanı ekrana yazdırmalıdır.
