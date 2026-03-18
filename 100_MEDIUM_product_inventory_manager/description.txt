@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a basic inventory management system for a small shop using C. The system should be able to store details of multiple products in a persistent manner, meaning the data should not be lost when the program closes. Each product has a unique integer ID, a name (up to 50 characters), and a price (float).
+
+Your program must define a `struct` named `Product` using `typedef` to represent these details. You will then create a fixed-size array of these `Product` structs, populate it with some sample data, and write this entire array into a binary file. This ensures the product data is saved.
+
+After successfully writing the data, the program should then read all the product details back from the same binary file into a *new* array of `Product` structs. Finally, it should iterate through the newly read products and print their ID, Name, and Price to the console. The use of pointers and dynamic memory allocation (`malloc`, `free`) is strictly forbidden.
+
+TR
+
+C dilini kullanarak küçük bir mağaza için temel bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, birden fazla ürünün detaylarını kalıcı bir şekilde saklayabilmelidir, yani program kapandığında veriler kaybolmamalıdır. Her ürünün benzersiz bir tamsayı ID'si, bir adı (en fazla 50 karakter) ve bir fiyatı (float) vardır.
+
+Programınız, bu detayları temsil etmek için `typedef` kullanarak `Product` adında bir `struct` tanımlamalıdır. Daha sonra, bu `Product` struct'larından oluşan sabit boyutlu bir dizi oluşturacak, bu diziyi bazı örnek verilerle dolduracak ve tüm bu diziyi bir ikili dosyaya yazacaksınız. Bu, ürün verilerinin kaydedilmesini sağlayacaktır.
+
+Verileri başarıyla yazdıktan sonra, program aynı ikili dosyadan tüm ürün detaylarını *yeni* bir `Product` struct dizisine geri okumalıdır. Son olarak, yeni okunan ürünler arasında döngü yaparak ID'lerini, Adlarını ve Fiyatlarını konsola yazdırmalıdır. İşaretçiler ve dinamik bellek ayırma (`malloc`, `free`) kullanımı kesinlikle yasaktır.
