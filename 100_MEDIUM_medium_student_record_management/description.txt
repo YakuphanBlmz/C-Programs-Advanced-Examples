@@ -1,0 +1,15 @@
+EN
+
+You are tasked with creating a basic student record management system in C. This system should be able to store a fixed number of student records, each containing a unique ID, the student's name, and their grade. The primary challenge is to implement the persistence of this data to a file.
+
+The system needs to support adding new students, displaying all currently stored students, and crucially, saving all student data to a binary file. When the program starts or at any point, it should also be able to load student data from this binary file, replacing or initializing the current in-memory records with the file's content.
+
+Your solution must utilize a `struct` to define the student record and a `typedef` for convenience. File I/O operations (`fopen`, `fwrite`, `fread`, `fclose`) are essential for saving and loading the data. Remember to handle file opening/closing carefully and check for potential errors. The system should manage a maximum of 10 students at any given time, without using dynamic memory allocation.
+
+TR
+
+C dilinde basit bir öğrenci kayıt yönetim sistemi oluşturmanız isteniyor. Bu sistem, her biri benzersiz bir kimlik numarası (ID), öğrencinin adı ve notunu içeren sabit sayıda öğrenci kaydını depolayabilmelidir. Temel zorluk, bu verileri bir dosyaya kalıcı olarak kaydetme ve yükleme işlevini uygulamaktır.
+
+Sistem, yeni öğrenci eklemeyi, mevcut tüm öğrencileri listelemeyi ve en önemlisi, tüm öğrenci verilerini ikili (binary) bir dosyaya kaydetmeyi desteklemelidir. Program başladığında veya herhangi bir zamanda, öğrenci verilerini bu ikili dosyadan yükleyerek, mevcut bellek içi kayıtları dosyadaki içerikle değiştirebilmeli veya başlatabilmelidir.
+
+Çözümünüz, öğrenci kaydını tanımlamak için bir `struct` ve kolaylık sağlamak için bir `typedef` kullanmalıdır. Dosya I/O işlemleri (`fopen`, `fwrite`, `fread`, `fclose`) verileri kaydetmek ve yüklemek için zorunludur. Dosya açma/kapama işlemlerini dikkatlice yönetmeyi ve olası hataları kontrol etmeyi unutmayın. Sistem, dinamik bellek tahsisi kullanmadan, herhangi bir zamanda en fazla 10 öğrenciyi yönetmelidir.
