@@ -1,0 +1,7 @@
+EN
+
+Given an integer array, calculate the sum of all even numbers present in the array. Assume the array contains exactly 5 integer elements. Your program should read these 5 integers from standard input and then print the sum of only the even numbers among them to standard output.
+
+TR
+
+Verilen bir tamsayı dizisindeki tüm çift sayıların toplamını hesaplayın. Dizinin tam olarak 5 tamsayı elemanı içerdiğini varsayın. Programınız standart girdiden bu 5 tamsayıyı okumalı ve ardından yalnızca çift olan sayıların toplamını standart çıktıya yazdırmalıdır.
