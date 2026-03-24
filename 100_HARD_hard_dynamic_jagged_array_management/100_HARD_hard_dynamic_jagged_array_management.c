@@ -1,121 +1,121 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define INITIAL_ROW_CAPACITY 4
-#define INITIAL_NUM_ROWS_CAPACITY 2
-#define GROWTH_FACTOR 2
 int main() {
-    int **jagged_array_data = NULL;
-    int *row_current_sizes = NULL;
-    int *row_allocated_capacities = NULL;
-    int num_active_rows = 0;
-    int total_rows_capacity = 0;
-    total_rows_capacity = INITIAL_NUM_ROWS_CAPACITY;
-    jagged_array_data = (int **)malloc(total_rows_capacity * sizeof(int *));
-    row_current_sizes = (int *)malloc(total_rows_capacity * sizeof(int));
-    row_allocated_capacities = (int *)malloc(total_rows_capacity * sizeof(int));
-    if (!jagged_array_data || !row_current_sizes || !row_allocated_capacities) {
-        fprintf(stderr, "Memory allocation failed during initialization.\n");
-        return 1;
-    }
-    printf("Adding initial elements:\n");
-    for (int i = 0; i < 3; ++i) {
-        if (num_active_rows >= total_rows_capacity) {
-            total_rows_capacity *= GROWTH_FACTOR;
-            jagged_array_data = (int **)realloc(jagged_array_data, total_rows_capacity * sizeof(int *));
-            row_current_sizes = (int *)realloc(row_current_sizes, total_rows_capacity * sizeof(int));
-            row_allocated_capacities = (int *)realloc(row_allocated_capacities, total_rows_capacity * sizeof(int));
-            if (!jagged_array_data || !row_current_sizes || !row_allocated_capacities) {
-                fprintf(stderr, "Memory reallocation failed for main arrays.\n");
-                return 1;
-            }
-        }
-        jagged_array_data[num_active_rows] = (int *)malloc(INITIAL_ROW_CAPACITY * sizeof(int));
-        if (!jagged_array_data[num_active_rows]) {
-            fprintf(stderr, "Memory allocation failed for row %d.\n", num_active_rows);
-            return 1;
-        }
-        row_current_sizes[num_active_rows] = 0;
-        row_allocated_capacities[num_active_rows] = INITIAL_ROW_CAPACITY;
-        num_active_rows++;
-    }
-    for (int i = 0; i < 5; ++i) {
-        int row_idx = 0;
-        if (row_idx >= num_active_rows) {
-            fprintf(stderr, "Invalid row index %d.\n", row_idx);
-            break;
-        }
-        if (row_current_sizes[row_idx] >= row_allocated_capacities[row_idx]) {
-            row_allocated_capacities[row_idx] *= GROWTH_FACTOR;
-            jagged_array_data[row_idx] = (int *)realloc(jagged_array_data[row_idx], row_allocated_capacities[row_idx] * sizeof(int));
-            if (!jagged_array_data[row_idx]) {
-                fprintf(stderr, "Memory reallocation failed for row %d.\n", row_idx);
-                return 1;
-            }
-        }
-        jagged_array_data[row_idx][row_current_sizes[row_idx]++] = 100 + i;
-    }
-    for (int i = 0; i < 2; ++i) {
-        int row_idx = 1;
-        if (row_idx >= num_active_rows) {
-            fprintf(stderr, "Invalid row index %d.\n", row_idx);
-            break;
-        }
-        if (row_current_sizes[row_idx] >= row_allocated_capacities[row_idx]) {
-            row_allocated_capacities[row_idx] *= GROWTH_FACTOR;
-            jagged_array_data[row_idx] = (int *)realloc(jagged_array_data[row_idx], row_allocated_capacities[row_idx] * sizeof(int));
-            if (!jagged_array_data[row_idx]) {
-                fprintf(stderr, "Memory reallocation failed for row %d.\n", row_idx);
-                return 1;
-            }
-        }
-        jagged_array_data[row_idx][row_current_sizes[row_idx]++] = 200 + i;
-    }
-    printf("\nAdding another row:\n");
-    int new_row_idx = num_active_rows;
-    if (new_row_idx >= total_rows_capacity) {
-        total_rows_capacity *= GROWTH_FACTOR;
-        jagged_array_data = (int **)realloc(jagged_array_data, total_rows_capacity * sizeof(int *));
-        row_current_sizes = (int *)realloc(row_current_sizes, total_rows_capacity * sizeof(int));
-        row_allocated_capacities = (int *)realloc(row_allocated_capacities, total_rows_capacity * sizeof(int));
-        if (!jagged_array_data || !row_current_sizes || !row_allocated_capacities) {
-            fprintf(stderr, "Memory reallocation failed for main arrays.\n");
-            return 1;
-        }
-    }
-    jagged_array_data[new_row_idx] = (int *)malloc(INITIAL_ROW_CAPACITY * sizeof(int));
-    if (!jagged_array_data[new_row_idx]) {
-        fprintf(stderr, "Memory allocation failed for new row %d.\n", new_row_idx);
-        return 1;
-    }
-    row_current_sizes[new_row_idx] = 0;
-    row_allocated_capacities[new_row_idx] = INITIAL_ROW_CAPACITY;
-    num_active_rows++;
-    for (int i = 0; i < 6; ++i) {
-        int row_idx = new_row_idx;
-        if (row_current_sizes[row_idx] >= row_allocated_capacities[row_idx]) {
-            row_allocated_capacities[row_idx] *= GROWTH_FACTOR;
-            jagged_array_data[row_idx] = (int *)realloc(jagged_array_data[row_idx], row_allocated_capacities[row_idx] * sizeof(int));
-            if (!jagged_array_data[row_idx]) {
-                fprintf(stderr, "Memory reallocation failed for row %d.\n", row_idx);
-                return 1;
-            }
-        }
-        jagged_array_data[row_idx][row_current_sizes[row_idx]++] = 300 + i;
-    }
-    printf("\nCurrent state of the jagged array (%d active rows):\n", num_active_rows);
-    for (int i = 0; i < num_active_rows; ++i) {
-        printf("Row %d (size: %d, capacity: %d): [", i, row_current_sizes[i], row_allocated_capacities[i]);
-        for (int j = 0; j < row_current_sizes[i]; ++j) {
-            printf("%d%s", jagged_array_data[i][j], (j == row_current_sizes[i] - 1) ? "" : ", ");
+    int **sets = NULL;
+    int *set_counts = NULL;
+    int num_sets = 0;
+    sets = (int **)realloc(sets, (num_sets + 1) * sizeof(int *));
+    set_counts = (int *)realloc(set_counts, (num_sets + 1) * sizeof(int));
+    sets[num_sets] = NULL;
+    set_counts[num_sets] = 0;
+    num_sets++;
+    sets = (int **)realloc(sets, (num_sets + 1) * sizeof(int *));
+    set_counts = (int *)realloc(set_counts, (num_sets + 1) * sizeof(int));
+    sets[num_sets] = NULL;
+    set_counts[num_sets] = 0;
+    num_sets++;
+    sets = (int **)realloc(sets, (num_sets + 1) * sizeof(int *));
+    set_counts = (int *)realloc(set_counts, (num_sets + 1) * sizeof(int));
+    sets[num_sets] = NULL;
+    set_counts[num_sets] = 0;
+    num_sets++;
+    int set_idx = 0;
+    int value = 10;
+    sets[set_idx] = (int *)realloc(sets[set_idx], (set_counts[set_idx] + 1) * sizeof(int));
+    sets[set_idx][set_counts[set_idx]] = value;
+    set_counts[set_idx]++;
+    value = 20;
+    sets[set_idx] = (int *)realloc(sets[set_idx], (set_counts[set_idx] + 1) * sizeof(int));
+    sets[set_idx][set_counts[set_idx]] = value;
+    set_counts[set_idx]++;
+    set_idx = 1;
+    value = 30;
+    sets[set_idx] = (int *)realloc(sets[set_idx], (set_counts[set_idx] + 1) * sizeof(int));
+    sets[set_idx][set_counts[set_idx]] = value;
+    set_counts[set_idx]++;
+    value = 40;
+    sets[set_idx] = (int *)realloc(sets[set_idx], (set_counts[set_idx] + 1) * sizeof(int));
+    sets[set_idx][set_counts[set_idx]] = value;
+    set_counts[set_idx]++;
+    value = 50;
+    sets[set_idx] = (int *)realloc(sets[set_idx], (set_counts[set_idx] + 1) * sizeof(int));
+    sets[set_idx][set_counts[set_idx]] = value;
+    set_counts[set_idx]++;
+    set_idx = 2;
+    value = 60;
+    sets[set_idx] = (int *)realloc(sets[set_idx], (set_counts[set_idx] + 1) * sizeof(int));
+    sets[set_idx][set_counts[set_idx]] = value;
+    set_counts[set_idx]++;
+    printf("--- Initial Sets ---\n");
+    for (int i = 0; i < num_sets; i++) {
+        printf("Set %d (size %d): [", i, set_counts[i]);
+        for (int j = 0; j < set_counts[i]; j++) {
+            printf("%d%s", sets[i][j], (j == set_counts[i] - 1) ? "" : ", ");
         }
         printf("]\n");
     }
-    for (int i = 0; i < num_active_rows; ++i) {
-        free(jagged_array_data[i]);
+    printf("\n");
+    set_idx = 0;
+    int element_to_remove_val = 20;
+    int element_found_idx = -1;
+    for (int j = 0; j < set_counts[set_idx]; j++) {
+        if (sets[set_idx][j] == element_to_remove_val) {
+            element_found_idx = j;
+            break;
+        }
     }
-    free(jagged_array_data);
-    free(row_current_sizes);
-    free(row_allocated_capacities);
-    printf("\nMemory successfully freed.\n");
+    if (element_found_idx != -1) {
+        for (int j = element_found_idx; j < set_counts[set_idx] - 1; j++) {
+            sets[set_idx][j] = sets[set_idx][j+1];
+        }
+        set_counts[set_idx]--;
+        if (set_counts[set_idx] == 0) {
+            free(sets[set_idx]);
+            sets[set_idx] = NULL;
+        } else {
+            sets[set_idx] = (int *)realloc(sets[set_idx], set_counts[set_idx] * sizeof(int));
+        }
+    }
+    printf("--- Sets After Removing 20 from Set 0 ---\n");
+    for (int i = 0; i < num_sets; i++) {
+        printf("Set %d (size %d): [", i, set_counts[i]);
+        for (int j = 0; j < set_counts[i]; j++) {
+            printf("%d%s", sets[i][j], (j == set_counts[i] - 1) ? "" : ", ");
+        }
+        printf("]\n");
+    }
+    printf("\n");
+    int set_to_remove_idx = 1;
+    if (set_to_remove_idx >= 0 && set_to_remove_idx < num_sets) {
+        free(sets[set_to_remove_idx]);
+        for (int i = set_to_remove_idx; i < num_sets - 1; i++) {
+            sets[i] = sets[i+1];
+            set_counts[i] = set_counts[i+1];
+        }
+        num_sets--;
+        if (num_sets == 0) {
+            free(sets);
+            sets = NULL;
+            free(set_counts);
+            set_counts = NULL;
+        } else {
+            sets = (int **)realloc(sets, num_sets * sizeof(int *));
+            set_counts = (int *)realloc(set_counts, num_sets * sizeof(int));
+        }
+    }
+    printf("--- Sets After Removing Set 1 ---\n");
+    for (int i = 0; i < num_sets; i++) {
+        printf("Set %d (size %d): [", i, set_counts[i]);
+        for (int j = 0; j < set_counts[i]; j++) {
+            printf("%d%s", sets[i][j], (j == set_counts[i] - 1) ? "" : ", ");
+        }
+        printf("]\n");
+    }
+    printf("\n");
+    for (int i = 0; i < num_sets; i++) {
+        free(sets[i]);
+    }
+    free(sets);
+    free(set_counts);
     return 0;
 }
