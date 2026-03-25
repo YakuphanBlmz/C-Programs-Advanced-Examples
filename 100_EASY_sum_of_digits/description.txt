@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes an integer as input and calculates the sum of its digits. The program should handle positive, negative, and zero inputs. For instance, if the input is 123, the output should be 6 (1+2+3). If the input is -45, the output should be 9 (4+5).
+
+TR
+
+Bir C programı yazarak kullanıcıdan bir tam sayı alın ve bu sayının rakamları toplamını hesaplayın. Program pozitif, negatif ve sıfır girdileri işleyebilmelidir. Örneğin, girdi 123 ise, çıktı 6 (1+2+3) olmalıdır. Girdi -45 ise, çıktı 9 (4+5) olmalıdır.
