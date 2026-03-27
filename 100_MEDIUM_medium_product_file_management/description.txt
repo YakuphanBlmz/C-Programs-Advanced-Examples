@@ -1,0 +1,11 @@
+EN
+
+This problem requires you to manage a small collection of product data using C structs and binary file operations. You will define a structure to hold product information, including a unique ID, a product name, and its price. The core task involves creating a fixed-size array of these product structures, initializing them with some sample data, and then writing this data to a binary file.
+
+After successfully writing the data, the program should demonstrate its ability to read the stored information back. You will reopen the same binary file, read the product details into a new array of structures, and finally display these details to the console to verify the integrity of the read-write process. This exercise emphasizes the use of `struct` and `typedef` for data organization and `fopen`, `fwrite`, `fread`, `fclose` for persistent storage, all without using dynamic memory allocation or complex pointer manipulation.
+
+TR
+
+Bu problemde, C dilinde `struct` yapıları ve ikili dosya işlemleri kullanarak küçük bir ürün veri koleksiyonunu yönetmeniz istenmektedir. Benzersiz bir kimlik (ID), ürün adı ve fiyatını içeren ürün bilgilerini saklamak için bir yapı (`struct`) tanımlayacaksınız. Temel görev, bu ürün yapılarından oluşan sabit boyutlu bir dizi oluşturmak, bunları bazı örnek verilerle başlatmak ve ardından bu veriyi ikili bir dosyaya yazmaktır.
+
+Veriyi başarıyla yazdıktan sonra, programın depolanan bilgileri geri okuma yeteneğini göstermesi gerekmektedir. Aynı ikili dosyayı tekrar açacak, ürün detaylarını yeni bir yapı dizisine okuyacak ve son olarak bu detayları konsola yazdırarak okuma-yazma sürecinin bütünlüğünü doğrulayacaksınız. Bu alıştırma, veri organizasyonu için `struct` ve `typedef` kullanımını, kalıcı depolama için `fopen`, `fwrite`, `fread`, `fclose` fonksiyonlarını, tüm bunları dinamik bellek ayırma veya karmaşık işaretçi manipülasyonu kullanmadan vurgulamaktadır.
