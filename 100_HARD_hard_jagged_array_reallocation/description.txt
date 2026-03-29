@@ -1,0 +1,15 @@
+EN
+
+This problem challenges your understanding of advanced dynamic memory management and pointer manipulation in C, specifically focusing on jagged two-dimensional arrays and memory reallocation. Unlike traditional 2D arrays where all rows have the same number of columns, a jagged array allows each row to have a different size, demanding meticulous handling of individual memory blocks.
+
+Your task is to dynamically allocate a jagged array of integers. You will first determine a fixed number of rows, but for each row, you must allocate a distinct number of columns. After the initial allocation and initialization of these varying-length rows, you are required to perform a critical memory operation: reallocate one specific row to a new, different size. This reallocation could either expand or shrink the row. If the row is expanded, new elements must be properly initialized; if it is shrunk, existing elements up to the new size must be preserved.
+
+The challenge lies not only in correctly allocating and reallocating memory using `malloc` and `realloc` but also in managing the `pointer to pointer` structure (`int**`) that represents the jagged array. You must ensure that existing data within a reallocated row is handled appropriately and, crucially, that all dynamically allocated memory is freed precisely and without leaks using `free`. Pay close attention to error handling for memory allocation failures, especially when dealing with `realloc`, to maintain program stability.
+
+TR
+
+Bu problem, C dilinde ileri düzey dinamik bellek yönetimi ve işaretçi manipülasyonu anlayışınızı test etmektedir. Özellikle, girintili (jagged) iki boyutlu dizilere ve bellek yeniden tahsisine odaklanmaktadır. Tüm satırların aynı sayıda sütuna sahip olduğu geleneksel 2B dizilerin aksine, girintili bir dizi, her satırın farklı bir boyuta sahip olmasına izin verir ve bu da ayrı bellek bloklarının titizlikle işlenmesini gerektirir.
+
+Göreviniz, dinamik olarak bir girintili tamsayı dizisi tahsis etmektir. İlk olarak sabit bir satır sayısı belirleyeceksiniz, ancak her satır için farklı sayıda sütun tahsis etmelisiniz. Bu değişen uzunluktaki satırların ilk tahsisi ve başlatılmasının ardından, kritik bir bellek işlemi gerçekleştirmeniz istenmektedir: belirli bir satırı yeni, farklı bir boyuta yeniden tahsis etmek. Bu yeniden tahsis işlemi satırı büyütebilir veya küçültebilir. Satır genişletilirse, yeni öğeler düzgün bir şekilde başlatılmalı; küçültülürse, yeni boyuta kadar mevcut öğeler korunmalıdır.
+
+Zorluk sadece `malloc` ve `realloc` kullanarak belleği doğru bir şekilde tahsis etmek ve yeniden tahsis etmekle kalmayıp, aynı zamanda girintili diziyi temsil eden `işaretçinin işaretçisi` yapısını (`int**`) yönetmekte yatmaktadır. Yeniden tahsis edilen bir satırdaki mevcut verilerin uygun şekilde işlendiğinden ve en önemlisi, dinamik olarak tahsis edilen tüm belleğin `free` kullanılarak kesinlikle ve bellek sızıntısı olmadan serbest bırakıldığından emin olmalısınız. Program kararlılığını korumak için özellikle `realloc` ile uğraşırken bellek tahsisi hataları için hata işlemeye çok dikkat edin.
