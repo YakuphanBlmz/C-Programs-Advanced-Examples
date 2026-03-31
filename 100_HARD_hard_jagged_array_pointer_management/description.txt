@@ -1,0 +1,27 @@
+EN
+
+You are tasked with developing a robust memory management system in C, designed to handle a collection of dynamic integer arrays. This challenge specifically targets advanced understanding of pointers, dynamic memory allocation, and the management of complex, non-contiguous data structures without the aid of higher-level constructs like `struct` or `typedef`. The primary goal is to simulate a scenario where you need to maintain multiple, independently-sized lists of integers, where both the number of lists and the size of each individual list can change over time.
+
+The core difficulty lies in managing this 'jagged array' structure using only raw pointers and dynamic memory functions (`malloc`, `realloc`, `free`). Since `struct` and `typedef` are strictly forbidden, you must devise a clever method to store essential metadata, such as the current length of each dynamic integer array. A common technique for such a constraint is to embed this metadata directly within the allocated memory block itself, typically at the beginning of the block, preceding the actual data. This means that each `int*` representing a row will actually point to a block where the first element indicates the row's length, and subsequent elements contain the actual integer data.
+
+Your solution must demonstrate the following operations:
+1.  **Initialization:** Set up the primary `int**` to manage the collection of dynamic arrays.
+2.  **Adding a Sequence:** Dynamically allocate a new integer array, populate it, and add its pointer to the main collection. The main collection itself should dynamically grow as needed using `realloc`.
+3.  **Resizing a Sequence:** Take an existing dynamic integer array within the collection and resize it to a new specified length, using `realloc`. Ensure data integrity during resizing.
+4.  **Removing a Sequence:** Deallocate a specific dynamic integer array and remove its entry from the main collection, shifting subsequent entries as necessary.
+5.  **Display:** Implement logic to print the current state of all sequences, clearly showing their lengths and contents.
+6.  **Cleanup:** Crucially, all dynamically allocated memory, both for individual sequences and for the main collection pointer array, must be properly `free`d at the end to prevent memory leaks. Failure to manage memory meticulously will result in an incorrect solution. This problem requires a deep understanding of `int**` and memory addresses.
+
+TR
+
+Bu görevde, dinamik tamsayı dizileri koleksiyonunu yönetmek için C dilinde sağlam bir bellek yönetim sistemi geliştirmeniz istenmektedir. Bu zorluk, özellikle işaretçilerin, dinamik bellek tahsisinin ve karmaşık, bitişik olmayan veri yapılarının `struct` veya `typedef` gibi daha üst düzey yapılar kullanılmadan yönetiminin ileri düzeyde anlaşılmasını hedeflemektedir. Temel amaç, hem listelerin sayısının hem de her bir listedeki eleman sayısının zamanla değişebileceği, bağımsız boyutlarda birden çok tamsayı listesini korumanız gereken bir senaryoyu simüle etmektir.
+
+Temel zorluk, bu 'düzensiz dizi' (jagged array) yapısını yalnızca ham işaretçiler ve dinamik bellek fonksiyonları (`malloc`, `realloc`, `free`) kullanarak yönetmektir. `struct` ve `typedef` kesinlikle yasak olduğundan, her bir dinamik tamsayı dizisinin mevcut uzunluğu gibi temel meta verileri depolamak için akıllı bir yöntem geliştirmeniz gerekmektedir. Bu tür bir kısıtlama için yaygın bir teknik, bu meta veriyi doğrudan tahsis edilen bellek bloğunun içine, genellikle bloğun başında, asıl veriden önce gömmektir. Bu, bir satırı temsil eden her bir `int*`'in aslında ilk elemanının satırın uzunluğunu gösterdiği ve sonraki elemanların gerçek tamsayı verilerini içerdiği bir bloğu işaret edeceği anlamına gelir.
+
+Çözümünüz aşağıdaki işlemleri göstermelidir:
+1.  **Başlatma:** Dinamik diziler koleksiyonunu yönetecek birincil `int**`'i kurun.
+2.  **Bir Dizi Ekleme:** Yeni bir tamsayı dizisini dinamik olarak tahsis edin, içini doldurun ve işaretçisini ana koleksiyona ekleyin. Ana koleksiyonun kendisi gerektiğinde `realloc` kullanarak dinamik olarak büyümelidir.
+3.  **Bir Diziyi Yeniden Boyutlandırma:** Koleksiyon içindeki mevcut bir dinamik tamsayı dizisini `realloc` kullanarak yeni belirtilen bir uzunluğa yeniden boyutlandırın. Yeniden boyutlandırma sırasında veri bütünlüğünü sağlayın.
+4.  **Bir Diziyi Kaldırma:** Belirli bir dinamik tamsayı dizisini serbest bırakın ve ana koleksiyondan girişini kaldırın, gerektiğinde sonraki girişleri kaydırın.
+5.  **Görüntüleme:** Tüm dizilerin mevcut durumunu, uzunluklarını ve içeriklerini açıkça gösteren bir mantık uygulayın.
+6.  **Temizleme:** En önemlisi, hem tek tek diziler için hem de ana koleksiyon işaretçi dizisi için tüm dinamik olarak tahsis edilmiş bellek, bellek sızıntılarını önlemek için sonunda düzgün bir şekilde `free` edilmelidir. Belleği titizlikle yönetememek yanlış bir çözüme yol açacaktır. Bu problem, `int**` ve bellek adresleri hakkında derin bir anlayış gerektirmektedir.
