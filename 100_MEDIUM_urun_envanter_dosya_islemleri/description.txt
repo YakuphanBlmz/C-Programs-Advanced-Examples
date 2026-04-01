@@ -1,0 +1,15 @@
+EN
+
+You are tasked with managing a small inventory system for a store. The system needs to store product information, including a unique ID, product name, and current stock quantity. To ensure data persistence, this information must be saved to a binary file and later retrieved from it.
+
+Your program should first define a structure named `Urun` (Product) using `typedef`. This structure will contain an integer `urunID`, a character array `urunAdi` for the product name (maximum 50 characters), and an integer `stokMiktari` for the stock quantity. You will then initialize an array of `Urun` structs with some sample product data.
+
+After populating the array, the program must write this entire array to a binary file named `urunler.bin`. Subsequently, it should read all the product records back from `urunler.bin` into a different array of `Urun` structs. Finally, the program needs to display the details of each product read from the file and calculate the total stock quantity across all products, printing this sum to the console. You are strictly forbidden from using pointers (other than for file handlers like `FILE *`) or dynamic memory allocation (`malloc`, `free`) in your solution.
+
+TR
+
+Bir mağaza için küçük bir envanter yönetim sistemi oluşturmanız isteniyor. Sistem, benzersiz bir kimlik numarası (ID), ürün adı ve mevcut stok miktarını içeren ürün bilgilerini saklamalıdır. Veri kalıcılığını sağlamak için bu bilgiler ikili bir dosyaya kaydedilmeli ve daha sonra bu dosyadan geri alınmalıdır.
+
+Programınız öncelikle `typedef` kullanarak `Urun` (Ürün) adında bir yapı tanımlamalıdır. Bu yapı, bir tam sayı `urunID`, ürün adı için bir karakter dizisi `urunAdi` (maksimum 50 karakter) ve stok miktarı için bir tam sayı `stokMiktari` içerecektir. Daha sonra, örnek ürün verileriyle bir `Urun` yapıları dizisi başlatmanız gerekmektedir.
+
+Diziyi doldurduktan sonra, program bu dizinin tamamını `urunler.bin` adında ikili bir dosyaya yazmalıdır. Ardından, tüm ürün kayıtlarını `urunler.bin` dosyasından farklı bir `Urun` yapıları dizisine geri okumalıdır. Son olarak, program dosyadan okunan her ürünün detaylarını ekrana basmalı ve tüm ürünlerin toplam stok miktarını hesaplayarak bu toplamı konsola yazdırmalıdır. Çözümünüzde işaretçiler (FILE * gibi dosya işleyicileri hariç) veya dinamik bellek tahsisi (`malloc`, `free`) kullanmanız kesinlikle yasaktır.
