@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student management system using C. The system needs to store information about several students, including their unique ID, name, and grades for three different courses. Your program should be able to process this data to calculate the average grade for each student and identify the student who achieved the highest overall average.
+
+You must define a `struct` to represent a student, incorporating fields for their ID, name, and an array to hold their three course grades. Use `typedef` to create an alias for this `struct`, making the code cleaner and more readable. Populate an array of these student structures with some predefined data.
+
+Finally, your program should iterate through the array of students, calculate the average grade for each one, and then determine which student has the highest average. The output should clearly list each student's details along with their calculated average, followed by the details of the student with the highest average grade. Remember, you are explicitly forbidden from using pointers or dynamic memory allocation in your solution.
+
+TR
+
+C programlama dili kullanarak basit bir öğrenci yönetim sistemi geliştirmeniz isteniyor. Sistem, her öğrencinin benzersiz kimliğini, adını ve üç farklı derse ait notlarını saklamalıdır. Programınız, bu verileri her öğrencinin not ortalamasını hesaplamak ve en yüksek genel ortalamaya sahip öğrenciyi belirlemek için işlemelidir.
+
+Bir öğrenciyi temsil edecek bir `struct` tanımlamanız gerekmektedir; bu `struct`, öğrencinin kimliği, adı ve üç ders notunu tutacak bir dizi içermelidir. Kodunuzu daha temiz ve okunabilir hale getirmek için bu `struct` için bir `typedef` kullanarak bir takma ad oluşturun. Bu öğrenci yapıları dizisini bazı önceden tanımlanmış verilerle doldurun.
+
+Son olarak, programınız öğrenci dizisi üzerinde yinelemeli olarak her bir öğrencinin not ortalamasını hesaplamalı ve ardından en yüksek ortalamaya sahip öğrenciyi belirlemelidir. Çıktı, her öğrencinin ayrıntılarını ve hesaplanan ortalamasını net bir şekilde listelemeli, ardından en yüksek ortalamaya sahip öğrencinin ayrıntılarını sunmalıdır. Çözümünüzde işaretçi veya dinamik bellek ayırma kullanmanız kesinlikle yasaktır.
