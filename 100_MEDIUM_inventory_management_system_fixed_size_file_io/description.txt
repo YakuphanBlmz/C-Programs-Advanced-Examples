@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simplified inventory management system for a small shop. The system needs to store information about several products, including their unique ID, name, price, and quantity in stock. You must define a `struct` called `Product` to hold this information and use `typedef` to simplify its usage.
+
+The program should perform two main operations: First, initialize a fixed set of products and save their data to a binary file named "inventory.bin". Second, it should read all product data back from this file into a separate fixed-size array, calculate the total value of the entire inventory (sum of price * quantity for all products), and then print details of all products along with the calculated total inventory value. All product data should be stored in fixed-size `Product` struct arrays on the stack, and no dynamic memory allocation or explicit pointer arithmetic is allowed.
+
+Ensure robust file handling by checking if the file can be opened for reading/writing and by correctly determining the number of products stored in the file to avoid buffer overflows when reading back into the fixed-size array. The solution must use standard C library functions for file I/O.
+
+TR
+
+Küçük bir mağaza için basitleştirilmiş bir envanter yönetim sistemi geliştirmekle görevlisiniz. Sistem, ürünlerin benzersiz kimliği (ID), adı, fiyatı ve stoktaki miktarı dahil olmak üzere çeşitli bilgilerini saklamalıdır. Bu bilgileri tutmak için `Product` adında bir `struct` tanımlamalı ve kullanımını kolaylaştırmak için `typedef` kullanmalısınız.
+
+Program iki ana işlem yapmalıdır: Birincisi, belirli sayıda ürünü başlatmalı ve bu verileri "inventory.bin" adlı ikili bir dosyaya kaydetmelidir. İkincisi, tüm ürün verilerini bu dosyadan ayrı bir sabit boyutlu diziye geri okumalı, tüm envanterin toplam değerini (tüm ürünler için fiyat * miktar toplamı) hesaplamalı ve ardından tüm ürünlerin detaylarını ve hesaplanan toplam envanter değerini ekrana yazdırmalıdır. Tüm ürün verileri, yığında (stack) sabit boyutlu `Product` struct dizilerinde saklanmalı ve dinamik bellek tahsisi veya açık işaretçi aritmetiği kullanılmasına izin verilmemektedir.
+
+Dosya okuma/yazma işlemlerinde dosyanın açılıp açılamadığını kontrol ederek ve sabit boyutlu diziye geri okunurken arabellek taşmasını önlemek için dosyada depolanan ürün sayısını doğru bir şekilde belirleyerek sağlam dosya yönetimini sağlayın. Çözüm, dosya G/Ç (File I/O) için standart C kütüphane fonksiyonlarını kullanmalıdır.
