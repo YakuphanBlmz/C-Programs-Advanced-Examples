@@ -1,0 +1,11 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small store. The system should allow users to manage product information, including product ID, name, price, and quantity. All product data must be stored using a `struct` and accessed through a `typedef`. The inventory should be persistently stored in a binary file using C's standard file I/O functions.
+
+Your program must implement a menu-driven interface that allows users to perform the following operations: add a new product to the inventory, list all existing products, save the current inventory to a binary file, and load inventory data from a binary file. The system must use a fixed-size array of products, without any dynamic memory allocation or explicit pointer variables. The maximum number of products the inventory can hold is predefined.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, kullanıcıların ürün kimliği (ID), adı, fiyatı ve miktarı dahil olmak üzere ürün bilgilerini yönetmesine olanak tanımalıdır. Tüm ürün verileri bir `struct` kullanılarak saklanmalı ve bir `typedef` aracılığıyla erişilmelidir. Envanter, C'nin standart dosya G/Ç (file I/O) fonksiyonları kullanılarak ikili bir dosyada kalıcı olarak depolanmalıdır.
+
+Programınız, kullanıcılara aşağıdaki işlemleri yapma imkanı sunan menü odaklı bir arayüz uygulamalıdır: envantere yeni bir ürün ekleme, mevcut tüm ürünleri listeleme, mevcut envanteri ikili bir dosyaya kaydetme ve ikili bir dosyadan envanter verilerini yükleme. Sistem, dinamik bellek ayırma veya açık işaretçi değişkenleri (pointer variables) olmadan, sabit boyutlu bir ürün dizisi kullanmalıdır. Envanterin tutabileceği maksimum ürün sayısı önceden tanımlanmıştır.
