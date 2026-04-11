@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a basic inventory management system for a small shop. This system should be capable of storing product information, displaying the current inventory, and persistently saving the data to a file.
+
+You will define a `Product` structure using `typedef` to represent each item. This structure must include fields for a unique product ID (integer), the product's name (a character array), its price (floating-point number), and the quantity in stock (integer). The system will manage a fixed, maximum number of products in memory, avoiding dynamic memory allocation.
+
+Your program should present a menu-driven interface, offering options to add a new product, list all existing products, save the current inventory to a binary file, and load inventory data from a binary file. This exercise is designed to test your understanding and application of C `struct`s, `typedef`, and fundamental binary file input/output operations.
+
+TR
+
+Küçük bir dükkan için basit bir envanter yönetim sistemi geliştirmeniz istenmektedir. Bu sistem, ürün bilgilerini saklayabilmeli, mevcut envanteri görüntüleyebilmeli ve verileri kalıcı olarak bir dosyaya kaydedebilmelidir.
+
+Her bir öğeyi temsil etmek üzere, `typedef` kullanarak bir `Product` yapısı tanımlayacaksınız. Bu yapı, benzersiz bir ürün ID'si (tam sayı), ürünün adı (karakter dizisi), fiyatı (ondalıklı sayı) ve stoktaki miktarı (tam sayı) için alanlar içermelidir. Sistem, dinamik bellek tahsisinden kaçınarak, bellekte sabit ve maksimum sayıda ürünü yönetecektir.
+
+Programınız, yeni bir ürün ekleme, mevcut tüm ürünleri listeleme, mevcut envanteri ikili bir dosyaya kaydetme ve ikili bir dosyadan envanter verilerini yükleme seçenekleri sunan menü tabanlı bir arayüz sunmalıdır. Bu alıştırma, C dilindeki `struct` yapılarını, `typedef` kullanımını ve temel ikili dosya giriş/çıkış işlemlerini anlama ve uygulama becerilerinizi test etmek üzere tasarlanmıştır.
