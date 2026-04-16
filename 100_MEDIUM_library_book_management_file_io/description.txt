@@ -1,0 +1,11 @@
+EN
+
+A local community library needs a simple C program to manage its book inventory. Each book in the library has a unique ID, a title, an author, and a publication year. This information needs to be persistently stored.
+
+Your task is to write a C program that first allows the librarian to input details for a small, fixed number of books (e.g., 3 books). These book details should be organized using a `struct` and stored temporarily in an array of these structs. After collecting the input, the program must write all these book records into a binary file named "books.dat". Finally, the program should reopen "books.dat", read all the book records back from the file sequentially, and display them on the console. This exercise will help you understand how to use `struct`s to organize related data and how to persist this data using binary file I/O operations (`fopen`, `fwrite`, `fread`, `fclose`) in C, without relying on dynamic memory allocation or pointers.
+
+TR
+
+Yerel bir halk kütüphanesi, kitap envanterini yönetmek için basit bir C programına ihtiyaç duymaktadır. Kütüphanedeki her kitabın benzersiz bir kimliği (ID), başlığı, yazarı ve yayın yılı bulunmaktadır. Bu bilgilerin kalıcı olarak saklanması gerekmektedir.
+
+Göreviniz, ilk olarak kütüphanecinin küçük, sabit sayıda (örneğin 3 kitap) kitabın detaylarını girmesine olanak tanıyan bir C programı yazmaktır. Bu kitap detayları bir `struct` kullanılarak düzenlenmeli ve geçici olarak bu struct'lardan oluşan bir dizide saklanmalıdır. Girişler toplandıktan sonra, program tüm bu kitap kayıtlarını "books.dat" adında ikili bir dosyaya yazmalıdır. Son olarak, program "books.dat" dosyasını yeniden açmalı, tüm kitap kayıtlarını dosyadan sırayla geri okumalı ve konsola yazdırmalıdır. Bu alıştırma, ilgili verileri düzenlemek için `struct` kullanımını ve dinamik bellek ayırma veya işaretçiler kullanmadan C dilinde ikili dosya I/O işlemleri (`fopen`, `fwrite`, `fread`, `fclose`) ile bu verileri kalıcı hale getirmeyi anlamanıza yardımcı olacaktır.
