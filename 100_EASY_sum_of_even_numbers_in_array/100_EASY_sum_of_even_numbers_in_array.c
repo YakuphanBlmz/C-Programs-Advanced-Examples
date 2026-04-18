@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int arr[] = {12, 5, 8, 20, 3, 15, 10, 7, 4};
+    int arr[] = {12, 7, 24, 15, 8, 30, 3};
     int n = sizeof(arr) / sizeof(arr[0]);
     int sum_of_evens = 0;
     int i;
