@@ -1,0 +1,15 @@
+EN
+
+In this problem, you will implement a basic student record management system using C structs and file I/O operations. The goal is to demonstrate your ability to define structured data, store it persistently in a binary file, and retrieve it for processing, all without using dynamic memory allocation or pointers.
+
+You need to define a `Student` structure using `typedef`. This structure should contain an integer for `id`, a character array for `name` (e.g., `char name[50]`), and an integer for `score`. In your `main` function, create a fixed-size array of `Student` objects and initialize it with at least three sample student records.
+
+Your program must first write these student records to a binary file named "students.dat". After successfully writing the data, close the file. Then, open the same file for reading. Read all the student records back into a separate array of `Student`s. As you read each record, print the student's ID, name, and score to the console. Finally, after all records have been read and displayed, identify and print the details of the student who achieved the highest score among all records.
+
+TR
+
+Bu problemde, C dilinde struct'lar ve dosya G/Ç işlemleri kullanarak temel bir öğrenci kayıt yönetim sistemi uygulayacaksınız. Amaç, dinamik bellek ayırma veya işaretçiler kullanmadan yapılandırılmış verileri tanımlama, ikili bir dosyada kalıcı olarak depolama ve işlemek üzere geri alma yeteneğinizi göstermektir.
+
+`typedef` kullanarak bir `Student` yapısı tanımlamanız gerekmektedir. Bu yapı, bir `id` (tam sayı), bir `name` (karakter dizisi, örn: `char name[50]`) ve bir `score` (tam sayı) içermelidir. `main` fonksiyonunuzda, sabit boyutlu bir `Student` nesneleri dizisi oluşturun ve en az üç örnek öğrenci kaydıyla başlatın.
+
+Daha sonra programınız, bu öğrenci kayıtlarını "students.dat" adında ikili bir dosyaya yazmalıdır. Verileri başarıyla yazdıktan sonra dosyayı kapatın. Ardından, aynı dosyayı okuma için açın. Tüm öğrenci kayıtlarını ayrı bir `Student` dizisine geri okuyun. Her kaydı okurken, öğrencinin ID'sini, adını ve puanını konsola yazdırın. Son olarak, tüm kayıtlar okunduktan ve görüntülendikten sonra, tüm kayıtlar arasında en yüksek puanı alan öğrencinin bilgilerini belirleyin ve yazdırın.
