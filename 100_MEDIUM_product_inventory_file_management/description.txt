@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small shop. The system needs to efficiently store product information and calculate the total value of all products currently in stock.
+
+You will define a structure named `Product` which will contain an integer `id`, a fixed-size character array `name` (for up to 50 characters, including the null terminator), a float `price`, and an integer `quantity`. Use `typedef` to create an alias for this structure, making the code more readable and maintainable.
+
+Your program should first initialize an array of `Product` items with some sample data. Then, it must write these product records sequentially into a binary file named "products.dat". After successfully writing the data, the program should reopen the file in read mode, read all product records back into another array of `Product` items, and finally calculate and display the total inventory value (which is the sum of `price * quantity` for all products). Ensure proper file handling by checking `fopen` return values and closing files after use.
+
+TR
+
+Küçük bir dükkan için basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, ürün bilgilerini verimli bir şekilde saklamalı ve stoktaki tüm ürünlerin toplam değerini hesaplamalıdır.
+
+`id` (tam sayı), `name` (boş sonlandırıcı dahil 50 karaktere kadar sabit boyutlu karakter dizisi), `price` (ondalık sayı) ve `quantity` (tam sayı) içerecek `Product` adında bir yapı tanımlayacaksınız. Kodun daha okunabilir ve sürdürülebilir olması için bu yapı için bir takma ad oluşturmak üzere `typedef` kullanın.
+
+Programınız öncelikle örnek verilerle `Product` öğelerinden oluşan bir diziyi başlatmalıdır. Ardından, bu ürün kayıtlarını "products.dat" adında ikili bir dosyaya sırayla yazmalıdır. Veriler başarıyla yazıldıktan sonra, program dosyayı okuma modunda tekrar açmalı, tüm ürün kayıtlarını başka bir `Product` öğeleri dizisine geri okumalı ve son olarak tüm ürünler için (`price * quantity` toplamı) toplam envanter değerini hesaplayıp görüntülemelidir. `fopen` dönüş değerlerini kontrol ederek ve kullandıktan sonra dosyaları kapatarak düzgün dosya işlemeyi sağlayın.
