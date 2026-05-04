@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a basic library management system in C. This system will manage a collection of books, allowing for their storage, retrieval, and display. The library has a fixed capacity for books, and each book must have a unique identifier.
+
+Your program should define a structure named `Book` using `typedef`. This structure should contain fields for the book's `id` (an integer), `title` (a character array), `author` (a character array), and `price` (a floating-point number). You will maintain a collection of these `Book` structures using a fixed-size array.
+
+The core functionalities of your program should include adding new books to the library, listing all books currently stored, and searching for a specific book by its `id`. Ensure that no pointers or dynamic memory allocation (`malloc`/`free`) are used throughout your solution. All string manipulations should be handled using standard C library functions suitable for character arrays.
+
+TR
+
+C programlama dilini kullanarak temel bir kütüphane yönetim sistemi geliştirmeniz istenmektedir. Bu sistem, kitap koleksiyonunu depolama, erişme ve görüntüleme işlemlerini yapacaktır. Kütüphane, sabit bir kitap kapasitesine sahip olacak ve her kitabın benzersiz bir kimliği bulunmalıdır.
+
+Programınız, `typedef` kullanarak `Book` adında bir yapı tanımlamalıdır. Bu yapı, kitabın `id`'si (bir tam sayı), `title` (bir karakter dizisi), `author` (bir karakter dizisi) ve `price` (bir ondalık sayı) için alanlar içermelidir. Bu `Book` yapılarının bir koleksiyonunu, sabit boyutlu bir dizi kullanarak yöneteceksiniz.
+
+Programınızın temel işlevleri arasında kütüphaneye yeni kitaplar eklemek, mevcut tüm kitapları listelemek ve `id`'sine göre belirli bir kitabı aramak bulunmalıdır. Çözümünüzde kesinlikle işaretçiler veya dinamik bellek ayırma (`malloc`/`free`) kullanmadığınızdan emin olun. Tüm dize işlemleri, karakter dizileri için uygun standart C kütüphane işlevleri kullanılarak yapılmalıdır.
