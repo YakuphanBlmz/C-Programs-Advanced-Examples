@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a C program to manage a small number of student records. The program should define a structure named `Student` that contains fields for `student_id` (an integer), `name` (a character array capable of holding up to 49 characters plus null terminator), and `score` (an integer). Use a `typedef` to create an alias for this structure for convenience.
+
+Your program must first initialize an array of a fixed number of `Student` records with some sample data. After initialization, these records should be written sequentially into a binary file named `students.dat`. This operation should ensure that all data is correctly stored. Subsequently, the program must read all the student records back from `students.dat` into a *new*, separate array of `Student` records. Finally, after successfully reading the data, calculate and print the average score of all students whose records were read from the file.
+
+Crucially, all operations must strictly avoid the use of dynamic memory allocation functions (like `malloc`, `calloc`, `realloc`, `free`) and explicit pointer arithmetic beyond simple array indexing. Ensure the data types and file operations are handled correctly to maintain data integrity.
+
+TR
+
+Küçük bir öğrenci kaydı grubunu yönetmek için bir C programı geliştirmeniz gerekmektedir. Programınız, `student_id` (bir tam sayı), `name` (49 karaktere kadar artı null sonlandırıcı tutabilen bir karakter dizisi) ve `score` (bir tam sayı) alanlarını içeren `Student` adında bir yapı tanımlamalıdır. Bu yapı için kolaylık sağlamak amacıyla bir `typedef` kullanarak bir takma ad oluşturun.
+
+Programınız öncelikle sabit sayıda `Student` kaydı içeren bir diziyi bazı örnek verilerle başlatmalıdır. Başlatmanın ardından, bu kayıtlar sırayla `students.dat` adında ikili bir dosyaya yazılmalıdır. Bu işlem, tüm verilerin doğru şekilde depolanmasını sağlamalıdır. Daha sonra, program tüm öğrenci kayıtlarını `students.dat` dosyasından *yeni*, ayrı bir `Student` kayıtları dizisine geri okumalıdır. Son olarak, veriler başarıyla okunduktan sonra, dosyadan okunan tüm öğrencilerin ortalama puanını hesaplayın ve ekrana yazdırın.
+
+Önemli olarak, tüm işlemler dinamik bellek ayırma fonksiyonlarının (`malloc`, `calloc`, `realloc`, `free` gibi) ve basit dizi indekslemesinin ötesinde açık işaretçi aritmetiğinin kullanımından kesinlikle kaçınmalıdır. Veri bütünlüğünü korumak için veri türlerinin ve dosya işlemlerinin doğru şekilde ele alındığından emin olun.
