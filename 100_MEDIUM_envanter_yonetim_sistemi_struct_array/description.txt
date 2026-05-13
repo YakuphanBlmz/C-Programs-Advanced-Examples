@@ -1,0 +1,11 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small shop. The system should be able to store details of various products, specifically their unique identification number, name, and current stock quantity. Your program must use a `struct` to represent each item and `typedef` to define a custom type for this `struct`.
+
+The inventory itself will be managed using a fixed-size array of these `Item` structs. The program should provide a menu-driven interface allowing users to perform three main operations: adding a new item to the inventory, updating the stock quantity of an existing item using its ID, and displaying the current list of all items in the inventory. Remember, the solution must strictly avoid the use of pointers and dynamic memory allocation.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz istenmektedir. Sistem, çeşitli ürünlerin ayrıntılarını, özellikle benzersiz kimlik numarasını, adını ve mevcut stok miktarını saklayabilmelidir. Programınız her bir öğeyi temsil etmek için bir `struct` kullanmalı ve bu `struct` için özel bir tür tanımlamak üzere `typedef` kullanmalıdır.
+
+Envanterin kendisi, bu `Item` yapılarını içeren sabit boyutlu bir dizi kullanılarak yönetilecektir. Program, kullanıcılara üç ana işlemi gerçekleştirmelerine olanak tanıyan menü tabanlı bir arayüz sağlamalıdır: envantere yeni bir öğe ekleme, kimliğini kullanarak mevcut bir öğenin stok miktarını güncelleme ve envanterdeki tüm öğelerin mevcut listesini görüntüleme. Çözümün işaretçileri ve dinamik bellek tahsisini kesinlikle kullanmaktan kaçınması gerektiğini unutmayın.
