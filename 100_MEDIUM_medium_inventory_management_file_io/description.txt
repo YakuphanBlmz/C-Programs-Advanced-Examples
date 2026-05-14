@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small shop. This system needs to store product information and persist it to a file.
+
+Define a structure named `Product` using `typedef`, which includes fields for `id` (integer), `name` (a character array of fixed size, e.g., 50 characters), `price` (float), and `quantity` (integer).
+
+Your program should first prompt the user to enter details for a fixed number of products (e.g., 3 products). After collecting this data, all product records must be written sequentially to a binary file named `products.dat`. Finally, the program should read all the product data back from `products.dat` into a separate array of `Product` structures and then display the details of each product on the console, ensuring data integrity.
+
+TR
+
+Küçük bir dükkan için basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Bu sistem, ürün bilgilerini depolamalı ve bir dosyaya kaydetmelidir.
+
+`typedef` kullanarak `Product` adında bir yapı tanımlayın. Bu yapı, `id` (tam sayı), `name` (sabit boyutlu bir karakter dizisi, örneğin 50 karakter), `price` (ondalıklı sayı) ve `quantity` (tam sayı) alanlarını içermelidir.
+
+Programınız, öncelikle kullanıcıdan sabit sayıda ürün (örneğin 3 ürün) için detayları girmesini istemelidir. Bu veriler toplandıktan sonra, tüm ürün kayıtları sıralı bir şekilde `products.dat` adlı ikili bir dosyaya yazılmalıdır. Son olarak, program `products.dat` dosyasından tüm ürün verilerini ayrı bir `Product` yapı dizisine geri okumalı ve ardından her ürünün detaylarını konsolda görüntüleyerek veri bütünlüğünü sağlamalıdır.
