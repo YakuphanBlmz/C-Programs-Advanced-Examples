@@ -1,0 +1,15 @@
+EN
+
+Managing product inventory is a fundamental task for many businesses. You are tasked with developing a simple C program to automate a part of this process. The program needs to handle product data, calculate total inventory value, and identify the product with the highest stock quantity. Each product has a unique ID, a name, a quantity in stock, and a unit price.
+
+Your program should first define a `struct Product` using `typedef` to encapsulate these details. It will then read product information from a text file named `inventory.txt`. Each line in this file will represent a single product, with its ID, name, quantity, and price separated by spaces (e.g., `P001 Laptop 50 1200.50`). Assume product names are single words without spaces. All products read should be stored in a fixed-size array of `Product` structs within your program.
+
+After successfully reading the data, the program must calculate the total monetary value of all items in the inventory. It should also determine which product has the maximum quantity currently in stock. Finally, a report summarizing these findings must be written to another text file named `report.txt`. This report should include the total inventory value and the full details (ID, name, quantity, price) of the product with the highest quantity. Your solution must strictly avoid the use of pointers and dynamic memory allocation (`malloc`/`free`).
+
+TR
+
+Ürün envanterini yönetmek, birçok işletme için temel bir görevdir. Bu sürecin bir kısmını otomatikleştirmek için basit bir C programı geliştirmekle görevlendirildiniz. Programın ürün verilerini işlemesi, toplam envanter değerini hesaplaması ve en yüksek stok miktarına sahip ürünü belirlemesi gerekmektedir. Her ürünün benzersiz bir kimliği, bir adı, stoktaki miktarı ve birim fiyatı bulunmaktadır.
+
+Programınız öncelikle bu ayrıntıları kapsamak üzere `typedef` kullanarak bir `Product` yapısı (`struct`) tanımlamalıdır. Daha sonra, `inventory.txt` adlı bir metin dosyasından ürün bilgilerini okuyacaktır. Bu dosyadaki her satır, kimliği, adı, miktarı ve fiyatı boşluklarla ayrılmış tek bir ürünü temsil edecektir (örn: `P001 Laptop 50 1200.50`). Ürün adlarının boşluk içermeyen tek kelimeler olduğunu varsayınız. Okunan tüm ürünler, programınız içinde sabit boyutlu bir `Product` yapıları dizisinde saklanmalıdır.
+
+Veriler başarıyla okunduktan sonra, program envanterdeki tüm öğelerin toplam parasal değerini hesaplamalıdır. Ayrıca, halihazırda stokta en yüksek miktarda bulunan ürünü de belirlemelidir. Son olarak, bu bulguları özetleyen bir rapor, `report.txt` adlı başka bir metin dosyasına yazılmalıdır. Bu rapor, toplam envanter değerini ve en yüksek miktara sahip ürünün tüm ayrıntılarını (Kimlik, Ad, Miktar, Fiyat) içermelidir. Çözümünüz kesinlikle işaretçi (`pointer`) ve dinamik bellek ayırma (`malloc`/`free`) kullanımından kaçınmalıdır.
