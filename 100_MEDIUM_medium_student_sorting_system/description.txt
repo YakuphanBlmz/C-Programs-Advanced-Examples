@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student record management system. The system needs to store information about a fixed number of students, process their data, and display it in a sorted manner.
+
+You must define a structure named `Student` that contains the student's `name` (a character array), `id` (an integer), and `score` (an integer). Use `typedef` to create an alias for this structure, e.g., `Student`. The program should first read a specified number of student records from standard input. Each record will consist of a student's name (a single word), ID, and score.
+
+After collecting the student data, your program must sort these students. The primary sorting criterion is the `score` in descending order (highest score first). If two students have the same score, they should then be sorted by their `id` in ascending order. Finally, print the sorted list of students, and identify the student with the highest overall score, displaying their details separately.
+
+TR
+
+Basit bir öğrenci kayıt yönetim sistemi geliştirmekle görevlendirildiniz. Sistem, belirli sayıda öğrencinin bilgilerini saklamalı, verilerini işlemeli ve sıralanmış bir şekilde görüntülemelidir.
+
+Öğrencinin `adı` (karakter dizisi), `kimlik numarası` (tam sayı) ve `puanı` (tam sayı) bilgilerini içerecek `Student` adında bir yapı tanımlamanız gerekmektedir. Bu yapı için, örneğin `Student` gibi bir `typedef` kullanarak bir takma ad oluşturun. Programınız ilk olarak standart girişten belirtilen sayıda öğrenci kaydını okumalıdır. Her kayıt bir öğrencinin adı (tek kelime), kimlik numarası ve puanından oluşacaktır.
+
+Öğrenci verilerini topladıktan sonra, programınız bu öğrencileri sıralamalıdır. Birincil sıralama kriteri, `puan`a göre azalan düzendir (en yüksek puan ilk önce). Eğer iki öğrencinin puanı aynıysa, o zaman `kimlik numarası`na göre artan düzende sıralanmalıdırlar. Son olarak, sıralanmış öğrenci listesini yazdırın ve en yüksek genel puana sahip öğrenciyi tespit ederek bilgilerini ayrı olarak görüntüleyin.
