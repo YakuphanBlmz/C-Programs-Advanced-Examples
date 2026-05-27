@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a C program to process student grade data. The program should read student information, including their ID, name, and three grades, from an input file named `grades.txt`. After successfully reading the data, it must calculate the average grade for each student. Finally, the program should write a formatted report for each student, displaying their ID, name, and calculated average grade, to an output file named `report.txt`.
+
+Your solution must use `struct` and `typedef` to represent student data. All student records should be stored in a statically-sized array of structs. The program must handle file input (`grades.txt`) and file output (`report.txt`). It should also include basic error handling for file operations.
+
+Crucially, you must not use any explicit pointers (e.g., `int *ptr;` or `char *str;`) or dynamic memory allocation (`malloc`, `free`) in your code. String handling within the struct should exclusively use fixed-size character arrays (e.g., `char name[50];`). The use of the address-of operator (`&`) for standard library functions like `fscanf` is permitted.
+
+TR
+
+Bir C programı geliştirmeniz isteniyor. Bu program, öğrenci notu verilerini işleyecek. Program, öğrenci kimliği, adı ve üç notunu içeren öğrenci bilgilerini `grades.txt` adlı bir giriş dosyasından okumalıdır. Verileri başarıyla okuduktan sonra, her öğrencinin not ortalamasını hesaplamalıdır. Son olarak, program her öğrenci için öğrenci kimliği, adı ve hesaplanan ortalama notunu gösteren biçimlendirilmiş bir raporu `report.txt` adlı bir çıkış dosyasına yazmalıdır.
+
+Çözümünüzde öğrenci verilerini temsil etmek için `struct` ve `typedef` kullanmalısınız. Tüm öğrenci kayıtları, statik boyutlu bir struct dizisinde saklanmalıdır. Program, dosya girişini (`grades.txt`) ve dosya çıkışını (`report.txt`) işlemeli ve dosya işlemleri için temel hata kontrolü içermelidir.
+
+En önemli kural, kodunuzda hiçbir açık işaretçi (örneğin, `int *ptr;` veya `char *str;`) veya dinamik bellek ayırma (`malloc`, `free`) kullanmamanızdır. Struct içindeki metin alanları için yalnızca sabit boyutlu karakter dizileri (örneğin, `char name[50];`) kullanılmalıdır. `fscanf` gibi standart kütüphane fonksiyonları için adres-of operatörünün (`&`) kullanılmasına izin verilmiştir.
