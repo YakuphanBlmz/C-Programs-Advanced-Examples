@@ -1,42 +1,46 @@
 #include <stdio.h>
-#include <string.h>
 typedef struct {
     int id;
     char name[50];
     float price;
+    int stock;
 } Product;
 int main() {
-    Product products_to_write[3];
-    products_to_write[0].id = 101;
-    strcpy(products_to_write[0].name, "Laptop");
-    products_to_write[0].price = 1200.50;
-    products_to_write[1].id = 102;
-    strcpy(products_to_write[1].name, "Mouse");
-    products_to_write[1].price = 25.99;
-    products_to_write[2].id = 103;
-    strcpy(products_to_write[2].name, "Keyboard");
-    products_to_write[2].price = 75.00;
-    FILE *fp_write;
-    fp_write = fopen("products.dat", "wb");
-    if (fp_write == NULL) {
+    FILE *fp;
+    Product p;
+    int num_products, i;
+    fp = fopen("products.dat", "wb");
+    if (fp == NULL) {
         printf("Error opening file for writing!\n");
         return 1;
     }
-    fwrite(products_to_write, sizeof(Product), 3, fp_write);
-    fclose(fp_write);
-    printf("Products written to products.dat successfully.\n\n");
-    Product products_read[3];
-    FILE *fp_read;
-    fp_read = fopen("products.dat", "rb");
-    if (fp_read == NULL) {
+    printf("How many products do you want to enter? ");
+    scanf("%d", &num_products);
+    for (i = 0; i < num_products; i++) {
+        printf("\nEnter details for product %d:\n", i + 1);
+        printf("ID: ");
+        scanf("%d", &p.id);
+        printf("Name (no spaces): ");
+        scanf("%49s", p.name);
+        printf("Price: ");
+        scanf("%f", &p.price);
+        printf("Stock: ");
+        scanf("%d", &p.stock);
+        fwrite(&p, sizeof(Product), 1, fp);
+    }
+    fclose(fp);
+    printf("\nProducts saved to products.dat\n");
+    fp = fopen("products.dat", "rb");
+    if (fp == NULL) {
         printf("Error opening file for reading!\n");
         return 1;
     }
-    fread(products_read, sizeof(Product), 3, fp_read);
-    fclose(fp_read);
-    printf("Products read from products.dat:\n");
-    for (int i = 0; i < 3; i++) {
-        printf("ID: %d, Name: %s, Price: %.2f\n", products_read[i].id, products_read[i].name, products_read[i].price);
+    printf("\n--- Products from file ---\n");
+    printf("%-5s %-20s %-10s %-10s\n", "ID", "Name", "Price", "Stock");
+    printf("--------------------------------------------------\n");
+    while (fread(&p, sizeof(Product), 1, fp) == 1) {
+        printf("%-5d %-20s %-10.2f %-10d\n", p.id, p.name, p.price, p.stock);
     }
+    fclose(fp);
     return 0;
 }
