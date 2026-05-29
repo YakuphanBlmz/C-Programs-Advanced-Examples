@@ -1,0 +1,15 @@
+EN
+
+In complex data acquisition systems, the structure of collected data often isn't fixed and can vary dynamically across multiple hierarchical levels. Imagine a scenario where you are tasked with managing sensor readings, but with a highly flexible architecture: there are multiple 'sensor groups', each group contains a varying number of 'individual sensors', and each individual sensor takes a varying number of 'readings' over time. This necessitates a robust dynamic memory management approach using multi-level pointers.
+
+Your challenge is to implement a system that dynamically allocates and manages a 3D-like hierarchical data structure using raw pointers (specifically `int***`) to store these integer sensor readings. You will be provided with the total number of sensor groups, an array specifying how many sensors are in each group, and a 2D array specifying how many readings each sensor has. After allocation, the structure must be populated with specific integer values derived from its indices.
+
+Following the allocation and population, you must write a function that calculates a 'weighted sum' of all recorded sensor readings. The weight for each individual reading should be determined by its hierarchical position (group index + sensor index + reading index + 1). Finally, and critically, all dynamically allocated memory must be deallocated correctly and in the precise reverse order of its allocation to prevent any memory leaks or corruption. No `struct`s, `typedef`s, or file I/O are allowed; only basic types, pointers, and dynamic memory functions.
+
+TR
+
+Karmaşık veri toplama sistemlerinde, toplanan verinin yapısı genellikle sabit değildir ve birden çok hiyerarşik seviyede dinamik olarak değişebilir. Sensör okumalarını yönetmekle görevli olduğunuz, ancak oldukça esnek bir mimariye sahip bir senaryo düşünün: birden çok 'sensör grubu' vardır, her grup değişen sayıda 'bireysel sensör' içerir ve her bireysel sensör zaman içinde değişen sayıda 'okuma' yapar. Bu durum, çok seviyeli işaretçiler kullanarak sağlam bir dinamik bellek yönetimi yaklaşımı gerektirmektedir.
+
+Göreviniz, bu tamsayı sensör okumalarını depolamak için ham işaretçiler (özellikle `int***`) kullanarak 3D benzeri hiyerarşik bir veri yapısını dinamik olarak tahsis eden ve yöneten bir sistem uygulamaktır. Size toplam sensör grubu sayısı, her gruptaki sensör sayısını belirten bir dizi ve her sensörün kaç okuması olduğunu belirten 2D bir dizi verilecektir. Tahsisten sonra, yapı dizinlerinden türetilen belirli tamsayı değerleri ile doldurulmalıdır.
+
+Tahsis ve doldurma işleminin ardından, tüm kaydedilen sensör okumalarının 'ağırlıklı toplamını' hesaplayan bir fonksiyon yazmanız gerekmektedir. Her bir okuma için ağırlık, hiyerarşik konumuna (grup dizini + sensör dizini + okuma dizini + 1) göre belirlenmelidir. Son olarak ve kritik olarak, tüm dinamik olarak tahsis edilen bellek, herhangi bir bellek sızıntısını veya bozulmasını önlemek için tahsis sırasının tam tersi sırayla doğru bir şekilde serbest bırakılmalıdır. `struct`, `typedef` veya dosya G/Ç'ye izin verilmez; yalnızca temel türler, işaretçiler ve dinamik bellek fonksiyonları kullanılmalıdır.
