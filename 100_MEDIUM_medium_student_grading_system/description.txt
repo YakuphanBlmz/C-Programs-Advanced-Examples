@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student grading system in C. Your program should manage student records, calculate their average scores, and identify the student with the highest average score.
+
+You will define a `struct` named `Student` to store information for each student. This `struct` should include a student ID (an integer), a student name (a fixed-size character array), and an array to hold a fixed number of scores (e.g., three scores). You should also use `typedef` to simplify the declaration of `Student` variables.
+
+Your program should initialize an array of `Student` structures with some sample data. For each student, calculate their average score and store it within the `Student` structure. Finally, iterate through all students to find and display the name and ID of the student who achieved the highest overall average score. The output should also list all students with their individual average scores, formatted to two decimal places.
+
+TR
+
+C programlama dilinde basit bir öğrenci notlandırma sistemi geliştirmeniz isteniyor. Programınız öğrenci kayıtlarını yönetmeli, ortalama notlarını hesaplamalı ve en yüksek ortalama nota sahip öğrenciyi belirlemelidir.
+
+Her öğrenci için bilgileri saklamak üzere `Student` adında bir `struct` tanımlayacaksınız. Bu `struct`, bir öğrenci kimliği (integer), bir öğrenci adı (sabit boyutlu karakter dizisi) ve belirli sayıda notu (örneğin üç not) tutacak bir dizi içermelidir. Ayrıca, `Student` değişkenlerinin deklarasyonunu kolaylaştırmak için `typedef` kullanmalısınız.
+
+Programınız, örnek verilerle `Student` yapılarından oluşan bir diziyi başlatmalıdır. Her öğrenci için ortalama notunu hesaplayın ve bunu `Student` yapısı içinde saklayın. Son olarak, en yüksek genel ortalama nota sahip öğrencinin adını ve kimliğini bulmak ve görüntülemek için tüm öğrencileri yineleyin. Çıktı ayrıca tüm öğrencileri ve onların bireysel ortalama notlarını iki ondalık basamak hassasiyetinde listelemelidir.
