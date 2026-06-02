@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a basic inventory management system for a small shop. The system needs to keep track of various items, each identified by an ID, a name, and a quantity. To ensure data persistence, all inventory items must be stored in a binary file.
+
+Your program should first allow the user to input details for a *single new item* (ID, name, quantity). This new item's data should then be appended to a file named `inventory.dat`. After successfully adding the new item, the program must then read *all* existing inventory items from `inventory.dat` and display their details to the console.
+
+You must define a `struct` to represent an inventory item and use `typedef` for convenience. Remember to use standard file I/O functions (`fopen`, `fwrite`, `fread`, `fclose`). Strictly avoid the use of pointers (except implicitly when passing struct addresses to `fread`/`fwrite`) and dynamic memory allocation (`malloc`, `free`) throughout your solution. The `struct` itself must not contain any pointers.
+
+TR
+
+Küçük bir dükkan için temel bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, her biri bir kimlik numarası (ID), bir ad ve bir miktar ile tanımlanan çeşitli öğeleri takip etmelidir. Veri kalıcılığını sağlamak için, tüm envanter öğeleri ikili bir dosyada saklanmalıdır.
+
+Programınız önce kullanıcının *tek bir yeni öğe* (ID, ad, miktar) için ayrıntıları girmesine izin vermelidir. Bu yeni öğenin verileri daha sonra `inventory.dat` adlı bir dosyaya eklenmelidir. Yeni öğe başarıyla eklendikten sonra, program `inventory.dat` dosyasındaki *tüm mevcut envanter öğelerini* okumalı ve bunların ayrıntılarını konsola yazdırmalıdır.
+
+Bir envanter öğesini temsil etmek için bir `struct` tanımlamalı ve kolaylık sağlamak için `typedef` kullanmalısınız. Standart dosya G/Ç fonksiyonlarını (`fopen`, `fwrite`, `fread`, `fclose`) kullanmayı unutmayın. Çözümünüz boyunca işaretçilerin (yapı adreslerini `fread`/`fwrite` fonksiyonlarına geçirirken dolaylı olarak kullanılanlar hariç) ve dinamik bellek ayırmanın (`malloc`, `free`) kullanımından kesinlikle kaçının. `struct`'ın kendisi herhangi bir işaretçi içermemelidir.
