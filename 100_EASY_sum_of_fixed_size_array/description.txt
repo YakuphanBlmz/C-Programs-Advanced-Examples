@@ -1,0 +1,7 @@
+EN
+
+Write a C program that calculates the sum of all elements in a given integer array of size 5. The program should prompt the user to enter the 5 array elements and then print their total sum.
+
+TR
+
+Boyutu 5 olan bir tam sayı dizisindeki tüm elemanların toplamını hesaplayan bir C programı yazın. Program, kullanıcıdan 5 dizi elemanını girmesini istemeli ve ardından toplamlarını ekrana yazdırmalıdır.
