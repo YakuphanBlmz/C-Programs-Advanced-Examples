@@ -1,0 +1,15 @@
+EN
+
+This problem requires you to implement a basic student record management system in C. You will define a `Student` structure using `typedef`, which includes an integer `id`, a character array `name` (for up to 49 characters plus null terminator), and an integer `grade`. All student records will be stored in a fixed-size array within your program.
+
+Your system must support the following operations: adding new students to the array (if there's space), displaying all currently registered students, saving all existing student records from the array to a binary file, and loading student records from a binary file back into the program's array. The system should operate with a predefined maximum number of students, meaning no dynamic memory allocation (`malloc`, `free`) is allowed. Furthermore, you must strictly avoid explicit pointer variables in your solution code, except for the `FILE*` type implicitly returned by standard file I/O functions like `fopen`.
+
+The challenge is to correctly manage the array of structs, handle user input, and implement robust binary file operations to persist and retrieve data, all while adhering to the constraint of using fixed-size arrays and avoiding explicit pointer declarations for custom data structures.
+
+TR
+
+Bu problem, C dilinde temel bir öğrenci kayıt yönetim sistemi uygulamanızı gerektiriyor. `typedef` kullanarak bir `Student` yapısı tanımlayacaksınız; bu yapı bir tam sayı `id`, bir karakter dizisi `name` (en fazla 49 karakter ve null sonlandırıcı için), ve bir tam sayı `grade` içerecektir. Tüm öğrenci kayıtları, programınız içinde sabit boyutlu bir dizide saklanacaktır.
+
+Sisteminiz aşağıdaki işlemleri desteklemelidir: diziye yeni öğrenciler ekleme (yer varsa), mevcut kayıtlı tüm öğrencileri görüntüleme, dizideki mevcut öğrenci kayıtlarının tümünü ikili bir dosyaya kaydetme ve ikili bir dosyadan öğrenci kayıtlarını programın dizisine geri yükleme. Sistem, önceden tanımlanmış maksimum öğrenci sayısı ile çalışmalı, yani dinamik bellek tahsisi (`malloc`, `free`) kullanılamaz. Ayrıca, çözüm kodunuzda, `fopen` gibi standart dosya G/Ç fonksiyonları tarafından örtük olarak döndürülen `FILE*` türü hariç, açık işaretçi değişkenlerinden kesinlikle kaçınmalısınız.
+
+Buradaki zorluk, yapı dizisini doğru şekilde yönetmek, kullanıcı girişini işlemek ve sabit boyutlu diziler kullanma ve özel veri yapıları için açık işaretçi bildirimlerinden kaçınma kısıtlamalarına bağlı kalarak verileri kalıcı hale getirmek ve geri almak için sağlam ikili dosya işlemlerini uygulamaktır.
