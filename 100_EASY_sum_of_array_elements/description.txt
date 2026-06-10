@@ -1,7 +1,7 @@
 EN
 
-Write a C program that initializes an integer array with a predefined set of values. The program should then calculate the sum of all elements present in this array. Finally, print the computed sum to the console.
+Write a C program that calculates the sum of all elements in a given integer array. The program should initialize an array with a fixed set of integer values and then compute and print their total sum.
 
 TR
 
-Önceden tanımlanmış değerlerle bir tam sayı dizisini başlatan bir C programı yazın. Program, bu dizideki tüm elemanların toplamını hesaplamalıdır. Son olarak, hesaplanan toplamı konsola yazdırmalıdır.
+Verilen bir tam sayı dizisindeki tüm elemanların toplamını hesaplayan bir C programı yazın. Program, sabit bir dizi tam sayı değeri ile bir diziyi başlatmalı ve ardından toplamlarını hesaplayıp ekrana yazdırmalıdır.
