@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student record management system in C. The program should be able to store information for a maximum of 10 students. For each student, you need to record their unique ID (an integer), their name (a string), and their grade (an integer).
+
+Your program must use a `struct` to represent a student's data, and this `struct` should be given a new name using `typedef`. All student records should be stored in a fixed-size array of this `struct` type. The system should provide a menu-driven interface allowing users to perform the following operations: add a new student, display all currently stored students, search for a student by their ID, and calculate the average grade of all students.
+
+Crucially, your solution must adhere to strict constraints: you are not allowed to use any explicit pointer variables (e.g., `int *ptr;` or `struct Node *next;`) or dynamic memory allocation functions (`malloc`, `free`). Arrays are permitted, and `scanf` for input is allowed, but direct pointer declarations or pointer arithmetic are forbidden. The use of global variables for the student array and count is encouraged to simplify adherence to the "no explicit pointers" rule.
+
+TR
+
+C programlama dilinde basit bir öğrenci kayıt yönetim sistemi geliştirmeniz istenmektedir. Program, en fazla 10 öğrencinin bilgilerini saklayabilmelidir. Her öğrenci için benzersiz bir kimlik numarası (tam sayı), adı (karakter dizisi) ve notu (tam sayı) kaydedilmelidir.
+
+Programınız, bir öğrencinin verilerini temsil etmek için bir `struct` kullanmalı ve bu `struct`'a `typedef` kullanarak yeni bir isim verilmelidir. Tüm öğrenci kayıtları, bu `struct` türünden sabit boyutlu bir dizide saklanmalıdır. Sistem, kullanıcılara aşağıdaki işlemleri gerçekleştirmeleri için menü tabanlı bir arayüz sağlamalıdır: yeni bir öğrenci ekleme, mevcut tüm öğrencileri görüntüleme, kimlik numarasına göre öğrenci arama ve tüm öğrencilerin not ortalamasını hesaplama.
+
+Çözümünüz kesin kısıtlamalara uymalıdır: herhangi bir açık işaretçi değişkeni (örneğin, `int *ptr;` veya `struct Node *next;`) veya dinamik bellek ayırma işlevleri (`malloc`, `free`) kullanılmasına izin verilmez. Diziler ve `scanf` girişi için izinlidir, ancak doğrudan işaretçi tanımlamaları veya işaretçi aritmetiği yasaktır. Öğrenci dizisi ve sayımı için genel değişkenlerin kullanılması, 'açık işaretçi yok' kuralına uyumu kolaylaştırmak için teşvik edilmektedir.
