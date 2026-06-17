@@ -1,0 +1,15 @@
+EN
+
+In many real-world applications, managing inventory efficiently is crucial. This involves keeping track of various details for each product, such as its unique identifier, name, cost, and the quantity available in stock. Organizing this data systematically allows for better decision-making regarding stock levels and overall business valuation.
+
+For this problem, you are tasked with designing a simple inventory system using C structures. You need to define a `Product` structure that holds an integer `id`, a character array `name` (for up to 49 characters plus null terminator), a double `price`, and an integer `quantity`. Use a `typedef` to simplify the declaration of `Product` variables. Your program should then initialize an array of several `Product` items with sample data.
+
+After setting up your inventory, your program must perform two calculations: first, compute the total monetary value of all products currently in stock (calculated as `price * quantity` for each product, summed up). Second, identify and display the details of the single product that has the highest quantity in stock. The solution should strictly avoid the use of pointers and dynamic memory allocation.
+
+TR
+
+Birçok gerçek dünya uygulamasında, envanteri etkili bir şekilde yönetmek çok önemlidir. Bu, her bir ürün için benzersiz kimliği, adı, maliyeti ve stokta bulunan miktarı gibi çeşitli detayları takip etmeyi içerir. Bu verileri sistematik olarak düzenlemek, stok seviyeleri ve genel işletme değerlemesi hakkında daha iyi kararlar alınmasını sağlar.
+
+Bu problem için, C yapılarını kullanarak basit bir envanter sistemi tasarlamanız istenmektedir. Bir tamsayı `id`, bir karakter dizisi `name` (49 karaktere kadar artı null sonlandırıcı), bir ondalık `price` ve bir tamsayı `quantity` tutacak bir `Product` yapısı tanımlamanız gerekmektedir. `Product` değişkenlerinin bildirimini basitleştirmek için bir `typedef` kullanın. Programınız daha sonra örnek verilerle birkaç `Product` öğesinden oluşan bir diziyi başlatmalıdır.
+
+Envanterinizi kurduktan sonra, programınız iki hesaplama yapmalıdır: ilk olarak, stokta bulunan tüm ürünlerin toplam parasal değerini hesaplayın (her ürün için `price * quantity` olarak hesaplanır ve toplanır). İkinci olarak, stokta en yüksek miktara sahip tek ürünü belirleyin ve ayrıntılarını görüntüleyin. Çözüm, işaretçilerin ve dinamik bellek ayırmanın kullanımından kesinlikle kaçınmalıdır.
