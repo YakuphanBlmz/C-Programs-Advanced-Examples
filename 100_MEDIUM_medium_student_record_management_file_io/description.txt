@@ -1,0 +1,15 @@
+EN
+
+A small educational institution needs a basic C program to manage its student records. Each student record should store an integer unique ID, a fixed-size character array for their name, and an integer score. The program must be able to handle a predefined maximum number of students.
+
+Your task is to develop a program that uses a `struct` to represent a student and `typedef` to simplify its usage. The program should implement functionality to: 1) Load existing student data from a binary file named "students.dat" if it exists. 2) Add one new student record to the list. 3) Display all current student records. 4) Save the entire (updated) list of student records back to the "students.dat" binary file.
+
+Crucially, the solution must strictly avoid the use of pointers for data storage or dynamic memory allocation (i.e., no `malloc` or `free`). All data structures, including strings within structs, must use fixed-size arrays. The maximum number of students the program can handle should be a compile-time constant.
+
+TR
+
+Küçük bir eğitim kurumu, öğrenci kayıtlarını yönetmek için basit bir C programına ihtiyaç duymaktadır. Her öğrenci kaydı, benzersiz bir tamsayı kimliği, adları için sabit boyutlu bir karakter dizisi ve bir tamsayı puanı içermelidir. Program, önceden tanımlanmış maksimum sayıda öğrenciyi işleyebilmelidir.
+
+Göreviniz, bir öğrenciyi temsil etmek için `struct` kullanan ve kullanımını basitleştirmek için `typedef` içeren bir program geliştirmektir. Program şu işlevleri uygulamalıdır: 1) "students.dat" adlı ikili bir dosyadan mevcut öğrenci verilerini yüklü ise okumalıdır. 2) Listeye yeni bir öğrenci kaydı eklemelidir. 3) Mevcut tüm öğrenci kayıtlarını görüntülemelidir. 4) Tüm (güncellenmiş) öğrenci kayıtları listesini "students.dat" ikili dosyasına geri kaydetmelidir.
+
+Çok önemli bir şekilde, çözüm veri depolama için işaretçilerin veya dinamik bellek ayırmanın (yani `malloc` veya `free` kullanmadan) kullanımından kesinlikle kaçınmalıdır. Struct'lar içindeki dizeler de dahil olmak üzere tüm veri yapıları, sabit boyutlu diziler kullanmalıdır. Programın işleyebileceği maksimum öğrenci sayısı, derleme zamanı sabiti olmalıdır.
