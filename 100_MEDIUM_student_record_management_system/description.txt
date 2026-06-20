@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student record management system in C. The system should allow users to perform two primary operations: adding new student records and viewing existing records. Each student record will consist of a unique integer ID, a student's name (up to 49 characters), and an integer grade.
+
+To manage student data efficiently, you must define a `struct` named `Student` that encapsulates these three pieces of information. Additionally, use `typedef` to create an alias for this structure, making the code cleaner and more readable. All student data should be persistently stored in a binary file named `students.dat`. When a new student is added, their record should be appended to this file. When viewing records, the program should read all entries from the file and display them to the console.
+
+Your solution must strictly avoid the use of pointers (except for file pointers, which are standard for file operations) and dynamic memory allocation functions like `malloc` or `free`. Ensure that string fields within the struct are handled using fixed-size character arrays to comply with this constraint. The program should present a menu to the user, allowing them to choose between adding a student or listing all students.
+
+TR
+
+C programlama dilinde basit bir öğrenci kayıt yönetim sistemi geliştirmeniz isteniyor. Sistem, kullanıcıların iki temel işlem yapmasına izin vermelidir: yeni öğrenci kayıtları ekleme ve mevcut kayıtları görüntüleme. Her öğrenci kaydı benzersiz bir tam sayı kimliği, bir öğrencinin adı (en fazla 49 karakter) ve bir tam sayı notundan oluşacaktır.
+
+Öğrenci verilerini verimli bir şekilde yönetmek için, bu üç bilgi parçasını kapsayan `Student` adında bir `struct` tanımlamanız gerekmektedir. Ek olarak, bu yapı için bir takma ad oluşturmak üzere `typedef` kullanın, böylece kod daha temiz ve okunabilir hale gelir. Tüm öğrenci verileri `students.dat` adlı bir ikili dosyada kalıcı olarak saklanmalıdır. Yeni bir öğrenci eklendiğinde, kaydı bu dosyaya eklenmelidir. Kayıtları görüntülerken, program dosyadaki tüm girişleri okumalı ve konsola yazdırmalıdır.
+
+Çözümünüz kesinlikle işaretçi (dosya işlemleri için standart olan dosya işaretçileri hariç) ve `malloc` veya `free` gibi dinamik bellek ayırma işlevlerinin kullanımından kaçınmalıdır. Bu kısıtlamaya uymak için, yapı içindeki dize alanlarının sabit boyutlu karakter dizileri kullanılarak işlendiğinden emin olun. Program, kullanıcıya öğrenci ekleme veya tüm öğrencileri listeleme arasında seçim yapmasına olanak tanıyan bir menü sunmalıdır.
