@@ -1,0 +1,7 @@
+EN
+
+Write a C program that initializes an integer array with a fixed set of values. The program should then iterate through the array and count the total number of even elements and the total number of odd elements. Finally, print both counts to the console.
+
+TR
+
+Sabit bir tam sayı dizisini belirli değerlerle başlatan bir C programı yazın. Program, dizi üzerinde döngü yaparak çift elemanların toplam sayısını ve tek elemanların toplam sayısını saymalıdır. Son olarak, her iki sayımı da konsola yazdırın.
