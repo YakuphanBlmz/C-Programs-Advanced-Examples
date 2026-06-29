@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a C program that manages student records. The program will read student information from an input text file, process this data, and then generate a report in an output text file. Each student record includes an ID, a name, and a score.
+
+First, your program should define a structure named `Student` using `typedef`, containing fields for student ID (integer), name (character array), and score (integer). The input file, named `students.txt`, will contain one student's data per line, formatted as `ID Name Score` (e.g., `101 Alice 75`). Your program must read up to a maximum of 10 students from this file.
+
+After successfully reading the student data, calculate the average score of all students. Finally, create an output file named `report.txt`. For each student, write their ID, Name, Score, and a status (either "PASS" if the score is 50 or above, or "FAIL" otherwise). After listing all students, append the overall average score to the report file. Ensure all file operations are handled correctly, including opening and closing files.
+
+TR
+
+Bir C programı geliştirmeniz isteniyor. Bu program, öğrenci kayıtlarını yönetecek. Program, öğrenci bilgilerini bir girdi metin dosyasından okuyacak, bu verileri işleyecek ve ardından bir çıktı metin dosyasına bir rapor oluşturacaktır. Her öğrenci kaydı bir kimlik (ID), bir isim ve bir puandan oluşmaktadır.
+
+Öncelikle, programınız öğrenci ID'si (tam sayı), ismi (karakter dizisi) ve puanı (tam sayı) alanlarını içeren, `Student` adında bir yapı tanımlamalıdır (typedef kullanarak). `students.txt` adlı girdi dosyası, her satırda bir öğrencinin verilerini `ID İsim Puan` formatında (örneğin: `101 Alice 75`) içerecektir. Programınız bu dosyadan en fazla 10 öğrenci okumalıdır.
+
+Öğrenci verilerini başarıyla okuduktan sonra, tüm öğrencilerin ortalama puanını hesaplayın. Son olarak, `report.txt` adında bir çıktı dosyası oluşturun. Her öğrenci için, ID'sini, İsmini, Puanını ve bir durumunu (puanı 50 veya daha yüksekse "GEÇTİ", aksi takdirde "KALDI") bu dosyaya yazın. Tüm öğrencileri listeledikten sonra, genel ortalama puanı rapor dosyasına ekleyin. Dosya açma ve kapama dahil tüm dosya işlemlerinin doğru bir şekilde yapıldığından emin olun.
