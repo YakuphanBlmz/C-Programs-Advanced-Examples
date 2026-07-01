@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a C program to manage a small inventory for a local electronics shop. The shop stores product information in a text file, and your program needs to process this data to provide an inventory report.
+
+The program should define a `struct` called `Product` that includes fields for product ID (integer), name (string, e.g., an array of characters), price (floating-point), and quantity in stock (integer). You should use `typedef` to simplify the declaration of `Product` variables. Your program will read product details from an input file named `products.txt`. Each line in this file will contain the ID, name, price, and quantity for one product.
+
+After reading all product information, the program must calculate the total monetary value of all items currently in stock across the entire inventory. Additionally, it needs to identify the product that has the highest quantity available. Finally, the program should write a report to an output file named `report.txt`. This report must include the calculated total inventory value and the full details (ID, name, price, quantity) of the product found to have the highest stock quantity.
+
+TR
+
+Yerel bir elektronik mağazası için küçük bir envanteri yönetmek üzere bir C programı geliştirmeniz istenmektedir. Mağaza, ürün bilgilerini bir metin dosyasında saklar ve programınızın bu verileri işleyerek bir envanter raporu sunması gerekmektedir.
+
+Program, ürün kimliği (tam sayı), adı (karakter dizisi, örneğin bir karakter dizisi), fiyatı (kayan nokta) ve stoktaki miktarı (tam sayı) için alanlar içeren `Product` adında bir `struct` tanımlamalıdır. `Product` değişkenlerinin bildirimini basitleştirmek için `typedef` kullanmalısınız. Programınız, `products.txt` adında bir giriş dosyasından ürün ayrıntılarını okuyacaktır. Bu dosyadaki her satır, bir ürünün kimliğini, adını, fiyatını ve miktarını içerecektir.
+
+Tüm ürün bilgilerini okuduktan sonra, program mevcut tüm envanterdeki tüm öğelerin toplam parasal değerini hesaplamalıdır. Ayrıca, en yüksek stok miktarına sahip ürünü belirlemesi gerekmektedir. Son olarak, program `report.txt` adında bir çıktı dosyasına bir rapor yazmalıdır. Bu rapor, hesaplanan toplam envanter değerini ve en yüksek stok miktarına sahip olduğu belirlenen ürünün tüm ayrıntılarını (Kimlik, Ad, Fiyat, Miktar) içermelidir.
