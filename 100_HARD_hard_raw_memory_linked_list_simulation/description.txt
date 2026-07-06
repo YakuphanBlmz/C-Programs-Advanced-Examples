@@ -1,0 +1,21 @@
+EN
+
+The challenge is to implement a rudimentary "linked list" data structure entirely using raw memory allocation (`malloc`, `free`) and pointer arithmetic, without the aid of `struct` or `typedef`. Each "node" in this list should store a single integer value and a pointer to the next "node". Since `struct` is forbidden, a "node" will be represented by a contiguous block of memory where the first `sizeof(int)` bytes hold the integer data, and the subsequent `sizeof(void *)` bytes hold the address of the next node.
+
+Your task involves three main parts:
+1.  **List Creation**: Dynamically allocate memory for a sequence of "nodes" and link them together to form a list. The list should contain a specified number of integers provided as input. You'll need to manage the `void *` pointers representing nodes and their connections.
+2.  **List Traversal and Operation**: Traverse the created list, access the integer data stored in each "node" using pointer arithmetic and type casting, and perform a simple operation (e.g., calculate the sum of all integers in the list). This step will heavily rely on understanding how to extract data and the "next" pointer from the raw memory block representing a node.
+3.  **List Deallocation**: Properly deallocate all memory blocks allocated for the "nodes" of the list, preventing memory leaks. This requires traversing the list again, freeing each node individually.
+
+This problem demands a deep understanding of pointer types, pointer arithmetic, `void *` casting, and dynamic memory lifecycle management. You will be working directly with memory addresses and sizes, mimicking how data structures are built at a very low level. The use of `void **` will be necessary when manipulating the "next" pointer within a node, further enhancing the difficulty and reinforcing the concept of a pointer to a pointer.
+
+TR
+
+Bu zorlu görev, `struct` veya `typedef` kullanmadan, tamamen ham bellek tahsisi (`malloc`, `free`) ve işaretçi aritmetiği ile ilkel bir "bağlı liste" veri yapısı uygulamaktır. Bu listedeki her "düğüm" (node) tek bir tam sayı değeri ve bir sonraki "düğümün" işaretçisini saklamalıdır. `struct` kullanımı yasak olduğu için, bir "düğüm" ardışık bir bellek bloğu ile temsil edilecek; bu bloğun ilk `sizeof(int)` baytı tam sayı verisini tutacak ve sonraki `sizeof(void *)` baytı bir sonraki düğümün adresini tutacaktır.
+
+Göreviniz üç ana bölümden oluşmaktadır:
+1.  **Liste Oluşturma**: Belirli sayıda tam sayı içeren bir diziyi (listeyi) oluşturmak için dinamik olarak bellek tahsis edin ve düğümleri birbirine bağlayın. Giriş olarak verilen belirli sayıda tam sayı değerini liste içermelidir. Düğümleri ve bağlantılarını temsil eden `void *` işaretçilerini yönetmeniz gerekecektir.
+2.  **Liste Gezme ve İşlem Yapma**: Oluşturulan listeyi gezin, işaretçi aritmetiği ve tür dönüştürme kullanarak her "düğümde" saklanan tam sayı verisine erişin ve basit bir işlem gerçekleştirin (örneğin, listedeki tüm tam sayıların toplamını hesaplayın). Bu adım, bir düğümü temsil eden ham bellek bloğundan veriyi ve "sonraki" işaretçisini nasıl çıkaracağınızı anlamanıza büyük ölçüde bağlı olacaktır.
+3.  **Liste Bellek Boşaltma**: Bellek sızıntılarını önlemek için listenin "düğümleri" için tahsis edilen tüm bellek bloklarını doğru bir şekilde boşaltın. Bu, her bir düğümü ayrı ayrı serbest bırakarak listeyi tekrar gezmeyi gerektirir.
+
+Bu problem, işaretçi türleri, işaretçi aritmetiği, `void *` tür dönüştürme ve dinamik bellek yaşam döngüsü yönetimi konularında derinlemesine bir anlayış gerektirmektedir. Veri yapılarının çok düşük bir seviyede nasıl inşa edildiğini taklit ederek doğrudan bellek adresleri ve boyutları ile çalışacaksınız. Bir düğüm içindeki "sonraki" işaretçiyi manipüle ederken `void **` kullanımı gerekli olacak, bu da zorluğu daha da artıracak ve işaretçinin işaretçisi kavramını pekiştirecektir.
