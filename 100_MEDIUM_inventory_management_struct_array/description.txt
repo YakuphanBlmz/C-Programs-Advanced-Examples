@@ -1,0 +1,15 @@
+EN
+
+You are tasked with managing a small inventory for a local shop. You need to store information about various products, including their unique ID, name, price, and current stock quantity. Your program should be able to store a fixed number of product records and perform basic operations on them.
+
+Specifically, you will define a `struct` for products and use `typedef` to create an alias for it. You will then create a fixed-size array to hold these product records. The program should calculate the total value of the entire inventory (sum of price * stock for each product) and allow the user to search for a product by its ID, displaying its details if found.
+
+Remember, you are strictly not allowed to use pointers for dynamic memory allocation (`malloc`/`free`) or for complex data structures like linked lists. All operations must be performed on fixed-size arrays and structures.
+
+TR
+
+Yerel bir dükkan için küçük bir envanteri yönetmekle görevlisiniz. Çeşitli ürünler hakkında benzersiz kimlik (ID), ad, fiyat ve mevcut stok miktarı dahil olmak üzere bilgileri saklamanız gerekmektedir. Programınız, sabit sayıda ürün kaydını depolayabilmeli ve bunlar üzerinde temel işlemleri gerçekleştirebilmelidir.
+
+Özellikle, ürünler için bir `struct` tanımlayacak ve bunun için `typedef` kullanarak bir takma ad oluşturacaksınız. Daha sonra bu ürün kayıtlarını tutmak için sabit boyutlu bir dizi oluşturacaksınız. Program, tüm envanterin toplam değerini (her ürün için fiyat * stok toplamı) hesaplamalı ve kullanıcının ID'sine göre bir ürünü aramasını, bulunursa ürün detaylarını görüntülemesini sağlamalıdır.
+
+Dinamik bellek tahsisi (`malloc`/`free`) veya bağlantılı listeler gibi karmaşık veri yapıları için işaretçiler kullanmanıza kesinlikle izin verilmemektedir. Tüm işlemler sabit boyutlu diziler ve yapılar üzerinde gerçekleştirilmelidir.
