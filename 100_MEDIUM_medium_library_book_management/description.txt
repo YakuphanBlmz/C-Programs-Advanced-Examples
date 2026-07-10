@@ -1,0 +1,15 @@
+EN
+
+You are tasked with creating a basic library management system in C. The system needs to keep track of books, including their unique identification number, title, author, and current availability status. For simplicity, the library will manage a fixed number of books.
+
+Your program should first define a structure named `Book` using `typedef` to represent a single book. This structure should contain fields for an integer `id`, a character array for `title`, another character array for `author`, and an integer `is_available` (0 for available, 1 for borrowed).
+
+In the `main` function, initialize a small, fixed-size array of `Book` objects with some sample data. Then, implement logic to perform two operations: first, display a list of all books that are currently available. Second, simulate the borrowing of a book: take a book ID as input, find the corresponding book, and if it's available, change its status to 'borrowed'. If the book is not found or already borrowed, display an appropriate message.
+
+TR
+
+C dilinde basit bir kütüphane yönetim sistemi oluşturmanız isteniyor. Sistem, kitapların benzersiz kimlik numaralarını, başlıklarını, yazarlarını ve mevcut durumlarını takip etmelidir. Basitlik adına, kütüphane sabit sayıda kitabı yönetecek.
+
+Programınız öncelikle tek bir kitabı temsil etmek için `Book` adında bir yapı (struct) tanımlamalı ve `typedef` kullanmalıdır. Bu yapı, bir tam sayı `id`, kitap başlığı için bir karakter dizisi `title`, yazar için başka bir karakter dizisi `author` ve bir tam sayı `is_available` (0 müsait, 1 ödünç alınmış) alanlarını içermelidir.
+
+`main` fonksiyonunda, örnek verilerle doldurulmuş, sabit boyutlu bir `Book` nesneleri dizisi başlatın. Ardından, iki işlem gerçekleştiren bir mantık uygulayın: ilk olarak, şu anda müsait olan tüm kitapların bir listesini görüntüleyin. İkinci olarak, bir kitabın ödünç alınmasını simüle edin: girdi olarak bir kitap kimliği (ID) alın, ilgili kitabı bulun ve eğer müsaitse durumunu 'ödünç alınmış' olarak değiştirin. Kitap bulunamazsa veya zaten ödünç alınmışsa, uygun bir mesaj görüntüleyin.
