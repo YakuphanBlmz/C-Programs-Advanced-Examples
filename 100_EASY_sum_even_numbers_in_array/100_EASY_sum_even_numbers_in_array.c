@@ -1,14 +1,16 @@
 #include <stdio.h>
 int main() {
-    int arr[] = {10, 23, 4, 17, 8, 31, 2};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int sum_even = 0;
+    int arr[5];
+    int sum = 0;
     int i;
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
+    for (i = 0; i < 5; i++) {
         if (arr[i] % 2 == 0) {
-            sum_even += arr[i];
+            sum += arr[i];
         }
     }
-    printf("Sum of even numbers: %d\n", sum_even);
+    printf("%d\n", sum);
     return 0;
 }
