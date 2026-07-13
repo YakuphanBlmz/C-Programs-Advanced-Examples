@@ -1,7 +1,7 @@
 EN
 
-Write a C program that initializes an integer array with a set of predefined values. The program should then iterate through this array and count how many of its elements are even numbers. Finally, print the total count of even numbers found in the array.
+Write a C program that takes an integer array and its size as input. The program should iterate through the array, count how many even numbers are present, and then print this count to the console. Assume the array will only contain positive integers.
 
 TR
 
-Önceden tanımlanmış bir dizi değerleriyle bir C programı yazın. Program, bu dizi üzerinde dönerek kaç tane elemanın çift sayı olduğunu saymalıdır. Son olarak, dizide bulunan çift sayıların toplam sayısını ekrana yazdırın.
+Bir tam sayı dizisi ve boyutunu girdi olarak alan bir C programı yazın. Program, dizi üzerinde döngü yaparak kaç tane çift sayı olduğunu saymalı ve bu sayıyı konsola yazdırmalıdır. Dizinin sadece pozitif tam sayılar içereceği varsayılmıştır.
