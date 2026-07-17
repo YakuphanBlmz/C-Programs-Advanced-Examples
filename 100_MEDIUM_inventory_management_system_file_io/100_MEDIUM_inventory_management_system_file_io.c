@@ -1,59 +1,65 @@
 #include <stdio.h>
-#include <string.h>
-#define MAX_PRODUCTS 10
 typedef struct {
-    char productID[10];
-    char productName[50];
-    int quantity;
+    int id;
+    char name[30];
     float price;
+    int stock;
 } Product;
 int main() {
-    Product inventory[MAX_PRODUCTS];
-    int productCount = 0;
-    FILE *inputFile;
-    FILE *outputFile;
-    float totalInventoryValue = 0.0;
-    int highestQuantityIndex = -1;
-    inputFile = fopen("inventory.txt", "r");
-    if (inputFile == NULL) {
-        printf("Error: Could not open inventory.txt\n");
+    FILE *file;
+    Product inventory[3] = {
+        {101, "Laptop", 1200.00, 10},
+        {102, "Mouse", 25.50, 50},
+        {103, "Keyboard", 75.00, 30}
+    };
+    int numProducts = 3;
+    int i;
+    int targetProductId = 102;
+    int newStockValue = 40;
+    file = fopen("inventory.dat", "wb");
+    if (file == NULL) {
+        printf("Error opening file for writing.\n");
         return 1;
     }
-    while (productCount < MAX_PRODUCTS &&
-           fscanf(inputFile, "%s %s %d %f",
-                  inventory[productCount].productID,
-                  inventory[productCount].productName,
-                  &inventory[productCount].quantity,
-                  &inventory[productCount].price) == 4) {
-        productCount++;
+    fwrite(inventory, sizeof(Product), numProducts, file);
+    fclose(file);
+    printf("Initial inventory written to inventory.dat\n\n");
+    Product updatedInventory[3];
+    file = fopen("inventory.dat", "rb");
+    if (file == NULL) {
+        printf("Error opening file for reading.\n");
+        return 1;
     }
-    fclose(inputFile);
-    if (productCount > 0) {
-        highestQuantityIndex = 0;
-        for (int i = 0; i < productCount; i++) {
-            totalInventoryValue += (float)inventory[i].quantity * inventory[i].price;
-            if (inventory[i].quantity > inventory[highestQuantityIndex].quantity) {
-                highestQuantityIndex = i;
-            }
+    fread(updatedInventory, sizeof(Product), numProducts, file);
+    fclose(file);
+    for (i = 0; i < numProducts; i++) {
+        if (updatedInventory[i].id == targetProductId) {
+            updatedInventory[i].stock = newStockValue;
+            printf("Product ID %d stock updated to %d\n\n", targetProductId, newStockValue);
+            break;
         }
     }
-    outputFile = fopen("report.txt", "w");
-    if (outputFile == NULL) {
-        printf("Error: Could not open report.txt\n");
+    file = fopen("inventory.dat", "wb");
+    if (file == NULL) {
+        printf("Error opening file for writing updated data.\n");
         return 1;
     }
-    fprintf(outputFile, "Inventory Report\n");
-    fprintf(outputFile, "----------------\n");
-    fprintf(outputFile, "Total Inventory Value: %.2f\n", totalInventoryValue);
-    if (highestQuantityIndex != -1) {
-        fprintf(outputFile, "\nProduct with Highest Quantity:\n");
-        fprintf(outputFile, "ID: %s\n", inventory[highestQuantityIndex].productID);
-        fprintf(outputFile, "Name: %s\n", inventory[highestQuantityIndex].productName);
-        fprintf(outputFile, "Quantity: %d\n", inventory[highestQuantityIndex].quantity);
-        fprintf(outputFile, "Price: %.2f\n", inventory[highestQuantityIndex].price);
-    } else {
-        fprintf(outputFile, "\nNo products found in inventory.\n");
+    fwrite(updatedInventory, sizeof(Product), numProducts, file);
+    fclose(file);
+    printf("Updated inventory written back to inventory.dat\n\n");
+    printf("Final Inventory Details:\n");
+    Product finalInventory[3];
+    file = fopen("inventory.dat", "rb");
+    if (file == NULL) {
+        printf("Error opening file for final reading.\n");
+        return 1;
     }
-    fclose(outputFile);
+    fread(finalInventory, sizeof(Product), numProducts, file);
+    fclose(file);
+    for (i = 0; i < numProducts; i++) {
+        printf("ID: %d, Name: %s, Price: %.2f, Stock: %d\n",
+               finalInventory[i].id, finalInventory[i].name, finalInventory[i].price, finalInventory[i].stock);
+    }
+    printf("\n");
     return 0;
 }
