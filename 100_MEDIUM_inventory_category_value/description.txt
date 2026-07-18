@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a basic inventory management system for a small shop. The system needs to store information about various products and calculate the total value of products belonging to a specific category.
+
+Define a `struct` called `Product` that will hold the following details for each item: an integer `id`, a character array `name` (to store up to 50 characters, including the null terminator), an integer `category_id`, and a floating-point number `price`. Use `typedef` to create an alias `Product` for this struct.
+
+Your program should create a fixed-size array of `Product` objects, pre-populate it with at least 5 sample products, each with different categories and prices. Then, it should prompt the user to enter a `category_id`. After receiving the input, the program must iterate through the product list, identify all products that match the entered `category_id`, and sum their prices. Finally, print the total calculated value for that category to two decimal places.
+
+TR
+
+Küçük bir dükkan için temel bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, çeşitli ürünler hakkında bilgi depolamalı ve belirli bir kategoriye ait ürünlerin toplam değerini hesaplayabilmelidir.
+
+Her ürün için şu detayları içerecek bir `Product` adında `struct` tanımlayın: bir tam sayı `id`, bir karakter dizisi `name` (null sonlandırıcı dahil en fazla 50 karakter depolamak için), bir tam sayı `category_id` ve bir ondalık sayı `price`. Bu struct için `Product` adında bir `typedef` kullanarak bir takma ad oluşturun.
+
+Programınız, `Product` nesnelerinden oluşan sabit boyutlu bir dizi oluşturmalı ve bu diziyi en az 5 örnek ürünle, her biri farklı kategoriler ve fiyatlarla önceden doldurmalıdır. Ardından, kullanıcıdan bir `category_id` girmesini istemelidir. Girdiyi aldıktan sonra, program ürün listesi üzerinde yinelemeli, girilen `category_id` ile eşleşen tüm ürünleri belirlemeli ve fiyatlarını toplamalıdır. Son olarak, bu kategori için hesaplanan toplam değeri iki ondalık basamak hassasiyetle yazdırmalıdır.
