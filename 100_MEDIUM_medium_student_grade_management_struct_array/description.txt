@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student grade management system. The system should be able to store information for a fixed number of students. Each student record must include an ID, a name, and a grade.
+
+Your program should define a structure to represent a student, utilizing `typedef` for convenience. You will then create a fixed-size array of these student structures. The system needs to perform two primary operations: first, calculate and display the average grade of all students in the system; second, identify and print the details of the student who achieved the highest grade.
+
+Ensure that your solution does not use any pointers or dynamic memory allocation (like `malloc` or `free`). All student data should be stored directly within an array of structures, and string operations should use standard library functions like `strcpy` for fixed-size character arrays.
+
+TR
+
+Basit bir öğrenci not yönetim sistemi geliştirmeniz istenmektedir. Bu sistem, sabit sayıda öğrenci için bilgi depolayabilmelidir. Her öğrenci kaydı bir kimlik numarası, bir isim ve bir not içermelidir.
+
+Programınız, bir öğrenciyi temsil etmek üzere `typedef` kullanarak uygun bir yapı (struct) tanımlamalıdır. Daha sonra, bu öğrenci yapılarından oluşan sabit boyutlu bir dizi oluşturacaksınız. Sistem iki ana işlem gerçekleştirmelidir: İlk olarak, sistemdeki tüm öğrencilerin ortalama notunu hesaplayıp göstermeli; ikinci olarak, en yüksek notu alan öğrencinin bilgilerini bulup ekrana yazdırmalıdır.
+
+Çözümünüzde kesinlikle işaretçi (pointer) veya dinamik bellek tahsisi (`malloc` veya `free` gibi) kullanılmamalıdır. Tüm öğrenci verileri, doğrudan bir yapılar dizisi içinde saklanmalı ve karakter dizisi işlemleri için `strcpy` gibi standart kütüphane fonksiyonları sabit boyutlu karakter dizileri üzerinde kullanılmalıdır.
