@@ -1,115 +1,53 @@
 #include <stdio.h>
 #include <string.h>
 #define MAX_PRODUCTS 10
-#define FILENAME "inventory.bin"
+#define FILENAME_IN "products.txt"
+#define FILENAME_OUT "outofstock.txt"
 typedef struct {
-    int id;
-    char name[50];
-    float price;
+    int productId;
+    char productName[50];
     int quantity;
+    float price;
 } Product;
-Product inventory[MAX_PRODUCTS];
-int currentProductCount = 0;
-void clearInputBuffer() {
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF);
-}
-void addProduct() {
-    if (currentProductCount >= MAX_PRODUCTS) {
-        printf("Envanter dolu, daha fazla urun eklenemez.\n");
-        return;
-    }
-    printf("Yeni urun bilgileri giriniz:\n");
-    printf("ID: ");
-    scanf("%d", &inventory[currentProductCount].id);
-    clearInputBuffer();
-    printf("Ad: ");
-    fgets(inventory[currentProductCount].name, sizeof(inventory[currentProductCount].name), stdin);
-    inventory[currentProductCount].name[strcspn(inventory[currentProductCount].name, "\n")] = 0;
-    printf("Fiyat: ");
-    scanf("%f", &inventory[currentProductCount].price);
-    printf("Miktar: ");
-    scanf("%d", &inventory[currentProductCount].quantity);
-    clearInputBuffer();
-    currentProductCount++;
-    printf("Urun basariyla eklendi.\n");
-}
-void listProducts() {
-    if (currentProductCount == 0) {
-        printf("Envanterde urun bulunmamaktadir.\n");
-        return;
-    }
-    printf("\n--- Mevcut Envanter ---\n");
-    for (int i = 0; i < currentProductCount; i++) {
-        printf("ID: %d, Ad: %s, Fiyat: %.2f, Miktar: %d\n",
-               inventory[i].id,
-               inventory[i].name,
-               inventory[i].price,
-               inventory[i].quantity);
-    }
-    printf("------------------------\n");
-}
-void saveInventory() {
-    FILE *file = fopen(FILENAME, "wb");
-    if (file == NULL) {
-        printf("Dosya yazilamadi: %s\n", FILENAME);
-        return;
-    }
-    fwrite(&currentProductCount, sizeof(int), 1, file);
-    fwrite(inventory, sizeof(Product), currentProductCount, file);
-    fclose(file);
-    printf("Envanter basariyla dosyaya kaydedildi: %s\n", FILENAME);
-}
-void loadInventory() {
-    FILE *file = fopen(FILENAME, "rb");
-    if (file == NULL) {
-        printf("Dosya okunamadi veya bulunamadi: %s\n", FILENAME);
-        currentProductCount = 0;
-        return;
-    }
-    int readCount;
-    fread(&readCount, sizeof(int), 1, file);
-    if (readCount > MAX_PRODUCTS) {
-        printf("Yuklenmek istenen urun sayisi maksimum kapasiteyi (%d) asiyor. Yukleme iptal edildi.\n", MAX_PRODUCTS);
-        fclose(file);
-        return;
-    }
-    fread(inventory, sizeof(Product), readCount, file);
-    currentProductCount = readCount;
-    fclose(file);
-    printf("Envanter basariyla dosyadan yuklendi: %s\n", FILENAME);
-}
 int main() {
-    int choice;
-    do {
-        printf("\n--- Envanter Yonetim Sistemi ---\n");
-        printf("1. Urun Ekle\n");
-        printf("2. Urunleri Listele\n");
-        printf("3. Envanteri Kaydet\n");
-        printf("4. Envanteri Yukle\n");
-        printf("5. Cikis\n");
-        printf("Seciminizi yapin: ");
-        scanf("%d", &choice);
-        clearInputBuffer();
-        switch (choice) {
-            case 1:
-                addProduct();
-                break;
-            case 2:
-                listProducts();
-                break;
-            case 3:
-                saveInventory();
-                break;
-            case 4:
-                loadInventory();
-                break;
-            case 5:
-                printf("Cikis yapiliyor...\n");
-                break;
-            default:
-                printf("Gecersiz secim, lutfen tekrar deneyin.\n");
+    FILE *inputFile;
+    FILE *outputFile;
+    Product inventory[MAX_PRODUCTS];
+    int productCount = 0;
+    float totalInventoryValue = 0.0;
+    int i;
+    inputFile = fopen(FILENAME_IN, "r");
+    if (inputFile == NULL) {
+        printf("Hata: Giriş dosyası %s açılamadı.\n", FILENAME_IN);
+        return 1;
+    }
+    while (productCount < MAX_PRODUCTS &&
+           fscanf(inputFile, "%d,%49[^,],%d,%f\n",
+                  &inventory[productCount].productId,
+                  inventory[productCount].productName,
+                  &inventory[productCount].quantity,
+                  &inventory[productCount].price) == 4) {
+        productCount++;
+    }
+    fclose(inputFile);
+    for (i = 0; i < productCount; i++) {
+        totalInventoryValue += (float)inventory[i].quantity * inventory[i].price;
+    }
+    outputFile = fopen(FILENAME_OUT, "w");
+    if (outputFile == NULL) {
+        printf("Hata: Çıkış dosyası %s açılamadı.\n", FILENAME_OUT);
+        return 1;
+    }
+    fprintf(outputFile, "Stok Dışı Ürünler Raporu:\n");
+    fprintf(outputFile, "-----------------------------\n");
+    for (i = 0; i < productCount; i++) {
+        if (inventory[i].quantity == 0) {
+            fprintf(outputFile, "%s (ID: %d) stokta yok.\n",
+                    inventory[i].productName, inventory[i].productId);
         }
-    } while (choice != 5);
+    }
+    fclose(outputFile);
+    printf("Toplam Envanter Değeri: %.2f\n", totalInventoryValue);
+    printf("Stok dışı ürünler raporu %s dosyasına oluşturuldu.\n", FILENAME_OUT);
     return 0;
 }

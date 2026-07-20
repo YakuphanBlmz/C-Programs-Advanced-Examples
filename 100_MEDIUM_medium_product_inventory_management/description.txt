@@ -1,15 +1,11 @@
 EN
 
-You are tasked with developing a basic inventory management system for a small shop. This system should be capable of storing product information, displaying the current inventory, and persistently saving the data to a file.
+You are tasked with developing a simple inventory management system for a small store. The store maintains its product data in a text file where each line represents a product with its ID, name, quantity, and price, separated by commas. Your program should read this product data, calculate the total monetary value of all items currently in stock, and identify products that are completely out of stock.
 
-You will define a `Product` structure using `typedef` to represent each item. This structure must include fields for a unique product ID (integer), the product's name (a character array), its price (floating-point number), and the quantity in stock (integer). The system will manage a fixed, maximum number of products in memory, avoiding dynamic memory allocation.
-
-Your program should present a menu-driven interface, offering options to add a new product, list all existing products, save the current inventory to a binary file, and load inventory data from a binary file. This exercise is designed to test your understanding and application of C `struct`s, `typedef`, and fundamental binary file input/output operations.
+The program must define a structure to hold product information, using `typedef` for convenience. It will then read up to a maximum number of products from the input file named `products.txt`, process them, and print the total inventory value to the console. Additionally, it must generate a separate report file named `outofstock.txt` listing all products whose quantity is zero. Ensure robust file handling by checking if files can be opened successfully.
 
 TR
 
-Küçük bir dükkan için basit bir envanter yönetim sistemi geliştirmeniz istenmektedir. Bu sistem, ürün bilgilerini saklayabilmeli, mevcut envanteri görüntüleyebilmeli ve verileri kalıcı olarak bir dosyaya kaydedebilmelidir.
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz istenmektedir. Mağaza, ürün verilerini her satırın bir ürünü, kimliğini, adını, miktarını ve fiyatını virgülle ayrılmış şekilde temsil ettiği bir metin dosyasında tutmaktadır. Programınızın bu ürün verilerini okuması, stoktaki tüm öğelerin toplam parasal değerini hesaplaması ve tamamen stokta kalmayan ürünleri belirlemesi gerekmektedir.
 
-Her bir öğeyi temsil etmek üzere, `typedef` kullanarak bir `Product` yapısı tanımlayacaksınız. Bu yapı, benzersiz bir ürün ID'si (tam sayı), ürünün adı (karakter dizisi), fiyatı (ondalıklı sayı) ve stoktaki miktarı (tam sayı) için alanlar içermelidir. Sistem, dinamik bellek tahsisinden kaçınarak, bellekte sabit ve maksimum sayıda ürünü yönetecektir.
-
-Programınız, yeni bir ürün ekleme, mevcut tüm ürünleri listeleme, mevcut envanteri ikili bir dosyaya kaydetme ve ikili bir dosyadan envanter verilerini yükleme seçenekleri sunan menü tabanlı bir arayüz sunmalıdır. Bu alıştırma, C dilindeki `struct` yapılarını, `typedef` kullanımını ve temel ikili dosya giriş/çıkış işlemlerini anlama ve uygulama becerilerinizi test etmek üzere tasarlanmıştır.
+Program, ürün bilgilerini tutmak için bir yapı tanımlamalı ve kolaylık sağlamak için `typedef` kullanmalıdır. Daha sonra, `products.txt` adlı giriş dosyasından belirli bir maksimum sayıya kadar ürünü okuyacak, bunları işleyecek ve toplam envanter değerini konsola yazdıracaktır. Ek olarak, miktarı sıfır olan tüm ürünleri listeleyen `outofstock.txt` adlı ayrı bir rapor dosyası oluşturmalıdır. Dosyaların başarılı bir şekilde açılıp açılmadığını kontrol ederek sağlam dosya işlemeyi sağlayın.
