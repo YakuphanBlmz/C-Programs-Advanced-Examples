@@ -1,0 +1,15 @@
+EN
+
+This problem requires you to develop a simple book management system using C. The system should allow users to add new book records and list all existing books. Each book record must be defined using a `struct` named `Book`, which includes an integer `id`, a character array for `title`, and another character array for `author`.
+
+All book data must be persistently stored in a binary file named `library.dat`. When adding a new book, the program should read all existing books from the file, append the new book to the collection (if space is available in a pre-defined maximum capacity), and then write the entire updated collection back to the file. When listing books, the program should read all records from `library.dat` and display them to the console.
+
+You are strictly forbidden from using pointers or dynamic memory allocation (e.g., `malloc`, `free`) throughout your solution. `struct`s should be passed by value or stored in fixed-size arrays. The problem emphasizes the use of `struct`s, `typedef`, and binary file I/O operations (`fopen`, `fwrite`, `fread`, `fclose`) for managing structured data persistently.
+
+TR
+
+Bu problemde C kullanarak basit bir kitap yönetim sistemi geliştirmeniz istenmektedir. Sistem, kullanıcıların yeni kitap kayıtları eklemesine ve mevcut tüm kitapları listelemesine olanak tanımalıdır. Her kitap kaydı, `id` için bir tamsayı, `title` için bir karakter dizisi ve `author` için başka bir karakter dizisi içeren `Book` adında bir `struct` kullanılarak tanımlanmalıdır.
+
+Tüm kitap verileri, `library.dat` adlı ikili bir dosyada kalıcı olarak saklanmalıdır. Yeni bir kitap eklerken, program dosyadan mevcut tüm kitapları okumalı, yeni kitabı koleksiyona eklemeli (önceden tanımlanmış maksimum kapasite içinde yer varsa) ve ardından güncellenmiş koleksiyonun tamamını dosyaya geri yazmalıdır. Kitapları listelerken ise program `library.dat` dosyasından tüm kayıtları okumalı ve bunları konsola yazdırmalıdır.
+
+Çözümünüzde işaretçiler veya dinamik bellek ayırma (`malloc`, `free` gibi) kullanmanız kesinlikle yasaktır. `struct`'lar değer olarak geçirilmeli veya sabit boyutlu dizilerde saklanmalıdır. Problem, yapılandırılmış verilerin kalıcı olarak yönetilmesi için `struct`'ların, `typedef`'in ve ikili dosya G/Ç işlemlerinin (`fopen`, `fwrite`, `fread`, `fclose`) kullanımını vurgulamaktadır.
