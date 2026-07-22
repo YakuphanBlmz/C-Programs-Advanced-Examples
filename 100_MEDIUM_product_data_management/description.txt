@@ -1,0 +1,15 @@
+EN
+
+In a small inventory system, managing product data efficiently is crucial. Each product has a unique ID, a name, a price, and a quantity in stock. Your task is to develop a C program that can handle basic product data storage and retrieval using structured data and file operations.
+
+The program should first prompt the user to enter details for a specified number of products (up to 5). After collecting this input, all product records must be written sequentially to a binary file named "products.dat". This ensures that the data persists even after the program terminates. Following the writing operation, the program must then read all the product data back from "products.dat".
+
+Finally, after successfully reading all product entries from the file and displaying them, the program should identify and print the details of the single product that has the highest price among all entries. You must use `struct` and `typedef` to define the product structure and utilize standard C binary file I/O functions for storing and retrieving the data.
+
+TR
+
+Küçük bir envanter sisteminde, ürün verilerini verimli bir şekilde yönetmek kritik öneme sahiptir. Her ürünün benzersiz bir kimliği, adı, fiyatı ve stoktaki miktarı bulunur. Göreviniz, yapılandırılmış veri ve dosya işlemlerini kullanarak temel ürün veri depolama ve alma işlemlerini yapabilen bir C programı geliştirmektir.
+
+Program önce kullanıcıdan belirtilen sayıda (en fazla 5) ürün için ayrıntıları girmesini istemelidir. Bu giriş toplandıktan sonra, tüm ürün kayıtları "products.dat" adlı ikili bir dosyaya sırayla yazılmalıdır. Bu, program sonlandıktan sonra bile verilerin kalıcı olmasını sağlar. Yazma işleminden sonra, program tüm ürün verilerini "products.dat" dosyasından geri okumalıdır.
+
+Son olarak, dosyadan tüm ürün girdilerini başarıyla okuduktan ve görüntüledikten sonra, program tüm girdiler arasında en yüksek fiyata sahip tek ürünün ayrıntılarını bulmalı ve yazdırmalıdır. Ürün yapısını tanımlamak için `struct` ve `typedef` kullanmanız ve verileri depolamak ve almak için standart C ikili dosya G/Ç işlevlerini kullanmanız gerekmektedir.
