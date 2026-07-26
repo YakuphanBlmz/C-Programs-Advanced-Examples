@@ -1,0 +1,15 @@
+EN
+
+In many applications, managing data records efficiently is crucial. This problem focuses on handling product information using C structs and file I/O operations without relying on dynamic memory allocation. You will define a `Product` struct to store details like product ID, name (as a fixed-size character array), and price.
+
+Your task is to implement a program that first initializes a small collection of products. These products should then be written to a binary file named `products.dat`. After successfully writing the initial data, the program must read all product records back from `products.dat` into a separate array.
+
+Finally, you need to simulate an update operation: find a specific product by its ID within the read data and modify its price. The complete, updated list of products should then be written to a *new* binary file called `updated_products.dat`. This exercise will help you understand how to persist and retrieve structured data using C's file handling capabilities.
+
+TR
+
+Birçok uygulamada, veri kayıtlarını verimli bir şekilde yönetmek çok önemlidir. Bu problem, C yapıları (struct) ve dosya G/Ç (Input/Output) işlemleri kullanarak ürün bilgilerini dinamik bellek tahsisine ihtiyaç duymadan işlemeye odaklanmaktadır. Ürün kimliği, adı (sabit boyutlu bir karakter dizisi olarak) ve fiyatı gibi detayları depolamak için bir `Product` yapısı tanımlayacaksınız.
+
+Göreviniz, öncelikle küçük bir ürün koleksiyonunu başlatan bir program uygulamaktır. Bu ürünler daha sonra `products.dat` adlı ikili bir dosyaya yazılmalıdır. Başlangıç verilerini başarıyla yazdıktan sonra, program tüm ürün kayıtlarını `products.dat` dosyasından ayrı bir diziye geri okumalıdır.
+
+Son olarak, bir güncelleme işlemini simüle etmeniz gerekmektedir: okunan veriler içinde belirli bir ürünü kimliğine göre bulun ve fiyatını değiştirin. Ürünlerin tamamlanmış, güncellenmiş listesi daha sonra `updated_products.dat` adlı *yeni* bir ikili dosyaya yazılmalıdır. Bu alıştırma, C'nin dosya işleme yeteneklerini kullanarak yapılandırılmış verileri kalıcı hale getirmeyi ve almayı anlamanıza yardımcı olacaktır.
