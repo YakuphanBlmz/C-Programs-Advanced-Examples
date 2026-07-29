@@ -1,0 +1,15 @@
+EN
+
+In many educational settings, managing student records and calculating their performance is a fundamental task. This problem requires you to implement a simple system for handling student data within a C program.
+
+You need to define a `struct` named `Student` that will represent a single student. This struct should contain fields for the student's ID (an integer), their name (a fixed-size character array), and an array to store three integer grades for different subjects. Use `typedef` to create an alias for this struct, making the code cleaner.
+
+Your program should then populate an array of these `Student` structs with sample data for a small class (e.g., 3 students). After setting up the student records, implement functions to perform two main tasks: first, calculate the average grade for any given student; and second, iterate through the class roster to identify and display the student who has the highest overall average grade. The solution should strictly avoid the use of pointers and dynamic memory allocation (malloc/free).
+
+TR
+
+Birçok eğitim ortamında öğrenci kayıtlarını yönetmek ve performanslarını hesaplamak temel bir görevdir. Bu problem, bir C programı içinde öğrenci verilerini işlemek için basit bir sistem uygulamanızı gerektirmektedir.
+
+Tek bir öğrenciyi temsil edecek `Student` adında bir `struct` tanımlamanız gerekmektedir. Bu struct, öğrencinin ID'si (bir tam sayı), adı (sabit boyutlu bir karakter dizisi) ve üç farklı ders için üç adet tam sayı notunu saklayacak bir dizi içermelidir. Kodunuzu daha okunaklı hale getirmek için bu struct için `typedef` kullanarak bir takma ad oluşturun.
+
+Programınız, küçük bir sınıf (örneğin 3 öğrenci) için örnek verilerle bu `Student` struct'larından oluşan bir diziyi doldurmalıdır. Öğrenci kayıtlarını ayarladıktan sonra, iki ana görevi yerine getirmek için fonksiyonlar uygulayın: birincisi, belirli bir öğrencinin ortalama notunu hesaplamak; ikincisi, sınıf listesi içinde en yüksek genel not ortalamasına sahip öğrenciyi belirlemek ve göstermek. Çözüm, işaretçilerin ve dinamik bellek tahsisinin (malloc/free) kullanımından kesinlikle kaçınmalıdır.
