@@ -1,0 +1,15 @@
+EN
+
+You are tasked with creating a simple inventory management program for a small shop. The program needs to manage product information, which includes a unique product ID (integer), a product name (string), and its price (floating-point number). To achieve this, you will define a structure using `typedef` to hold these details.
+
+The program should first allow the user to input data for a fixed number of products (e.g., 3 products). After collecting this input, the program must write all the product records into a binary file named `products.dat`. This step ensures that the product information is persistently stored even after the program terminates.
+
+Finally, the program should read all the product records back from the `products.dat` binary file and display them on the console. This exercise will help you practice using `struct`, `typedef`, and essential file I/O operations like `fopen`, `fwrite`, `fread`, and `fclose` without relying on dynamic memory allocation or complex pointer manipulations.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim programı oluşturmanız isteniyor. Programın, benzersiz bir ürün kimliği (tam sayı), bir ürün adı (karakter dizisi) ve fiyatını (ondalıklı sayı) içeren ürün bilgilerini yönetmesi gerekmektedir. Bu görevi yerine getirmek için, bu detayları tutacak `typedef` ile bir yapı (struct) tanımlayacaksınız.
+
+Program ilk olarak kullanıcının belirli sayıda ürün (örneğin 3 ürün) için veri girmesine izin vermelidir. Bu girişler toplandıktan sonra, program tüm ürün kayıtlarını `products.dat` adlı ikili bir dosyaya yazmalıdır. Bu adım, program sonlandırıldıktan sonra bile ürün bilgilerinin kalıcı olarak saklanmasını sağlayacaktır.
+
+Son olarak, program `products.dat` ikili dosyasından tüm ürün kayıtlarını geri okumalı ve bunları konsola yazdırmalıdır. Bu alıştırma, yapıları (struct), `typedef`'i ve `fopen`, `fwrite`, `fread`, `fclose` gibi temel dosya G/Ç işlemlerini dinamik bellek ayırma veya karmaşık işaretçi manipülasyonlarına dayanmadan kullanma pratiği yapmanıza yardımcı olacaktır.
