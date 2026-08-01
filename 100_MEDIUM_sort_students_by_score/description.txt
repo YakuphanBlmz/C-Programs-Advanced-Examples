@@ -1,0 +1,15 @@
+EN
+
+In this problem, you are tasked with managing student records using C structures. Each student has a unique ID, a name, and a score. Your goal is to sort a predefined list of students based on specific criteria without using any dynamic memory allocation or explicit pointers.
+
+You need to define a `struct` called `Student` that contains an integer `studentId`, a character array for `name` (e.g., 50 characters long), and an integer `score`. Use `typedef` to create an alias for this structure for convenience. Your program should initialize an fixed-size array of `Student` structures with some sample data.
+
+The primary task is to sort this array of students. The sorting criteria are as follows: students should be sorted in **descending order** based on their `score`. If two students have the same score, they should then be sorted in **ascending order** based on their `studentId`. After sorting, print the details of all students to the console. Ensure your solution uses only fixed-size arrays and direct structure assignments for swapping, adhering strictly to the constraint of no pointer usage (beyond implicit array handling) and no dynamic memory allocation.
+
+TR
+
+Bu problemde, C yapılarını (struct) kullanarak öğrenci kayıtlarını yönetmeniz istenmektedir. Her öğrencinin benzersiz bir kimliği, adı ve puanı bulunmaktadır. Amacınız, önceden tanımlanmış bir öğrenci listesini belirli kriterlere göre, dinamik bellek tahsisi veya açık işaretçi (pointer) kullanımı olmaksızın sıralamaktır.
+
+Bir `Student` adında `struct` tanımlamanız gerekmektedir. Bu yapı, bir `studentId` (tam sayı), bir `name` (örneğin 50 karakterlik bir karakter dizisi) ve bir `score` (tam sayı) içermelidir. Bu yapı için kolaylık sağlamak amacıyla `typedef` kullanın. Programınız, bazı örnek verilerle `Student` yapılarından oluşan sabit boyutlu bir diziyi başlatmalıdır.
+
+Ana görev, bu öğrenci dizisini sıralamaktır. Sıralama kriterleri şunlardır: öğrenciler öncelikle `score`'larına göre **azalan sırada** sıralanmalıdır. Eğer iki öğrencinin puanı aynıysa, bu durumda `studentId`'lerine göre **artan sırada** sıralanmalıdırlar. Sıralama işleminden sonra, tüm öğrencilerin detaylarını konsola yazdırın. Çözümünüzün yalnızca sabit boyutlu diziler ve doğrudan yapı atamalarını (struct assignment) kullanarak takas yapmayı içermesine, işaretçi kullanımının (örtük dizi işlemleri dışında) ve dinamik bellek tahsisinin kesinlikle olmamasına dikkat edin.
