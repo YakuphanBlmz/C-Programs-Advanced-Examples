@@ -1,0 +1,15 @@
+EN
+
+This problem focuses on managing product information using C structs and arrays. You are tasked with developing a small inventory system for a store. Each product in the inventory should have a unique identifier, a name, and a price.
+
+Your program must define a `Product` structure using `typedef` to encapsulate these details. You will then create a fixed-size array of `Product` structures to hold a small number of inventory items. The main goal is to populate this array with some sample product data, display all the products in a formatted manner, and finally identify and display the product with the highest price.
+
+The challenge lies in effectively using structs within an array and implementing a search algorithm to find the most expensive item, all while adhering to strict constraints: no dynamic memory allocation (`malloc`, `free`) and no explicit use of pointer variables (other than what naturally occurs when passing arrays to functions, which should be handled through standard array indexing `products[i]`). Functions should be used to modularize the tasks of printing and finding the most expensive product, potentially returning a `Product` struct by value.
+
+TR
+
+Bu problem, C dilinde `struct` yapıları ve diziler kullanarak ürün bilgilerini yönetmeye odaklanmaktadır. Bir mağaza için küçük bir envanter sistemi geliştirmeniz istenmektedir. Envanterdeki her ürünün benzersiz bir kimliği, bir adı ve bir fiyatı olmalıdır.
+
+Programınız, bu detayları kapsayacak şekilde `typedef` kullanarak bir `Product` yapısı tanımlamalıdır. Daha sonra, belirli sayıda envanter öğesini tutmak için sabit boyutlu bir `Product` yapıları dizisi oluşturacaksınız. Temel amaç, bu diziyi bazı örnek ürün verileriyle doldurmak, tüm ürünleri biçimlendirilmiş bir şekilde görüntülemek ve son olarak en yüksek fiyatlı ürünü bulup görüntülemektir.
+
+Zorluk, bir dizi içindeki `struct` yapılarını etkili bir şekilde kullanmak ve en pahalı ürünü bulmak için bir arama algoritması uygulamakla birlikte, katı kısıtlamalara uymaktır: dinamik bellek tahsisi (`malloc`, `free`) ve açıkça işaretçi değişkenleri (`products[i]` gibi standart dizi indeksleme dışında) kullanmak yasaktır. Yazdırma ve en pahalı ürünü bulma görevlerini modüler hale getirmek için fonksiyonlar kullanılmalı ve bu fonksiyonlar, gerekirse bir `Product` yapısını değer olarak döndürebilmelidir.
