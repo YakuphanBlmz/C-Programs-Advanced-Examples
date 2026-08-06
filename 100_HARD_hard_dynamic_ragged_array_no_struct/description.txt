@@ -1,0 +1,31 @@
+EN
+
+In a highly constrained embedded system environment, you are tasked with implementing a flexible data storage mechanism. The critical restriction is the absolute prohibition of user-defined `struct` types and `typedef` aliasing due to specific legacy compiler limitations or strict coding standards. Despite this, you need to manage a collection of dynamic, variable-length integer sequences (which we'll refer to as "lines"). Each line itself is a dynamic array of integers, and the collection holding these lines must also be dynamic, allowing for expansion and contraction.
+
+Your primary data structure will be an `int**`, representing the "Dynamic Array of Lines" (DAL). Each element of this `int**` will point to an `int*` (a single "line"), which is itself a dynamically allocated array of integers. Since `struct` is forbidden, you cannot bundle the total number of lines (`num_lines`) or the individual lengths of each line (`line_lengths`) directly with the `int**` pointer. Instead, `num_lines` must be managed via an `int` variable (e.g., in `main`), and the `line_lengths` must be managed as a separate `int*` array (a dynamic array of integers where each integer stores the length of the corresponding line). This means operations will require careful tracking and updates of these separate but interconnected pieces of data.
+
+You are required to implement the core logic within `main` to demonstrate the management of this DAL. Specifically, your solution should:
+1.  **Initialize the DAL:** Set up an empty DAL, meaning `int**` is `NULL` and `num_lines` is 0. Also initialize the `line_lengths` array to `NULL`.
+2.  **Add Lines:** Dynamically allocate new integer arrays (lines) of specified initial lengths and append them to the DAL. This involves using `realloc` for both the `int**` (to expand the collection) and `realloc` for the `line_lengths` array. For each new line, `malloc` is used.
+3.  **Modify Line Content:** Populate or modify specific elements within any of the dynamically allocated lines.
+4.  **Resize Existing Lines:** Change the length of an existing line at a given index. This requires `realloc` on the specific `int*` (the line itself) and updating its corresponding length in the `line_lengths` array.
+5.  **Remove Lines:** Delete an existing line at a specified index. This involves `free`ing the line, then using `realloc` on both the `int**` (to shrink the collection) and `realloc` on the `line_lengths` array. Crucially, all subsequent lines (and their lengths) must be shifted to fill the gap.
+6.  **Cleanup:** Ensure all dynamically allocated memory (the `int**` for the DAL, all `int*` for individual lines, and the `int*` for `line_lengths`) is properly freed to prevent memory leaks.
+
+The primary challenge lies in the meticulous management of multiple levels of indirection, pointer arithmetic, and `realloc` operations, ensuring consistency between the DAL pointer, the line count, and the array of line lengths, all while strictly adhering to the "no structs/typedefs" rule.
+
+TR
+
+Yüksek derecede kısıtlı bir gömülü sistem ortamında, esnek bir veri depolama mekanizması uygulamanız isteniyor. En kritik kısıtlama, belirli eski derleyici sınırlamaları veya katı kodlama standartları nedeniyle kullanıcı tanımlı `struct` türlerinin ve `typedef` takma adlarının kesinlikle yasaklanmasıdır. Buna rağmen, dinamik, değişken uzunlukta tam sayı dizileri (bunlara "satırlar" diyeceğiz) koleksiyonunu yönetmeniz gerekiyor. Her satırın kendisi dinamik bir tam sayı dizisidir ve bu satırları tutan koleksiyonun da dinamik olması, genişlemesine ve daralmasına izin vermesi gerekir.
+
+Ana veri yapınız, "Satırların Dinamik Dizisi" (DAL) olarak adlandıracağımız bir `int**` olacaktır. Bu `int**` dizisinin her öğesi, bir `int*`'i (tek bir "satır") gösterecektir ve bu `int*`'in kendisi dinamik olarak tahsis edilmiş bir tam sayı dizisidir. `struct` yasak olduğu için, toplam satır sayısını (`num_lines`) veya her bir satırın ayrı ayrı uzunluklarını (`line_lengths`) doğrudan `int**` işaretçisiyle birlikte paketleyemezsiniz. Bunun yerine, `num_lines` bir `int` değişkeni (örneğin, `main` içinde) aracılığıyla yönetilmeli ve `line_lengths` ayrı bir `int*` dizisi (her tam sayının karşılık gelen satırın uzunluğunu sakladığı dinamik bir tam sayı dizisi) olarak yönetilmelidir. Bu, işlemlerin bu ayrı ama birbiriyle bağlantılı veri parçalarının dikkatli bir şekilde izlenmesini ve güncellenmesini gerektireceği anlamına gelir.
+
+Bu DAL'ın yönetimini göstermek için ana (`main`) fonksiyon içinde temel mantığı uygulamanız gerekmektedir. Özellikle, çözümünüz şunları yapmalıdır:
+1.  **DAL'ı Başlatma:** Boş bir DAL kurun; yani `int**` `NULL` olmalı ve `num_lines` 0 olmalı. Ayrıca `line_lengths` dizisini de `NULL` olarak başlatın.
+2.  **Satır Ekleme:** Belirtilen başlangıç uzunluklarında yeni tam sayı dizilerini (satırları) dinamik olarak tahsis edin ve bunları DAL'a ekleyin. Bu, hem `int**` için (koleksiyonu genişletmek için) `realloc` kullanımını hem de `line_lengths` dizisi için `realloc` kullanımını içerir. Her yeni satır için `malloc` kullanılır.
+3.  **Satır İçeriğini Değiştirme:** Dinamik olarak tahsis edilmiş herhangi bir satır içindeki belirli öğeleri doldurun veya değiştirin.
+4.  **Mevcut Satırları Yeniden Boyutlandırma:** Belirli bir dizindeki mevcut bir satırın uzunluğunu değiştirin. Bu, belirli `int*` üzerinde (`satırın kendisi`) `realloc` kullanımını ve `line_lengths` dizisindeki karşılık gelen uzunluğunun güncellenmesini gerektirir.
+5.  **Satırları Kaldırma:** Belirtilen bir dizindeki mevcut bir satırı silin. Bu, satırı `free` etmeyi, ardından hem `int**` üzerinde (koleksiyonu küçültmek için) `realloc` kullanmayı hem de `line_lengths` dizisi üzerinde `realloc` kullanmayı içerir. En önemlisi, sonraki tüm satırlar (ve uzunlukları) boşluğu doldurmak için kaydırılmalıdır.
+6.  **Belleği Temizleme:** Dinamik olarak tahsis edilmiş tüm belleğin (DAL için `int**`, tek tek satırlar için tüm `int*`'ler ve `line_lengths` için `int*`) bellek sızıntılarını önlemek için düzgün bir şekilde serbest bırakıldığından emin olun.
+
+Asıl zorluk, çoklu dolaylılık seviyelerinin, işaretçi aritmetiğinin ve `realloc` işlemlerinin titiz yönetiminde, DAL işaretçisi, satır sayısı ve satır uzunlukları dizisi arasındaki tutarlılığı sağlarken, "struct/typedef yok" kuralına sıkı sıkıya bağlı kalmaktır.
