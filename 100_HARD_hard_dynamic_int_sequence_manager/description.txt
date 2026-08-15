@@ -1,0 +1,31 @@
+EN
+
+In this challenge, you are tasked with building a robust, dynamic system to manage a collection of integer sequences using only low-level C features. The primary constraint is the strict prohibition of `struct`, `typedef`, and `file I/O`, forcing you to rely entirely on raw pointers, pointer-to-pointer constructs, and parallel dynamic arrays for managing data.
+
+The core of your task is to implement a mechanism that handles a main "collection" which itself is a dynamic array of pointers, where each pointer points to another dynamic array representing an integer sequence. Since `struct` is forbidden, you cannot bundle a sequence's data with its length. Instead, you must maintain a separate, parallel dynamic array to store the length of each corresponding sequence. Both the main collection (the array of `int*`) and the parallel lengths array (the array of `int`) must be dynamically resizable using `realloc` as sequences are added or removed, ensuring efficient memory usage.
+
+Your solution must implement the following key operations:
+1.  **`initialize_collection`**: Sets up the initial, empty dynamic collection along with its parallel lengths array, allocating an initial capacity.
+2.  **`add_sequence`**: Appends a new dynamically allocated integer sequence to the collection. If the current capacity of the main collection and lengths array is insufficient, both must be resized (e.g., doubled) using `realloc` before adding the new sequence.
+3.  **`extend_sequence`**: Given an index, extends an existing integer sequence by appending additional integers. This operation requires `realloc` for the specific sequence at that index to adjust its size.
+4.  **`remove_sequence`**: Given an index, removes a sequence from the collection. This involves freeing the memory of the individual sequence, then shifting all subsequent sequences and their corresponding lengths to fill the gap. Optionally, if the collection becomes significantly underutilized after removal (e.g., less than 1/4 of capacity), the main collection and lengths array can be shrunk using `realloc`.
+5.  **`print_collection`**: A utility function to display the current state of all sequences in the collection.
+6.  **`free_collection`**: Properly deallocates all memory associated with the collection, including individual sequences, the main collection array, and the lengths array, to prevent memory leaks.
+
+This problem heavily emphasizes pointer arithmetic, dereferencing multiple levels of pointers (`int***` for modifying the main `int**` from a function), and meticulous dynamic memory management. Pay close attention to freeing memory at all levels to avoid leaks and ensure robustness.
+
+TR
+
+Bu görevde, yalnızca düşük seviyeli C özelliklerini kullanarak tamsayı dizileri koleksiyonunu yöneten sağlam, dinamik bir sistem oluşturmanız istenmektedir. Temel kısıtlama, `struct`, `typedef` ve `dosya işlemleri`nin kesinlikle yasak olmasıdır. Bu durum, veri yönetimi için tamamen ham işaretçilere, işaretçinin işaretçisine yapılarına ve paralel dinamik dizilere güvenmenizi zorunlu kılmaktadır.
+
+Temel göreviniz, her biri bir tamsayı dizisini temsil eden dinamik işaretçi dizilerinden oluşan ana bir "koleksiyonu" yöneten bir mekanizma uygulamaktır. `struct` kullanımı yasaklandığı için, bir dizinin verilerini uzunluğuyla bir araya getiremezsiniz. Bunun yerine, her karşılık gelen dizinin uzunluğunu depolamak için ayrı, paralel bir dinamik dizi tutmalısınız. Koleksiyona diziler eklendikçe veya kaldırıldıkça hem ana koleksiyon (`int*` işaretçiler dizisi) hem de paralel uzunluklar dizisi (`int` dizisi) `realloc` kullanılarak dinamik olarak yeniden boyutlandırılabilir olmalı ve verimli bellek kullanımını sağlamalıdır.
+
+Çözümünüz aşağıdaki temel işlemleri uygulamalıdır:
+1.  **`initialize_collection`**: Başlangıç kapasitesi olan boş dinamik koleksiyonu ve paralel uzunluklar dizisini kurar.
+2.  **`add_sequence`**: Koleksiyona dinamik olarak tahsis edilmiş yeni bir tamsayı dizisi ekler. Ana koleksiyon ve uzunluklar dizisinin mevcut kapasitesi yetersizse, yeni dizi eklenmeden önce her ikisi de `realloc` kullanılarak yeniden boyutlandırılmalıdır (örneğin, iki katına çıkarılmalıdır).
+3.  **`extend_sequence`**: Verilen bir indeks için, mevcut bir tamsayı dizisini ek tamsayılar ekleyerek genişletir. Bu işlem, o indeksteki belirli dizi için boyutunu ayarlamak üzere `realloc` kullanımını gerektirir.
+4.  **`remove_sequence`**: Verilen bir indeks için, koleksiyondan bir diziyi kaldırır. Bu, bireysel dizinin belleğini serbest bırakmayı ve ardından boşluğu doldurmak için sonraki tüm dizileri ve ilgili uzunluklarını kaydırmayı içerir. İsteğe bağlı olarak, kaldırma işleminden sonra koleksiyon önemli ölçüde az kullanılır hale gelirse (örneğin, kapasitenin 1/4'inden az), ana koleksiyon ve uzunluklar dizisi `realloc` kullanılarak küçültülebilir.
+5.  **`print_collection`**: Koleksiyondaki tüm dizilerin mevcut durumunu görüntülemek için bir yardımcı işlev.
+6.  **`free_collection`**: Bellek sızıntılarını önlemek için bireysel diziler, ana koleksiyon dizisi ve uzunluklar dizisi dahil olmak üzere koleksiyonla ilişkili tüm belleği uygun şekilde serbest bırakır.
+
+Bu problem, işaretçi aritmetiği, çoklu işaretçi seviyelerinin (bir fonksiyondan ana `int**`'i değiştirmek için `int***`) dereferans edilmesi ve titiz dinamik bellek yönetimi konularına yoğun bir şekilde odaklanmaktadır. Bellek sızıntılarını önlemek ve sağlamlığı sağlamak için tüm seviyelerde belleği serbest bırakmaya özellikle dikkat edin.
