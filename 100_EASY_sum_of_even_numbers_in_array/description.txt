@@ -1,7 +1,7 @@
 EN
 
-Write a C program that calculates the sum of all even numbers in a given integer array. The program should iterate through the array, identify even numbers, and accumulate their sum. Finally, print the total sum of the even numbers found.
+Write a C program that calculates the sum of all even numbers in a given integer array. The program should iterate through the array, identify even numbers using the modulo operator, and accumulate their sum. Assume the array contains positive integers and its size is fixed.
 
 TR
 
-Verilen bir tam sayı dizisindeki tüm çift sayıların toplamını hesaplayan bir C programı yazın. Program diziyi dolaşmalı, çift sayıları belirlemeli ve bunların toplamını biriktirmelidir. Son olarak, bulunan çift sayıların toplamını ekrana yazdırın.
+Verilen bir tam sayı dizisindeki tüm çift sayıların toplamını hesaplayan bir C programı yazın. Program, dizi üzerinde dönmeli, modulo operatörünü kullanarak çift sayıları belirlemeli ve bunların toplamını biriktirmelidir. Dizinin pozitif tam sayılar içerdiğini ve boyutunun sabit olduğunu varsayın.
