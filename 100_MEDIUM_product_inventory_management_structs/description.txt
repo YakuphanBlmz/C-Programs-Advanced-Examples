@@ -1,0 +1,15 @@
+EN
+
+You are tasked with managing a small product inventory for a local shop. To streamline this, you need to use C's `struct` and `typedef` features to define a `Product` data type. Each product should have an integer `id`, a character array `name` (maximum 49 characters + null terminator), and a `double price`.
+
+Your program should first define this `Product` structure using `typedef`. Then, declare a fixed-size array of `Product` objects, representing your inventory. You will need to initialize this array with at least 5 sample products, including their ID, name, and price.
+
+Finally, your program must perform two operations: iterate through the inventory and print the details (ID, Name, Price) of all products whose price is greater than a specified threshold (e.g., $50.00). Additionally, it should identify and print the details of the single most expensive product in the inventory. Ensure that no pointers or dynamic memory allocation are used in your solution.
+
+TR
+
+Yerel bir dükkan için küçük bir ürün envanterini yönetmekle görevlendirildiniz. Bu süreci kolaylaştırmak için, C dilinin `struct` ve `typedef` özelliklerini kullanarak bir `Product` veri tipi tanımlamanız gerekmektedir. Her ürünün bir tam sayı `id`'si, bir karakter dizisi `name`'i (maksimum 49 karakter + null sonlandırıcı) ve bir `double price`'ı olmalıdır.
+
+Programınız öncelikle bu `Product` yapısını `typedef` kullanarak tanımlamalıdır. Ardından, envanterinizi temsil eden sabit boyutlu bir `Product` nesneleri dizisi (array) bildirmelisiniz. Bu diziyi, kimlikleri, adları ve fiyatları dahil olmak üzere en az 5 örnek ürünle başlatmanız gerekmektedir.
+
+Son olarak, programınız iki işlem gerçekleştirmelidir: Envanteri dolaşarak fiyatı belirli bir eşiğin (örneğin 50.00 $) üzerinde olan tüm ürünlerin ayrıntılarını (ID, Ad, Fiyat) ekrana yazdırmalıdır. Ek olarak, envanterdeki en pahalı ürünü bulmalı ve ayrıntılarını ekrana yazdırmalıdır. Çözümünüzde işaretçiler veya dinamik bellek tahsisi kullanılmamasına dikkat edin.
