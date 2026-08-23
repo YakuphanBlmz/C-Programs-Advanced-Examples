@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small shop. The system needs to keep track of various products, including their unique ID, name, price, and current stock quantity. Your program should use a `struct` to represent a product and `typedef` to simplify its usage.
+
+The core functionality of your program will involve initializing an array of products with some sample data. After setting up the initial inventory, your program must calculate the total monetary value of all items currently in stock. Additionally, it should identify and display the details of the product that has the highest individual unit price.
+
+Finally, to ensure data persistence, the program should save the entire product inventory to a binary file named `inventory.dat`. After saving, it should demonstrate reading the data back from the same file into a new (or cleared) array, and then print the details of the loaded products to confirm the file operations were successful.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz istenmektedir. Sistem, ürünlerin benzersiz kimliğini, adını, fiyatını ve mevcut stok miktarını takip etmelidir. Programınız, bir ürünü temsil etmek için bir `struct` kullanmalı ve kullanımını basitleştirmek için `typedef` içermelidir.
+
+Programınızın temel işlevselliği, bir dizi ürünü örnek verilerle başlatmayı içerecektir. Başlangıç envanterini ayarladıktan sonra, programınız mevcut stoktaki tüm ürünlerin toplam parasal değerini hesaplamalıdır. Ek olarak, en yüksek birim fiyatına sahip ürünü belirlemeli ve detaylarını görüntülemelidir.
+
+Son olarak, veri kalıcılığını sağlamak için program, tüm ürün envanterini `inventory.dat` adında ikili bir dosyaya kaydetmelidir. Kaydettikten sonra, aynı dosyadan verileri yeni (veya temizlenmiş) bir diziye geri okumayı göstermeli ve dosya işlemlerinin başarılı olduğunu doğrulamak için yüklenen ürünlerin detaylarını yazdırmalıdır.
