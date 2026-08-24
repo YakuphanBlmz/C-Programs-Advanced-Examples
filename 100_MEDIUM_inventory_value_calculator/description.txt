@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system in C. The system needs to keep track of various products, including their unique ID, name, price, and current stock quantity. Your program should define a structure to represent a product and then use an array of these structures to store inventory data.
+
+The main objective is to perform two key operations: first, calculate the total monetary value of all items currently in stock, which is the sum of (price * quantity) for each product. Second, the system should be able to search for a specific product by its ID and display its details if found.
+
+You must use a `typedef` to create an alias for your product structure. The program should use a fixed-size array to store product data. You are strictly prohibited from using explicit pointers (e.g., `*` or `->` operators for logic) or dynamic memory allocation (`malloc`, `free`) in your solution. All product data should be handled directly within the defined structure variables and arrays.
+
+TR
+
+C dilinde basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, ürünlerin benzersiz kimliği (ID), adı, fiyatı ve mevcut stok miktarı gibi bilgilerini takip etmelidir. Programınız bir ürünü temsil etmek için bir yapı (struct) tanımlamalı ve ardından bu yapıların bir dizisini kullanarak envanter verilerini saklamalıdır.
+
+Temel amaç iki ana işlemi gerçekleştirmektir: birincisi, stoktaki tüm öğelerin toplam parasal değerini hesaplamak; bu, her ürün için (fiyat * miktar) değerlerinin toplamıdır. İkincisi, sistemin belirli bir ürünü ID'sine göre arayabilmesi ve bulunursa ayrıntılarını görüntüleyebilmesi gerekmektedir.
+
+Ürün yapınız için bir takma ad (alias) oluşturmak üzere `typedef` kullanmalısınız. Program, ürün verilerini depolamak için sabit boyutlu bir dizi kullanmalıdır. Çözümünüzde açık işaretçiler (örneğin, mantık için `*` veya `->` operatörleri) veya dinamik bellek ayırma (`malloc`, `free`) kullanmanız kesinlikle yasaktır. Tüm ürün verileri, tanımlanan yapı değişkenleri ve dizileri içinde doğrudan işlenmelidir.
