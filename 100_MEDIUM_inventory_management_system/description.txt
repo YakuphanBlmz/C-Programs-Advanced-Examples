@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small shop. The system needs to keep track of various products, each with a unique identifier, a name, a unit price, and the current quantity in stock.
+
+Your program should first define a structure named `Product` using `typedef`, containing fields for product ID (integer), name (string, e.g., `char name[50];`), unit price (double), and quantity (integer). Then, you should initialize a fixed-size array of these `Product` structures with at least three sample products. Implement a mechanism to simulate a "sale": the user will provide a product ID and a quantity to sell. Your program must search for the product by its ID and, if found, decrease its stock quantity. If the requested sale quantity exceeds the available stock, an appropriate error message should be displayed, and no changes should be made.
+
+Finally, after performing a few sales, the program must calculate and print the total value of all items currently in the inventory. This exercise focuses on the use of `struct` and `typedef` to organize related data, array manipulation for storing multiple records, and basic search and update operations. Remember, you must not use pointers (explicit `*` declarations or `->` operators) or dynamic memory allocation (like `malloc` or `free`) in your solution.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz gerekiyor. Sistem, her biri benzersiz bir tanımlayıcıya, bir isme, birim fiyata ve mevcut stok miktarına sahip çeşitli ürünleri takip etmelidir.
+
+Programınız ilk olarak, ürün kimliği (integer), adı (string, örn: `char name[50];`), birim fiyatı (double) ve miktarı (integer) için alanlar içeren, `Product` adında bir yapıyı `typedef` kullanarak tanımlamalıdır. Ardından, bu `Product` yapılarından oluşan sabit boyutlu bir diziyi en az üç örnek ürünle başlatmalısınız. Bir "satış" işlemini simüle etmek için bir mekanizma uygulayın: kullanıcı bir ürün kimliği ve satılacak miktar sağlayacaktır. Programınız, ürünü kimliğine göre aramalı ve bulunursa, stok miktarını azaltmalıdır. İstenen satış miktarı mevcut stoğu aşarsa, uygun bir hata mesajı görüntülenmeli ve hiçbir değişiklik yapılmamalıdır.
+
+Son olarak, birkaç satış gerçekleştirdikten sonra, program envanterdeki tüm öğelerin toplam değerini hesaplamalı ve yazdırmalıdır. Bu alıştırma, ilgili verileri düzenlemek için `struct` ve `typedef` kullanımı, birden çok kaydı depolamak için dizi manipülasyonu ve temel arama ve güncelleme işlemleri üzerinde durmaktadır. Çözümünüzde işaretçi (açık `*` bildirimleri veya `->` operatörleri) veya dinamik bellek ayırma (`malloc` veya `free` gibi) kullanmamanız gerektiğini unutmayın.
