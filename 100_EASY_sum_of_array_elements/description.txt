@@ -1,7 +1,7 @@
 EN
 
-Write a C program that calculates the sum of all elements in a given integer array. The array will have a fixed size (e.g., 5 elements) and can be initialized with example values within your `main` function. Print the final sum to the console.
+Write a C program that calculates the sum of all integer elements in a given array. The array will have a fixed size and contain positive integers. Print the final sum to the console.
 
 TR
 
-Verilen bir tam sayı dizisindeki tüm elemanların toplamını hesaplayan bir C programı yazın. Dizi belirli bir boyutta (örneğin 5 elemanlı) olacak ve `main` fonksiyonunuz içinde örnek değerlerle başlatılabilir. Nihai toplamı konsola yazdırın.
+Verilen bir tamsayı dizisindeki tüm elemanların toplamını hesaplayan bir C programı yazın. Dizi sabit bir boyuta sahip olacak ve pozitif tamsayılar içerecektir. Son toplamı konsola yazdırın.
