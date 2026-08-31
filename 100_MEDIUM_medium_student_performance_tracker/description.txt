@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a C program to help manage student performance within a small class. The program should be capable of recording essential information for a fixed number of students and then identifying the top-performing student based on their total score.
+
+Your program must define a structure, `Student`, using `typedef`. This structure should store the student's name (as a character array), their unique student ID (an integer), and their scores for a project, a midterm exam, and a final exam (all integers). The program should then prompt the user to input the details for a predefined number of students (e.g., 3 students).
+
+After collecting all the student data, the program will calculate the total score for each student by summing their project, midterm, and final exam scores. Finally, it must determine which student has achieved the highest total score among all processed students and display that student's name, ID, and their overall highest total score. Ensure your solution avoids the use of pointers or dynamic memory allocation.
+
+TR
+
+Küçük bir sınıftaki öğrencilerin performansını yönetmeye yardımcı olacak bir C programı geliştirmekle görevlendirildiniz. Program, sabit sayıda öğrenci için temel bilgileri kaydedebilmeli ve ardından toplam puanlarına göre en başarılı öğrenciyi belirleyebilmelidir.
+
+Programınız, `typedef` kullanarak `Student` adında bir yapı (struct) tanımlamalıdır. Bu yapı, öğrencinin adını (karakter dizisi olarak), benzersiz öğrenci kimliğini (tam sayı) ve bir proje, bir vize sınavı ve bir final sınavı için aldığı puanları (tümü tam sayı) saklamalıdır. Program, daha sonra önceden belirlenmiş sayıda öğrenci (örneğin 3 öğrenci) için kullanıcıdan ayrıntıları girmesini istemelidir.
+
+Tüm öğrenci verileri toplandıktan sonra, program her bir öğrencinin toplam puanını (proje, vize ve final sınavı puanlarının toplamı) hesaplayacaktır. Son olarak, işlenen tüm öğrenciler arasında en yüksek toplam puana sahip olan öğrenciyi bulmalı ve bu öğrencinin adını, kimliğini ve en yüksek toplam puanını ekrana yazdırmalıdır. Çözümünüzde işaretçi (pointer) veya dinamik bellek tahsisi (dynamic memory allocation) kullanmaktan kaçındığınızdan emin olun.
