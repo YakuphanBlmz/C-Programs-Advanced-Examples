@@ -1,11 +1,12 @@
 #include <stdio.h>
 int main() {
-    int numbers[] = {10, -5, 20, 0, -15, 30};
-    int n = sizeof(numbers) / sizeof(numbers[0]);
+    int arr[] = {10, -5, 20, -1, 15, 0, 7};
+    int n = sizeof(arr) / sizeof(arr[0]);
     int sum = 0;
-    for (int i = 0; i < n; i++) {
-        if (numbers[i] > 0) {
-            sum += numbers[i];
+    int i;
+    for (i = 0; i < n; i++) {
+        if (arr[i] > 0) {
+            sum += arr[i];
         }
     }
     printf("Sum of positive numbers: %d\n", sum);
