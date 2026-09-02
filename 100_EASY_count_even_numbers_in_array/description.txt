@@ -1,7 +1,7 @@
 EN
 
-Write a C program that takes an integer array and its size as input. The program should iterate through the array, count how many even numbers are present, and then print this count to the console. Assume the array will only contain positive integers.
+Given an array of integers, write a C program to count how many of these integers are even. The program should iterate through the array and use the modulo operator to determine if each number is even. Finally, print the total count of even numbers found.
 
 TR
 
-Bir tam sayı dizisi ve boyutunu girdi olarak alan bir C programı yazın. Program, dizi üzerinde döngü yaparak kaç tane çift sayı olduğunu saymalı ve bu sayıyı konsola yazdırmalıdır. Dizinin sadece pozitif tam sayılar içereceği varsayılmıştır.
+Verilen bir tam sayı dizisindeki çift sayıları sayan bir C programı yazın. Program, dizi üzerinde dönmeli ve her sayının çift olup olmadığını anlamak için modulo operatörünü kullanmalıdır. Son olarak, bulunan çift sayıların toplam sayısını ekrana yazdırın.
