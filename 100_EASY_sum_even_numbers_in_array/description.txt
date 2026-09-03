@@ -1,11 +1,7 @@
 EN
 
-Write a C program that reads 5 integer values into an array. Then, iterate through the array, calculate the sum of all even numbers present, and print this sum to the console.
-
-Your program should only use basic C features such as loops, arrays, conditional statements, and arithmetic operators.
+Write a C program that takes an array of integers and calculates the sum of all even numbers within that array. The program should then print the final sum to the console.
 
 TR
 
-Bir C programı yazın. Bu program, 5 adet tam sayı değerini bir diziye okumalıdır. Ardından, dizi üzerinde dolaşarak dizideki tüm çift sayıların toplamını hesaplamalı ve bu toplamı ekrana yazdırmalıdır.
-
-Programınız yalnızca döngüler, diziler, koşullu ifadeler ve aritmetik operatörler gibi temel C özelliklerini kullanmalıdır.
+Bir tam sayı dizisi alan ve bu dizideki tüm çift sayıların toplamını hesaplayan bir C programı yazın. Program daha sonra nihai toplamı konsola yazdırmalıdır.
