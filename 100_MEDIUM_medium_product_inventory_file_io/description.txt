@@ -1,15 +1,19 @@
 EN
 
-You are tasked with creating a simple inventory management program for a small shop. The program needs to manage product information, which includes a unique product ID (integer), a product name (string), and its price (floating-point number). To achieve this, you will define a structure using `typedef` to hold these details.
+You are tasked with developing a simple inventory management system for a small shop. The shop stores information about its products, including a unique identifier, a name, and a price. This product data is stored in a plain text file named `products.txt`.
 
-The program should first allow the user to input data for a fixed number of products (e.g., 3 products). After collecting this input, the program must write all the product records into a binary file named `products.dat`. This step ensures that the product information is persistently stored even after the program terminates.
+Each line in `products.txt` represents a single product and follows the format: `ProductID ProductName ProductPrice`. For example, a line might look like `101 Laptop 1200.50`. Your program needs to read this data from the file, process it, and then report some key metrics.
 
-Finally, the program should read all the product records back from the `products.dat` binary file and display them on the console. This exercise will help you practice using `struct`, `typedef`, and essential file I/O operations like `fopen`, `fwrite`, `fread`, and `fclose` without relying on dynamic memory allocation or complex pointer manipulations.
+Specifically, your program should calculate the total monetary value of all products listed in the file. Additionally, it must identify and display the details of the single product that has the highest price. You will need to use a `struct` to represent product information and `typedef` for convenience. The solution must involve file input/output operations.
+
+Remember, your solution should strictly avoid the use of pointers (beyond what's necessary for standard file operations like `FILE*`) and dynamic memory allocation (`malloc`, `free`). All data storage must be done using fixed-size arrays or individual `struct` variables on the stack.
 
 TR
 
-Küçük bir mağaza için basit bir envanter yönetim programı oluşturmanız isteniyor. Programın, benzersiz bir ürün kimliği (tam sayı), bir ürün adı (karakter dizisi) ve fiyatını (ondalıklı sayı) içeren ürün bilgilerini yönetmesi gerekmektedir. Bu görevi yerine getirmek için, bu detayları tutacak `typedef` ile bir yapı (struct) tanımlayacaksınız.
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Mağaza, benzersiz bir tanımlayıcı, bir ad ve bir fiyat dahil olmak üzere ürünleri hakkında bilgi depolamaktadır. Bu ürün verileri, `products.txt` adlı düz metin dosyasında saklanmaktadır.
 
-Program ilk olarak kullanıcının belirli sayıda ürün (örneğin 3 ürün) için veri girmesine izin vermelidir. Bu girişler toplandıktan sonra, program tüm ürün kayıtlarını `products.dat` adlı ikili bir dosyaya yazmalıdır. Bu adım, program sonlandırıldıktan sonra bile ürün bilgilerinin kalıcı olarak saklanmasını sağlayacaktır.
+`products.txt` dosyasındaki her satır tek bir ürünü temsil eder ve şu formattadır: `UrunID UrunAdi UrunFiyati`. Örneğin, bir satır `101 DizustuBilgisayar 1200.50` şeklinde olabilir. Programınızın bu verileri dosyadan okuması, işlemesi ve ardından bazı temel metrikleri raporlaması gerekmektedir.
 
-Son olarak, program `products.dat` ikili dosyasından tüm ürün kayıtlarını geri okumalı ve bunları konsola yazdırmalıdır. Bu alıştırma, yapıları (struct), `typedef`'i ve `fopen`, `fwrite`, `fread`, `fclose` gibi temel dosya G/Ç işlemlerini dinamik bellek ayırma veya karmaşık işaretçi manipülasyonlarına dayanmadan kullanma pratiği yapmanıza yardımcı olacaktır.
+Özellikle, programınızın dosyada listelenen tüm ürünlerin toplam parasal değerini hesaplaması gerekmektedir. Ayrıca, en yüksek fiyata sahip tek bir ürünün ayrıntılarını belirlemeli ve görüntülemelidir. Ürün bilgilerini temsil etmek için bir `struct` kullanmanız ve kolaylık sağlamak için `typedef` kullanmanız gerekecektir. Çözüm, dosya giriş/çıkış işlemlerini içermelidir.
+
+Unutmayın, çözümünüz işaretçi (standart dosya işlemleri için gereken `FILE*` dışındaki) ve dinamik bellek tahsisini (`malloc`, `free`) kesinlikle kullanmamalıdır. Tüm veri depolama, yığın üzerinde sabit boyutlu diziler veya tekil `struct` değişkenleri kullanılarak yapılmalıdır.

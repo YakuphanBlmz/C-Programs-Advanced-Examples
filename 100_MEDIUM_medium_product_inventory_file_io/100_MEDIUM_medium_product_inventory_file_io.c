@@ -1,42 +1,34 @@
 #include <stdio.h>
 typedef struct {
     int id;
-    char name[30];
+    char name[50];
     float price;
 } Product;
 int main() {
-    Product inventory[3];
-    int i;
-    FILE *fp;
-    printf("Enter data for 3 products:\n");
-    for (i = 0; i < 3; i++) {
-        printf("Product %d ID: ", i + 1);
-        scanf("%d", &inventory[i].id);
-        printf("Product %d Name: ", i + 1);
-        scanf("%s", inventory[i].name);
-        printf("Product %d Price: ", i + 1);
-        scanf("%f", &inventory[i].price);
-    }
-    fp = fopen("products.dat", "wb");
-    if (fp == NULL) {
-        printf("Error opening file for writing!\n");
+    FILE *file;
+    Product currentProduct;
+    Product mostExpensiveProduct = {0, "", 0.0f};
+    float totalValue = 0.0f;
+    file = fopen("products.txt", "r");
+    if (file == NULL) {
+        printf("Hata: 'products.txt' dosyasi acilamadi.\n");
         return 1;
     }
-    fwrite(inventory, sizeof(Product), 3, fp);
-    fclose(fp);
-    printf("\nProduct data written to products.dat.\n");
-    printf("\nReading product data from products.dat:\n");
-    fp = fopen("products.dat", "rb");
-    if (fp == NULL) {
-        printf("Error opening file for reading!\n");
-        return 1;
+    while (fscanf(file, "%d %s %f", &currentProduct.id, currentProduct.name, &currentProduct.price) == 3) {
+        totalValue += currentProduct.price;
+        if (currentProduct.price > mostExpensiveProduct.price) {
+            mostExpensiveProduct = currentProduct;
+        }
     }
-    Product readProducts[3];
-    fread(readProducts, sizeof(Product), 3, fp);
-    fclose(fp);
-    printf("\nProducts read from file:\n");
-    for (i = 0; i < 3; i++) {
-        printf("ID: %d, Name: %s, Price: %.2f\n", readProducts[i].id, readProducts[i].name, readProducts[i].price);
+    fclose(file);
+    printf("Tum urunlerin toplam degeri: %.2f\n", totalValue);
+    if (mostExpensiveProduct.id != 0) {
+        printf("En pahali urun:\n");
+        printf("  ID: %d\n", mostExpensiveProduct.id);
+        printf("  Ad: %s\n", mostExpensiveProduct.name);
+        printf("  Fiyat: %.2f\n", mostExpensiveProduct.price);
+    } else {
+        printf("Dosyada hic urun bulunamadi veya okunamadi.\n");
     }
     return 0;
 }
