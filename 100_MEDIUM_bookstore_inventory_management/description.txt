@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small bookstore. The system needs to store information about various books, including their title, author, publication year, and price. Since the bookstore is small, you can assume a maximum capacity for books (e.g., 10 books) and manage them using a fixed-size array.
+
+Your program should define a structure named `Book` to hold the book's details. Use `typedef` to create an alias for this structure. The main program should present a menu allowing users to perform several basic operations: add a new book to the inventory, list all currently stored books, search for a specific book by its title, and calculate the total monetary value of all books in the inventory.
+
+The solution must adhere to strict memory management rules: no dynamic memory allocation (`malloc`, `calloc`, `realloc`, `free`) and no explicit pointers (except for array indexing or standard library string functions that operate on character arrays). String comparisons should be handled using standard library functions like `strcmp`.
+
+TR
+
+Küçük bir kitapçı için basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Sistem, kitapların başlığı, yazarı, yayın yılı ve fiyatı dahil olmak üzere çeşitli kitaplar hakkında bilgi depolamalıdır. Kitapçı küçük olduğu için, kitaplar için maksimum bir kapasite (örneğin 10 kitap) varsayabilir ve bunları sabit boyutlu bir dizi kullanarak yönetebilirsiniz.
+
+Programınız, kitabın ayrıntılarını tutmak için `Book` adında bir yapı tanımlamalıdır. Bu yapı için bir takma ad oluşturmak üzere `typedef` kullanın. Ana program, kullanıcılara bir menü sunmalı ve birkaç temel işlem yapmalarına izin vermelidir: envantere yeni bir kitap eklemek, mevcut tüm kitapları listelemek, başlığına göre belirli bir kitabı aramak ve envanterdeki tüm kitapların toplam parasal değerini hesaplamak.
+
+Çözüm, katı bellek yönetimi kurallarına uymalıdır: dinamik bellek ayırma (`malloc`, `calloc`, `realloc`, `free`) ve açık işaretçiler (dizi indeksleme veya karakter dizileri üzerinde çalışan standart kütüphane dize fonksiyonları dışında) kullanılmamalıdır. Dize karşılaştırmaları `strcmp` gibi standart kütüphane fonksiyonları kullanılarak yapılmalıdır.
