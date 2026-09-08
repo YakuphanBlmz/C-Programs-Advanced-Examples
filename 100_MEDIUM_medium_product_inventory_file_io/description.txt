@@ -1,19 +1,15 @@
 EN
 
-You are tasked with developing a simple inventory management system for a small shop. The shop stores information about its products, including a unique identifier, a name, and a price. This product data is stored in a plain text file named `products.txt`.
+You are tasked with developing a simple inventory management system for a small shop. This system needs to store product information in a binary file, allowing shopkeepers to add new products and view existing ones. Each product should have a unique ID, a name, a quantity, and a price.
 
-Each line in `products.txt` represents a single product and follows the format: `ProductID ProductName ProductPrice`. For example, a line might look like `101 Laptop 1200.50`. Your program needs to read this data from the file, process it, and then report some key metrics.
+The program must define a structure for a `Product` that includes an integer for the ID, a character array for the name, an integer for the quantity, and a float for the price. Use `typedef` to create an alias for this structure. Your program should provide two main functionalities: adding a new product's details to the `inventory.bin` file and listing all products currently stored in the file.
 
-Specifically, your program should calculate the total monetary value of all products listed in the file. Additionally, it must identify and display the details of the single product that has the highest price. You will need to use a `struct` to represent product information and `typedef` for convenience. The solution must involve file input/output operations.
-
-Remember, your solution should strictly avoid the use of pointers (beyond what's necessary for standard file operations like `FILE*`) and dynamic memory allocation (`malloc`, `free`). All data storage must be done using fixed-size arrays or individual `struct` variables on the stack.
+Crucially, you must avoid using pointers or dynamic memory allocation (like `malloc` or `free`) anywhere in your solution. All product data, including names, must be handled using fixed-size arrays within the structure. File operations should be performed using standard C file I/O functions such as `fopen`, `fwrite`, `fread`, and `fclose`.
 
 TR
 
-Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Mağaza, benzersiz bir tanımlayıcı, bir ad ve bir fiyat dahil olmak üzere ürünleri hakkında bilgi depolamaktadır. Bu ürün verileri, `products.txt` adlı düz metin dosyasında saklanmaktadır.
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmeniz isteniyor. Bu sistemin ürün bilgilerini ikili bir dosyada saklaması, mağaza sahiplerinin yeni ürünler eklemesine ve mevcut ürünleri görüntülemesine olanak tanıması gerekmektedir. Her ürünün benzersiz bir kimliği (ID), bir adı, bir miktarı ve bir fiyatı olmalıdır.
 
-`products.txt` dosyasındaki her satır tek bir ürünü temsil eder ve şu formattadır: `UrunID UrunAdi UrunFiyati`. Örneğin, bir satır `101 DizustuBilgisayar 1200.50` şeklinde olabilir. Programınızın bu verileri dosyadan okuması, işlemesi ve ardından bazı temel metrikleri raporlaması gerekmektedir.
+Program, bir ID için tam sayı, ad için karakter dizisi, miktar için tam sayı ve fiyat için ondalık sayı içeren bir `Product` yapısı tanımlamalıdır. Bu yapı için bir takma ad oluşturmak üzere `typedef` kullanın. Programınız iki ana işlevsellik sağlamalıdır: yeni bir ürünün ayrıntılarını `inventory.bin` dosyasına eklemek ve dosyada depolanan tüm ürünleri listelemek.
 
-Özellikle, programınızın dosyada listelenen tüm ürünlerin toplam parasal değerini hesaplaması gerekmektedir. Ayrıca, en yüksek fiyata sahip tek bir ürünün ayrıntılarını belirlemeli ve görüntülemelidir. Ürün bilgilerini temsil etmek için bir `struct` kullanmanız ve kolaylık sağlamak için `typedef` kullanmanız gerekecektir. Çözüm, dosya giriş/çıkış işlemlerini içermelidir.
-
-Unutmayın, çözümünüz işaretçi (standart dosya işlemleri için gereken `FILE*` dışındaki) ve dinamik bellek tahsisini (`malloc`, `free`) kesinlikle kullanmamalıdır. Tüm veri depolama, yığın üzerinde sabit boyutlu diziler veya tekil `struct` değişkenleri kullanılarak yapılmalıdır.
+Çözümünüzde kesinlikle işaretçi veya dinamik bellek ayırma (örneğin `malloc` veya `free`) kullanmaktan kaçınmalısınız. Adlar da dahil olmak üzere tüm ürün verileri, yapı içindeki sabit boyutlu diziler kullanılarak işlenmelidir. Dosya işlemleri, `fopen`, `fwrite`, `fread` ve `fclose` gibi standart C dosya I/O işlevleri kullanılarak yapılmalıdır.
