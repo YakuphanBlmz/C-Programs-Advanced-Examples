@@ -1,0 +1,15 @@
+EN
+
+You are tasked with creating a simple inventory management system in C. The system needs to manage information about various products. Each product has a unique ID, a name, and a price.
+
+Your program should first define a structure, using `typedef`, to represent a `Product`. This structure will store the product's ID (an integer), its name (a fixed-size character array), and its price (a floating-point number). You will then create a small set of sample product data within your program.
+
+The core task involves demonstrating basic file input/output operations. You must write these sample product records to a binary file named `products.dat`. After writing, your program should then read all the product records back from `products.dat` into a separate array of `Product` structures. Finally, print the details of all products that were successfully read from the file to the console, ensuring the data integrity after the read-write cycle.
+
+TR
+
+C dilinde basit bir envanter yönetim sistemi oluşturmanız isteniyor. Bu sistemin çeşitli ürünler hakkındaki bilgileri yönetmesi gerekmektedir. Her ürünün benzersiz bir kimliği (ID), bir adı ve bir fiyatı olacaktır.
+
+Programınız öncelikle bir `Product` yapısını temsil etmek için `typedef` kullanarak bir yapı tanımlamalıdır. Bu yapı, ürünün ID'sini (tam sayı), adını (sabit boyutlu karakter dizisi) ve fiyatını (ondalıklı sayı) saklayacaktır. Ardından, programınız içinde küçük bir örnek ürün verisi seti oluşturacaksınız.
+
+Temel görev, temel dosya giriş/çıkış işlemlerini göstermektir. Bu örnek ürün kayıtlarını `products.dat` adlı ikili bir dosyaya yazmanız gerekmektedir. Yazma işleminden sonra, programınız tüm ürün kayıtlarını `products.dat` dosyasından ayrı bir `Product` yapıları dizisine geri okumalıdır. Son olarak, dosyadan başarıyla okunan tüm ürünlerin detaylarını konsola yazdırmalı, böylece yazma-okuma döngüsünden sonra verilerin bütünlüğünü sağlamalısınız.
