@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple inventory management system for a small store. The system needs to keep track of various products, their prices, and their stock levels. Your goal is to implement a C program that uses a `struct` to represent a product and then performs some basic calculations on a fixed-size array of these products.
+
+Specifically, you need to define a `Product` struct that includes an integer `productID`, a character array for `productName` (maximum 50 characters), a float for `unitPrice`, and an integer for `stockQuantity`. You should then create a fixed-size array of these `Product` structs, populate it with at least three sample products, and calculate two key metrics: the total value of the entire inventory (sum of `unitPrice * stockQuantity` for all items) and identify the product with the highest and lowest stock quantity.
+
+Remember to use `typedef` for your struct. Your solution must strictly avoid the use of pointers and dynamic memory allocation (`malloc`, `free`). The size of the product array should be fixed at compile time, and all operations should be performed on this static array.
+
+TR
+
+Küçük bir mağaza için basit bir envanter yönetim sistemi geliştirmekle görevlisiniz. Sistem, çeşitli ürünleri, fiyatlarını ve stok seviyelerini takip etmelidir. Amacınız, bir ürünü temsil etmek için bir `struct` kullanan ve bu ürünlerin sabit boyutlu bir dizisi üzerinde bazı temel hesaplamalar yapan bir C programı uygulamaktır.
+
+Özellikle, bir `productID` (tam sayı), `productName` (maksimum 50 karakterlik karakter dizisi), `unitPrice` (float) ve `stockQuantity` (tam sayı) içeren bir `Product` yapısı tanımlamanız gerekmektedir. Daha sonra, bu `Product` yapılarından oluşan sabit boyutlu bir dizi oluşturmalı, en az üç örnek ürünle doldurmalı ve iki temel metrik hesaplamalısınız: tüm envanterin toplam değeri (tüm ürünler için `unitPrice * stockQuantity` toplamı) ve en yüksek ve en düşük stok miktarına sahip ürünü belirlemelisiniz.
+
+Yapınız için `typedef` kullanmayı unutmayın. Çözümünüz kesinlikle işaretçi ve dinamik bellek tahsisini (`malloc`, `free`) kullanmaktan kaçınmalıdır. Ürün dizisinin boyutu derleme zamanında sabit olmalı ve tüm işlemler bu statik dizi üzerinde yapılmalıdır.
