@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main() {
-    int arr[] = {1, -2, 3, 0, 5, -6, 7, 10, -4, 2};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int positive_count = 0;
-    for (int i = 0; i < n; i++) {
-        if (arr[i] > 0) {
-            positive_count++;
+    int numbers[] = {10, -5, 20, 0, -1, 30, 7};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
+    int positiveCount = 0;
+    for (int i = 0; i < size; i++) {
+        if (numbers[i] > 0) {
+            positiveCount++;
         }
     }
-    printf("Dizideki pozitif sayi adedi: %d\n", positive_count);
+    printf("Total positive numbers: %d\n", positiveCount);
     return 0;
 }
