@@ -1,0 +1,11 @@
+EN
+
+This problem requires you to manage a small set of student records using C structures and `typedef`. You will define a `Student` structure containing an integer `id`, a character array for `name`, and an integer `score`. Your program should first collect data for a fixed number of students, storing each student's ID, name, and score.
+
+After all student data has been input, the program must identify and display the details of the student who achieved the highest test score. Finally, it should print a complete list of all students and their corresponding information (ID, name, and score). The use of dynamic memory allocation and explicit pointer variables is strictly forbidden. All operations should be performed using fixed-size arrays and structure variables.
+
+TR
+
+Bu problem, C yapıları (struct) ve `typedef` kullanarak küçük bir öğrenci kaydı setini yönetmenizi gerektirmektedir. Bir öğrenci kimliği (`id`), adı için bir karakter dizisi (`name`) ve bir test puanı (`score`) içeren bir `Student` yapısı tanımlayacaksınız. Programınız öncelikle belirli sayıda öğrenci için verileri toplamalı, her öğrencinin kimliğini, adını ve puanını saklamalıdır.
+
+Tüm öğrenci verileri girildikten sonra, program en yüksek test puanını alan öğrencinin ayrıntılarını belirlemeli ve görüntülemelidir. Son olarak, tüm öğrencilerin ve ilgili bilgilerinin (kimlik, ad ve puan) tam bir listesini yazdırmalıdır. Dinamik bellek ayırma ve açık işaretçi değişkenleri kullanmak kesinlikle yasaktır. Tüm işlemler, sabit boyutlu diziler ve yapı değişkenleri kullanılarak yapılmalıdır.
