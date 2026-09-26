@@ -1,7 +1,7 @@
 EN
 
-Write a C program that takes a fixed-size array of integers as input. The program should iterate through the array, count all positive numbers (greater than 0), and then print the total count of positive numbers found.
+Write a C program that initializes an integer array with a set of predefined values. The program should then iterate through the array, count how many of these numbers are positive (greater than zero), and finally print the total count of positive numbers.
 
 TR
 
-Sabit boyutlu bir tamsayı dizisini girdi olarak alan bir C programı yazın. Program, dizi üzerinde döngü yaparak tüm pozitif sayıları (0'dan büyük) saymalı ve bulunan pozitif sayıların toplam sayısını ekrana yazdırmalıdır.
+Belirli önceden tanımlanmış değerlerle bir tamsayı dizisini başlatan bir C programı yazın. Program daha sonra dizi üzerinde gezinmeli, bu sayılardan kaç tanesinin pozitif (sıfırdan büyük) olduğunu saymalı ve son olarak pozitif sayıların toplam sayısını yazdırmalıdır.

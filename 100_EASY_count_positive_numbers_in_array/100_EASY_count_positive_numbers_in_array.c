@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int numbers[] = {10, -5, 20, 0, -1, 30, 7};
+    int numbers[] = {-5, 10, 0, 20, -3, 15, 0, 8};
     int size = sizeof(numbers) / sizeof(numbers[0]);
     int positiveCount = 0;
     for (int i = 0; i < size; i++) {
@@ -8,6 +8,6 @@ int main() {
             positiveCount++;
         }
     }
-    printf("Total positive numbers: %d\n", positiveCount);
+    printf("Number of positive elements: %d\n", positiveCount);
     return 0;
 }
