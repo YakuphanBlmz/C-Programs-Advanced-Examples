@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a basic inventory management utility for a small shop. The utility needs to handle product information, including a unique ID, product name, unit price, and current stock quantity. To ensure data persistence, all product records must be stored in and retrieved from a binary file.
+
+Your program should first define a `Product` structure using `typedef` to represent each item, containing fields for an integer ID, a fixed-size character array for the product name, a float for the price, and an integer for the stock quantity. The application will then initialize a fixed number of product records. These records must be written sequentially into a binary file named `inventory.dat`.
+
+After successfully writing the data, the program should then read all product records back from `inventory.dat`. Finally, it must calculate the total monetary value of all products currently in stock. This value is determined by summing (price * stock) for each product read from the file. The final aggregated value should be printed to the console.
+
+TR
+
+Küçük bir mağaza için temel bir envanter yönetim aracı geliştirmeniz isteniyor. Bu araç, benzersiz bir kimlik (ID), ürün adı, birim fiyatı ve mevcut stok miktarı dahil olmak üzere ürün bilgilerini işlemesi gerekmektedir. Veri kalıcılığını sağlamak için tüm ürün kayıtları ikili bir dosyadan depolanmalı ve bu dosyadan geri alınmalıdır.
+
+Programınız öncelikle her bir öğeyi temsil etmek üzere `typedef` kullanarak bir `Product` yapısı tanımlamalıdır. Bu yapı, bir tam sayı ID, ürün adı için sabit boyutlu bir karakter dizisi, fiyat için bir `float` ve stok miktarı için bir tam sayı içermelidir. Uygulama daha sonra sabit sayıda ürün kaydını başlatacaktır. Bu kayıtlar, `inventory.dat` adlı ikili bir dosyaya sırayla yazılmalıdır.
+
+Verileri başarıyla yazdıktan sonra, program tüm ürün kayıtlarını `inventory.dat` dosyasından geri okumalıdır. Son olarak, stoktaki tüm ürünlerin toplam parasal değerini hesaplaması gerekmektedir. Bu değer, dosyadan okunan her bir ürün için (fiyat * stok) değerinin toplanmasıyla belirlenir. Toplam değer konsola yazdırılmalıdır.
