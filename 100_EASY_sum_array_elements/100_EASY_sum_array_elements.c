@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main() {
-    int numbers[] = {10, 20, 30, 40, 50};
-    int n = sizeof(numbers) / sizeof(numbers[0]);
+    int arr[] = {10, 20, 30, 40, 50};
+    int n = sizeof(arr) / sizeof(arr[0]);
     int sum = 0;
     int i;
     for (i = 0; i < n; i++) {
-        sum += numbers[i];
+        sum = sum + arr[i];
     }
-    printf("Dizinin elemanları toplamı: %d\n", sum);
+    printf("Dizideki elemanlarin toplami: %d\n", sum);
     return 0;
 }
