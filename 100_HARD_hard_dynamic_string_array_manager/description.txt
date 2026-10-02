@@ -1,0 +1,25 @@
+EN
+
+This problem challenges you to implement a dynamic collection of strings in C, entirely from scratch, without leveraging any `struct` types, `typedef` aliases, or standard file I/O operations. Your task is to manage a dynamic array that holds pointers to other dynamically allocated strings. This setup inherently requires a deep understanding of `char**` (pointer to a pointer to a character, i.e., an array of strings) and meticulous manual memory management using `malloc`, `realloc`, and `free`.
+
+You must create a self-contained program that simulates the lifecycle of such a string collection. The core operations your solution must demonstrate include:
+1.  **Adding Strings**: Dynamically allocate memory for a new string and add its pointer to the dynamic array of string pointers. The array of string pointers itself must dynamically resize (e.g., doubling its capacity) using `realloc` when it runs out of space.
+2.  **Removing Strings**: Delete a string at a specified index. This involves freeing the memory occupied by the individual string, shifting subsequent string pointers to fill the gap, and potentially shrinking the main array of string pointers using `realloc` if its usage falls significantly (e.g., reducing capacity by half).
+3.  **Updating Strings**: Modify an existing string at a given index with new content. This operation might require freeing the old string's memory, allocating new memory for the updated content, and potentially resizing that specific string's memory block using `realloc` if the new content has a different length.
+4.  **Printing All Strings**: Iterate through the collection and print each stored string.
+5.  **Comprehensive Memory Cleanup**: Implement a mechanism to free all dynamically allocated memory for all individual strings and the main array of string pointers at the end of the program's execution, preventing any memory leaks.
+
+This problem is designed to rigorously test your ability to manage complex memory layouts, handle `NULL` returns from allocation functions, and perform pointer arithmetic correctly across multiple levels of indirection. You are expected to implement basic string operations (like length calculation and copying) manually, without relying on `string.h` functions like `strlen` or `strcpy`, further emphasizing a low-level understanding of C strings. The solution must be robust against common memory errors and ensure all resources are properly released.
+
+TR
+
+Bu problem, C dilinde dinamik bir dize koleksiyonunu tamamen sıfırdan, hiçbir `struct` türü, `typedef` takma adı veya standart dosya G/Ç işlemleri kullanmadan uygulamanızı gerektirir. Göreviniz, dinamik olarak tahsis edilmiş diğer dizelere işaret eden göstericileri tutan dinamik bir dizi yönetmektir. Bu kurulum, `char**` (bir karakter işaretçisinin işaretçisi, yani bir dizeler dizisi) hakkında derinlemesine bir anlayış ve `malloc`, `realloc` ve `free` kullanarak titiz manuel bellek yönetimi gerektirir.
+
+Böyle bir dize koleksiyonunun yaşam döngüsünü simüle eden kendi içinde çalışan bir program oluşturmalısınız. Çözümünüzün göstermesi gereken temel işlemler şunları içerir:
+1.  **Dize Ekleme**: Yeni bir dize için dinamik olarak bellek tahsis edin ve işaretçisini dize işaretçileri dizisine ekleyin. Dize işaretçileri dizisinin kendisi, boş yer kalmadığında `realloc` kullanarak dinamik olarak yeniden boyutlandırılmalıdır (örneğin kapasitesini iki katına çıkararak).
+2.  **Dize Silme**: Belirtilen bir indeksteki bir dizeyi silin. Bu işlem, tekil dizenin kapladığı belleği serbest bırakmayı, boşluğu doldurmak için sonraki dize işaretçilerini kaydırmayı ve kullanım oranı önemli ölçüde düşerse (örneğin kapasiteyi yarıya indirerek) ana dize işaretçileri dizisini `realloc` kullanarak potansiyel olarak küçültmeyi içerir.
+3.  **Dize Güncelleme**: Verilen bir indeksteki mevcut bir dizeyi yeni içerikle değiştirin. Bu işlem, eski dizenin belleğini serbest bırakmayı, güncellenmiş içerik için yeni bellek tahsis etmeyi ve yeni içeriğin farklı bir uzunluğa sahip olması durumunda o belirli dizenin bellek bloğunu `realloc` kullanarak yeniden boyutlandırmayı gerektirebilir.
+4.  **Tüm Dizeleri Yazdırma**: Koleksiyonu yineleyerek saklanan her dizeyi yazdırın.
+5.  **Kapsamlı Bellek Temizliği**: Programın yürütülmesinin sonunda, tüm bireysel dizeler ve ana dize işaretçileri dizisi için dinamik olarak tahsis edilen tüm belleği serbest bırakacak bir mekanizma uygulayarak bellek sızıntılarını önleyin.
+
+Bu problem, karmaşık bellek düzenlerini yönetme, tahsis fonksiyonlarından `NULL` dönüşlerini işleme ve birden çok dolaylılık seviyesinde işaretçi aritmetiğini doğru bir şekilde gerçekleştirme yeteneğinizi titizlikle test etmek için tasarlanmıştır. `string.h` kütüphanesindeki `strlen` veya `strcpy` gibi fonksiyonlara güvenmeden, temel dize işlemlerini (uzunluk hesaplama ve kopyalama gibi) manuel olarak uygulamanız beklenir, bu da C dizelerinin düşük seviyede anlaşılmasını daha da vurgular. Çözüm, yaygın bellek hatalarına karşı sağlam olmalı ve tüm kaynakların düzgün bir şekilde serbest bırakıldığından emin olmalıdır.
