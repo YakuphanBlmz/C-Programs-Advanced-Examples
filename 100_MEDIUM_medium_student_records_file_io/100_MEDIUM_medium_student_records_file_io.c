@@ -1,46 +1,69 @@
 #include <stdio.h>
-typedef struct Student {
+#include <string.h>
+#define MAX_STUDENTS 3
+#define MAX_NAME_LEN 50
+typedef struct {
     int id;
-    char name[50];
-    int score;
+    char name[MAX_NAME_LEN];
+    float grade;
 } Student;
 int main() {
-    Student students_to_write[3] = {
-        {101, "Alice Smith", 85},
-        {102, "Bob Johnson", 92},
-        {103, "Charlie Brown", 78}
-    };
-    FILE *file_ptr;
-    file_ptr = fopen("students.dat", "wb");
-    if (file_ptr == NULL) {
-        printf("Dosya yazmak icin acilamadi.\n");
-        return 1;
-    }
-    fwrite(students_to_write, sizeof(Student), 3, file_ptr);
-    fclose(file_ptr);
-    printf("Ogrenci verileri students.dat dosyasina yazildi.\n\n");
-    Student students_read[3];
-    Student highest_score_student;
-    int max_score = -1;
+    Student students[MAX_STUDENTS];
+    int numStudents = 0;
+    char filename[] = "students.dat";
+    FILE *filePtr;
     int i;
-    file_ptr = fopen("students.dat", "rb");
-    if (file_ptr == NULL) {
-        printf("Dosya okumak icin acilamadi.\n");
+    float totalGrade = 0.0;
+    printf("Please enter data for up to %d students.\n", MAX_STUDENTS);
+    printf("Enter ID, Name (single word), Grade. Enter 0 for ID to stop.\n");
+    for (i = 0; i < MAX_STUDENTS; i++) {
+        printf("Student %d ID: ", i + 1);
+        scanf("%d", &students[i].id);
+        if (students[i].id == 0) {
+            break;
+        }
+        printf("Student %d Name: ", i + 1);
+        scanf("%s", students[i].name);
+        printf("Student %d Grade: ", i + 1);
+        scanf("%f", &students[i].grade);
+        numStudents++;
+    }
+    filePtr = fopen(filename, "wb");
+    if (filePtr == NULL) {
+        printf("Error opening file for writing!\n");
         return 1;
     }
-    printf("Dosyadan okunan ogrenci verileri:\n");
-    printf("-----------------------------\n");
-    fread(students_read, sizeof(Student), 3, file_ptr);
-    for (i = 0; i < 3; i++) {
-        printf("ID: %d, Ad: %s, Puan: %d\n", students_read[i].id, students_read[i].name, students_read[i].score);
-        if (students_read[i].score > max_score) {
-            max_score = students_read[i].score;
-            highest_score_student = students_read[i];
-        }
+    fwrite(students, sizeof(Student), numStudents, filePtr);
+    fclose(filePtr);
+    printf("\nSuccessfully saved %d student records to %s.\n", numStudents, filename);
+    for(i = 0; i < MAX_STUDENTS; i++) {
+        students[i].id = 0;
+        students[i].name[0] = '\0';
+        students[i].grade = 0.0;
     }
-    fclose(file_ptr);
-    printf("\nEn yuksek puana sahip ogrenci:\n");
-    printf("------------------------------\n");
-    printf("ID: %d, Ad: %s, Puan: %d\n", highest_score_student.id, highest_score_student.name, highest_score_student.score);
+    numStudents = 0;
+    totalGrade = 0.0;
+    filePtr = fopen(filename, "rb");
+    if (filePtr == NULL) {
+        printf("Error opening file for reading or file does not exist.\n");
+        return 1;
+    }
+    printf("\nLoading student records from %s:\n", filename);
+    printf("--------------------------------------------------\n");
+    printf("ID\tName\tGrade\n");
+    printf("--------------------------------------------------\n");
+    while (fread(&students[numStudents], sizeof(Student), 1, filePtr) == 1 && numStudents < MAX_STUDENTS) {
+        printf("%d\t%s\t%.2f\n", students[numStudents].id, students[numStudents].name, students[numStudents].grade);
+        totalGrade += students[numStudents].grade;
+        numStudents++;
+    }
+    fclose(filePtr);
+    if (numStudents > 0) {
+        printf("--------------------------------------------------\n");
+        printf("Total students loaded: %d\n", numStudents);
+        printf("Average Grade: %.2f\n", totalGrade / numStudents);
+    } else {
+        printf("No student records found in the file.\n");
+    }
     return 0;
 }
