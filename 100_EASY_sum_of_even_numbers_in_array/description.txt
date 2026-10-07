@@ -1,7 +1,7 @@
 EN
 
-Write a C program that takes an integer array of a fixed size (e.g., 5 elements) as input. The program should calculate and print the sum of all even numbers present in the array.
+Write a C program that takes an array of integers and calculates the sum of all even numbers within that array. The program should then print the total sum. You can use a predefined array for testing.
 
 TR
 
-Sabit boyutlu (örneğin 5 elemanlı) bir tam sayı dizisini girdi olarak alan bir C programı yazın. Program, dizide bulunan tüm çift sayıların toplamını hesaplamalı ve ekrana yazdırmalıdır.
+Bir tam sayı dizisi alan ve bu dizideki tüm çift sayıların toplamını hesaplayan bir C programı yazın. Program, toplamı ekrana yazdırmalıdır. Test için önceden tanımlanmış bir dizi kullanabilirsiniz.

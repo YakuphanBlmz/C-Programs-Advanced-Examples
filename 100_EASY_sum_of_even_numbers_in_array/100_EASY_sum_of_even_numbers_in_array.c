@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main() {
-    int arr[5] = {10, 3, 8, 15, 20};
+    int arr[] = {12, 7, 24, 3, 18, 9, 30};
+    int n = sizeof(arr) / sizeof(arr[0]);
     int sum_even = 0;
-    int i;
-    for (i = 0; i < 5; i++) {
+    for (int i = 0; i < n; i++) {
         if (arr[i] % 2 == 0) {
             sum_even += arr[i];
         }
