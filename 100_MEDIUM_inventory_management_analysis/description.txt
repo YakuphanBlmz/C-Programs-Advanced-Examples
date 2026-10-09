@@ -1,0 +1,15 @@
+EN
+
+You are tasked with analyzing a small inventory of products for a local store. The store keeps track of each product's ID, name, unit price, and the current quantity in stock. Your program needs to process a predefined list of products.
+
+Your primary goals are to calculate the total monetary value of all items currently in the inventory and to identify which product has the highest quantity available. The total monetary value is the sum of (price * quantity) for each individual product. You will need to define a `struct` to represent a product and use `typedef` for convenience. Store the product data in an array of these structs.
+
+After performing the calculations, your program should print the total inventory value, formatted to two decimal places, and the name of the product with the highest quantity. Ensure your solution avoids the use of pointers or dynamic memory allocation (`malloc`, `free`).
+
+TR
+
+Yerel bir mağaza için küçük bir ürün envanterini analiz etmekle görevlendirildiniz. Mağaza her ürünün kimliğini (ID), adını, birim fiyatını ve mevcut stok miktarını takip etmektedir. Programınızın, önceden tanımlanmış bir ürün listesini işlemesi gerekmektedir.
+
+Temel hedefleriniz, envanterdeki tüm ürünlerin toplam parasal değerini hesaplamak ve stokta en yüksek miktara sahip olan ürünü belirlemektir. Toplam parasal değer, her bir ürün için (fiyat * miktar) çarpımının toplamıdır. Bir ürünü temsil etmek için bir `struct` tanımlamanız ve kolaylık sağlamak için `typedef` kullanmanız gerekecektir. Ürün verilerini bu yapıların bir dizisinde saklayın.
+
+Hesaplamaları yaptıktan sonra programınız, toplam envanter değerini iki ondalık basamak hassasiyetinde ve en yüksek miktara sahip ürünün adını yazdırmalıdır. Çözümünüzün işaretçi (pointer) veya dinamik bellek ayırma (`malloc`, `free`) kullanımından kaçındığından emin olun.
