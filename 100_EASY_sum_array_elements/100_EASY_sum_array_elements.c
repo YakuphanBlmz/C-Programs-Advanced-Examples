@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main() {
-    int arr[] = {10, 20, 30, 40, 50};
+    int arr[] = {15, 25, 35, 45, 55};
     int n = sizeof(arr) / sizeof(arr[0]);
     int sum = 0;
     int i;
     for (i = 0; i < n; i++) {
-        sum = sum + arr[i];
+        sum += arr[i];
     }
     printf("Dizideki elemanlarin toplami: %d\n", sum);
     return 0;
