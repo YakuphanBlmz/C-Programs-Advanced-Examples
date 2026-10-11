@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple student record management system. The system should be able to store a fixed number of student records, save them to a file, and load them back. Each student record will consist of a unique student ID, their name, and their final grade.
+
+Your program needs to define a structure, `Student`, which contains these three fields. You should also use `typedef` to simplify its usage. The main part of your program will involve initializing an array of `Student` structs with some sample data. After populating this array, you must write all these student records to a binary file named `students.dat`.
+
+Finally, your program should read the student records from `students.dat` back into a *different* array of `Student` structs. After successfully reading the data, display all the loaded student information to the console to verify that the file operations were successful. Ensure that no explicit pointer variables (beyond what's necessary for fundamental file operations like `FILE*` and array addressing for `fread`/`fwrite`) or dynamic memory allocation (`malloc`/`free`) are used.
+
+TR
+
+Basit bir öğrenci kayıt yönetim sistemi geliştirmeniz istenmektedir. Bu sistem, sabit sayıda öğrenci kaydını saklayabilmeli, bunları bir dosyaya kaydedebilmeli ve dosyadan geri yükleyebilmelidir. Her öğrenci kaydı, benzersiz bir öğrenci kimliği, öğrencinin adı ve final notundan oluşacaktır.
+
+Programınız, bu üç alanı içeren bir `Student` yapısı tanımlamalıdır. Ayrıca, yapının kullanımını kolaylaştırmak için `typedef` kullanmalısınız. Programınızın ana kısmı, bazı örnek verilerle `Student` yapılarından oluşan bir diziyi başlatmayı içerecektir. Bu dizi doldurulduktan sonra, tüm öğrenci kayıtlarını `students.dat` adında ikili bir dosyaya yazmalısınız.
+
+Son olarak, programınız `students.dat` dosyasından öğrenci kayıtlarını okuyarak *farklı* bir `Student` yapıları dizisine geri yüklemelidir. Veriler başarıyla okunduktan sonra, dosya işlemlerinin başarılı olduğunu doğrulamak için yüklenen tüm öğrenci bilgilerini konsola yazdırmalısınız. Dosya işlemleri için gerekli olanlar (örn: `FILE*` ve dizi adreslerinin `fread`/`fwrite`'a geçirilmesi) dışındaki açık işaretçi değişkenleri veya dinamik bellek tahsisi (`malloc`/`free`) kullanılmadığından emin olun.
