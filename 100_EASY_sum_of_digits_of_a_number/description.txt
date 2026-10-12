@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes a positive integer as input and calculates the sum of its digits. For example, if the input is 123, the output should be 6 (1+2+3). Your program should read the integer from standard input and print the sum to standard output.
+
+TR
+
+Pozitif bir tam sayıyı girdi olarak alan ve basamaklarının toplamını hesaplayan bir C programı yazın. Örneğin, girdi 123 ise, çıktı 6 (1+2+3) olmalıdır. Programınız tam sayıyı standart girdiden okumalı ve toplamı standart çıktıya yazdırmalıdır.
