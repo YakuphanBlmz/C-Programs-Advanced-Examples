@@ -1,13 +1,14 @@
 #include <stdio.h>
 int main() {
-    int arr[] = {12, 7, 24, 3, 18, 9, 30};
+    int arr[] = {12, 7, 24, 15, 8, 30, 3, 10};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int sum_even = 0;
-    for (int i = 0; i < n; i++) {
+    int sum_of_evens = 0;
+    int i;
+    for (i = 0; i < n; i++) {
         if (arr[i] % 2 == 0) {
-            sum_even += arr[i];
+            sum_of_evens += arr[i];
         }
     }
-    printf("Sum of even numbers: %d\n", sum_even);
+    printf("Sum of even numbers in the array: %d\n", sum_of_evens);
     return 0;
 }
