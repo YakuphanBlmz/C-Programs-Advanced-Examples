@@ -1,0 +1,25 @@
+EN
+
+In C programming, managing complex data structures without the aid of `struct` or `typedef` can be a significant challenge. This problem requires you to implement a dynamic collection of dynamic 2D integer matrices. This means you will not only manage a variable number of matrices, but each matrix itself will have a variable number of rows and columns, allocated and freed during runtime. The core of this task involves sophisticated use of multi-level pointers (`int***`), dynamic memory allocation (`malloc`, `realloc`), and careful memory deallocation (`free`).
+
+Your program must maintain an array of pointers to 2D matrices. As new matrices are added, this main collection array must dynamically grow using `realloc`. Similarly, when matrices are removed, their memory must be properly freed, and the collection array potentially shrunk. Since `struct` is forbidden, you will need to store metadata like the number of rows and columns for each 2D matrix in separate, parallel dynamic arrays, which must also be `realloc`-ed in sync with the main collection of matrix pointers. The problem requires robust handling of memory operations, including error checking for allocation failures and ensuring no memory leaks.
+
+Specifically, you need to implement functionality to:
+1. Initialize an empty dynamic collection of matrices.
+2. Add a new 2D matrix of specified dimensions (rows x cols) to the collection. This involves `malloc` for the matrix, initializing its elements, and potentially `realloc`ing the main collection and its parallel dimension arrays.
+3. Remove a 2D matrix at a given index from the collection. This requires freeing all memory associated with that specific matrix and then shifting subsequent matrices in the collection (and their dimension data) to maintain contiguity, potentially shrinking the main collection's capacity with `realloc`.
+4. Print the current state of the entire collection, displaying each matrix and its contents.
+5. Properly deallocate all dynamic memory used by the collection at the program's termination. Focus on pointer arithmetic, careful dereferencing, and comprehensive memory management.
+
+TR
+
+C programlamada, `struct` veya `typedef` kullanmadan karmaşık veri yapılarını yönetmek önemli bir zorluktur. Bu problem, dinamik 2D tamsayı matrislerinden oluşan dinamik bir koleksiyon uygulamanızı gerektirir. Bu, yalnızca değişken sayıda matrisi yönetmekle kalmayacak, aynı zamanda her matrisin çalışma zamanında tahsis edilen ve serbest bırakılan değişken sayıda satır ve sütuna sahip olacağı anlamına gelir. Bu görevin özü, çok seviyeli işaretçilerin (`int***`), dinamik bellek tahsisinin (`malloc`, `realloc`) ve dikkatli bellek serbest bırakma işlemlerinin (`free`) sofistike kullanımını içerir.
+
+Programınız, 2D matris işaretçilerinden oluşan bir dizi tutmalıdır. Yeni matrisler eklendikçe, bu ana koleksiyon dizisi `realloc` kullanılarak dinamik olarak büyümelidir. Benzer şekilde, matrisler kaldırıldığında, bellekleri uygun şekilde serbest bırakılmalı ve koleksiyon dizisi potansiyel olarak küçültülmelidir. `struct` yasak olduğu için, her 2D matrisin satır ve sütun sayısı gibi meta verilerini ayrı, paralel dinamik dizilerde saklamanız gerekecektir. Bu diziler de ana matris işaretçileri koleksiyonuyla senkronize olarak `realloc` edilmelidir. Problem, bellek tahsis hataları için hata kontrolü ve bellek sızıntısı olmamasını sağlama dahil olmak üzere bellek işlemlerinin sağlam bir şekilde ele alınmasını gerektirir.
+
+Özellikle, aşağıdaki işlevleri uygulamanız gerekmektedir:
+1. Matrislerin boş bir dinamik koleksiyonunu başlatma.
+2. Belirtilen boyutlarda (satır x sütun) yeni bir 2D matrisi koleksiyona ekleme. Bu, matris için `malloc` yapmayı, elemanlarını başlatmayı ve potansiyel olarak ana koleksiyonu ve paralel boyut dizilerini `realloc` etmeyi içerir.
+3. Koleksiyondaki belirli bir dizindeki 2D matrisi kaldırma. Bu, o matrisle ilişkili tüm belleği serbest bırakmayı ve ardından koleksiyondaki sonraki matrisleri (ve boyut verilerini) sürekliliği sağlamak için kaydırmayı gerektirir. Potansiyel olarak ana koleksiyonun kapasitesini `realloc` ile küçültmeyi de düşünebilirsiniz.
+4. Tüm koleksiyonun mevcut durumunu, her matrisi ve içeriğini görüntüleyerek yazdırma.
+5. Programın sonlandırılmasında koleksiyon tarafından kullanılan tüm dinamik belleği düzgün bir şekilde serbest bırakma. İşaretçi aritmetiğine, dikkatli dereferanslamaya ve kapsamlı bellek yönetimine odaklanın.
