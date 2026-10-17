@@ -1,0 +1,15 @@
+EN
+
+This problem challenges your understanding of advanced pointer manipulation and dynamic memory management in C, without the aid of structs or typedefs. Your task is to dynamically construct and manage a "pyramid" of integers. This pyramid is essentially a two-dimensional, ragged array where each row contains a progressively increasing number of elements.
+
+Specifically, your program must first determine the total number of rows for this pyramid at runtime (e.g., a hardcoded value or simulated user input). Let's call this `N`. You will then need to allocate a dynamic array of pointers, where each pointer will point to another dynamically allocated integer array. For each row `i` (0-indexed, from `0` to `N-1`), the corresponding integer array must be capable of holding exactly `i + 1` integer values. These values should be populated using a distinct pattern, such as `(row_index * 100) + column_index`.
+
+After successfully constructing and populating this dynamic pyramid, your program must iterate through all its elements and print them to the standard output in a clear, row-by-row format. This step ensures that the memory has been correctly allocated and the values stored as intended. The final and crucial part of the problem involves the complete and correct deallocation of all dynamically reserved memory. This must be performed in the precise order to prevent memory leaks and ensure system stability, freeing each inner array before freeing the outer array of pointers.
+
+TR
+
+Bu problem, C dilinde ileri seviye işaretçi manipülasyonu ve dinamik bellek yönetimini, `struct` veya `typedef` kullanmadan sınamaktadır. Göreviniz, dinamik olarak bir tam sayı "piramidi" inşa etmek ve yönetmektir. Bu piramit, her satırda giderek artan sayıda eleman içeren, düzensiz (ragged) bir iki boyutlu dizi niteliğindedir.
+
+Özellikle, programınız öncelikle bu piramidin toplam satır sayısını çalışma zamanında belirlemelidir (örneğin, sabit kodlanmış bir değer veya simüle edilmiş kullanıcı girişi). Buna `N` diyelim. Daha sonra, her biri başka bir dinamik olarak ayrılmış tam sayı dizisini işaret edecek olan bir işaretçi dizisi için dinamik bellek ayırmanız gerekecektir. Her `i` satırı (0'dan başlayarak, `0` ile `N-1` arasında) için, ilgili tam sayı dizisi tam olarak `i + 1` adet tam sayı değeri içerebilecek kapasitede olmalıdır. Bu değerler, örneğin `(satır_indeksi * 100) + sütun_indeksi` gibi belirgin bir desen kullanarak doldurulmalıdır.
+
+Bu dinamik piramidi başarıyla oluşturup doldurduktan sonra, programınız tüm elemanları üzerinden döngü kurarak bunları standart çıktıya, satır satır ve anlaşılır bir formatta yazdırmalıdır. Bu adım, belleğin doğru bir şekilde ayrıldığını ve değerlerin amaçlandığı gibi depolandığını doğrular. Problemin son ve kritik kısmı, dinamik olarak rezerve edilen tüm belleğin eksiksiz ve doğru bir şekilde serbest bırakılmasını içerir. Bu, bellek sızıntılarını önlemek ve sistem kararlılığını sağlamak için kesin bir sırada yapılmalı, önce her bir iç dizi serbest bırakılmalı, ardından dış işaretçi dizisi serbest bırakılmalıdır.
