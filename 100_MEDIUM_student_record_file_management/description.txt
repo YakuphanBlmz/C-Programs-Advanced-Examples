@@ -1,15 +1,15 @@
 EN
 
-You are tasked with developing a C program to manage a small number of student records. The program should define a structure named `Student` that contains fields for `student_id` (an integer), `name` (a character array capable of holding up to 49 characters plus null terminator), and `score` (an integer). Use a `typedef` to create an alias for this structure for convenience.
+You are tasked with developing a simple student record management system in C. This system should be able to store student information in a persistent manner using file I/O operations. Each student record will consist of a unique student ID, their name, and a grade.
 
-Your program must first initialize an array of a fixed number of `Student` records with some sample data. After initialization, these records should be written sequentially into a binary file named `students.dat`. This operation should ensure that all data is correctly stored. Subsequently, the program must read all the student records back from `students.dat` into a *new*, separate array of `Student` records. Finally, after successfully reading the data, calculate and print the average score of all students whose records were read from the file.
+Your program should first define a structure, `Student`, using `typedef`, to hold these three pieces of information. The student's name should be stored as a fixed-size character array. Subsequently, you need to implement functionality to perform two main operations: writing several predefined student records to a binary file named `students.dat`, and then reading all records from this file, displaying them on the console.
 
-Crucially, all operations must strictly avoid the use of dynamic memory allocation functions (like `malloc`, `calloc`, `realloc`, `free`) and explicit pointer arithmetic beyond simple array indexing. Ensure the data types and file operations are handled correctly to maintain data integrity.
+Finally, the program should prompt the user for a student ID, search for that student in the file, and display their details if found. If the student is not found after checking all records, an appropriate message should be displayed.
 
 TR
 
-Küçük bir öğrenci kaydı grubunu yönetmek için bir C programı geliştirmeniz gerekmektedir. Programınız, `student_id` (bir tam sayı), `name` (49 karaktere kadar artı null sonlandırıcı tutabilen bir karakter dizisi) ve `score` (bir tam sayı) alanlarını içeren `Student` adında bir yapı tanımlamalıdır. Bu yapı için kolaylık sağlamak amacıyla bir `typedef` kullanarak bir takma ad oluşturun.
+C programlama dilinde basit bir öğrenci kayıt yönetim sistemi geliştirmeniz istenmektedir. Bu sistem, öğrenci bilgilerini dosya G/Ç işlemleri kullanarak kalıcı bir şekilde saklayabilmelidir. Her öğrenci kaydı, benzersiz bir öğrenci kimliği, adı ve notu içerecektir.
 
-Programınız öncelikle sabit sayıda `Student` kaydı içeren bir diziyi bazı örnek verilerle başlatmalıdır. Başlatmanın ardından, bu kayıtlar sırayla `students.dat` adında ikili bir dosyaya yazılmalıdır. Bu işlem, tüm verilerin doğru şekilde depolanmasını sağlamalıdır. Daha sonra, program tüm öğrenci kayıtlarını `students.dat` dosyasından *yeni*, ayrı bir `Student` kayıtları dizisine geri okumalıdır. Son olarak, veriler başarıyla okunduktan sonra, dosyadan okunan tüm öğrencilerin ortalama puanını hesaplayın ve ekrana yazdırın.
+Programınız öncelikle bu üç bilgi parçasını tutacak `Student` adında bir yapı (`struct`) tanımlamalıdır. Öğrencinin adı, sabit boyutlu bir karakter dizisi olarak saklanmalıdır. Daha sonra, iki ana işlemi gerçekleştirecek bir işlevsellik uygulamanız gerekmektedir: önceden tanımlanmış birkaç öğrenci kaydını `students.dat` adında ikili bir dosyaya yazmak ve ardından bu dosyadan tüm kayıtları okuyarak konsolda görüntülemek.
 
-Önemli olarak, tüm işlemler dinamik bellek ayırma fonksiyonlarının (`malloc`, `calloc`, `realloc`, `free` gibi) ve basit dizi indekslemesinin ötesinde açık işaretçi aritmetiğinin kullanımından kesinlikle kaçınmalıdır. Veri bütünlüğünü korumak için veri türlerinin ve dosya işlemlerinin doğru şekilde ele alındığından emin olun.
+Son olarak, program kullanıcıdan bir öğrenci kimliği istemeli, o öğrenciyi dosyada aramalı ve bulunursa detaylarını görüntülemelidir. Tüm kayıtlar kontrol edildikten sonra öğrenci bulunamazsa, uygun bir mesaj gösterilmelidir.
