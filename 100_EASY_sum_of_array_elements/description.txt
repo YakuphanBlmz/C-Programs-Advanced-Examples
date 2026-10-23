@@ -1,7 +1,7 @@
 EN
 
-Write a C program that calculates the sum of all integer elements in a given fixed-size array. For instance, if an array `int numbers[5] = {10, 20, 30, 40, 50};` is defined, the program should find and print its total sum.
+Write a C program that calculates the sum of all elements in a given integer array. The program should declare an array with some predefined integer values, iterate through it using a loop, and print the total sum to the console.
 
 TR
 
-C dilinde, sabit boyutlu bir tamsayı dizisindeki tüm elemanların toplamını hesaplayan bir program yazın. Örneğin, `int numbers[5] = {10, 20, 30, 40, 50};` şeklinde tanımlanmış bir dizinin toplamını bulmalı ve ekrana yazdırmalıdır.
+Verilen bir tamsayı dizisindeki tüm elemanların toplamını hesaplayan bir C programı yazın. Program, önceden tanımlanmış tamsayı değerlerine sahip bir dizi bildirmeli, bir döngü kullanarak üzerinde yinelemeli ve toplam sonucu konsola yazdırmalıdır.

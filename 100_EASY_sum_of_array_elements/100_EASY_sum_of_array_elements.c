@@ -1,11 +1,12 @@
 #include <stdio.h>
 int main() {
-    int numbers[5] = {10, 20, 30, 40, 50};
+    int arr[] = {12, 7, 24, 1, 9, 15};
+    int n = sizeof(arr) / sizeof(arr[0]);
     int sum = 0;
     int i;
-    for (i = 0; i < 5; i++) {
-        sum = sum + numbers[i];
+    for (i = 0; i < n; i++) {
+        sum = sum + arr[i];
     }
-    printf("Array Sum: %d\n", sum);
+    printf("Sum of array elements: %d\n", sum);
     return 0;
 }
