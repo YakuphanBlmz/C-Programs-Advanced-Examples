@@ -1,0 +1,7 @@
+EN
+
+Write a C program that takes a single positive integer `N` as input. The program should then calculate and print the sum of all even numbers from 1 up to `N` (inclusive).
+
+TR
+
+C dilinde, tek bir pozitif tam sayı `N`'yi girdi olarak alan bir program yazın. Program, 1'den `N`'ye (dahil) kadar olan tüm çift sayıların toplamını hesaplamalı ve ekrana yazdırmalıdır.
