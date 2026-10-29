@@ -1,0 +1,31 @@
+EN
+
+This problem challenges your understanding of raw memory manipulation, pointer arithmetic, and dynamic memory management in C, pushing the limits by explicitly disallowing `struct`s and `typedef`s. You are tasked with implementing a hierarchical data structure: a linked list where each node itself contains a pointer to the head of another linked list. Effectively, you will be creating a "Collection List" of "Sequence Lists".
+
+Each "Sequence List" will store a series of integer values. A node in a "Sequence List" must dynamically allocate memory to hold an integer and a pointer to the next node in its sequence. Crucially, you cannot use a `struct` to define this node; instead, you must manage the memory layout manually, allocating a block of memory and interpreting specific byte offsets as the integer data and the next pointer. The "next" pointer should point to a `char*` representing another sequence node. This requires careful type casting and `char*` arithmetic.
+
+The "Collection List" will link together these "Sequence Lists". A node in the "Collection List" must dynamically allocate memory to hold a pointer to the head of an existing "Sequence List" and a pointer to the next node in the "Collection List". Again, `struct`s are forbidden. Your implementation will require careful use of `malloc`, `free`, and explicit pointer casting and arithmetic to navigate and manipulate these raw memory blocks. You will be dealing with `char*` as your primary generic pointer type for byte-level addressing.
+
+Your solution must provide functionalities to:
+1.  **Create and append to a Sequence List**: A function that takes a `char**` (representing the head of a sequence list) and an `int` value, then dynamically allocates a new inner node, stores the integer, sets its next pointer to `NULL`, and appends it to the end of the specified sequence list.
+2.  **Create and append to a Collection List**: A function that takes a `char**` (representing the head of the collection list) and a `char*` (representing the head of a fully formed sequence list), dynamically allocates a new outer node, stores the pointer to the sequence list head, sets its next pointer to `NULL`, and appends it to the end of the collection list.
+3.  **Print the entire Collection List**: A function that iterates through the collection list, and for each entry, iterates through its corresponding sequence list, printing all integers in that sequence. Each sequence should be printed on a new line, with integers separated by spaces.
+4.  **Free all allocated memory**: A function that correctly deallocates all memory blocks used by both the collection list and all its contained sequence lists, preventing memory leaks.
+
+This problem is designed to rigorously test your understanding of low-level memory management and pointer manipulation. Expect to encounter complex casting scenarios and intricate pointer arithmetic. The use of `void*` or `char*` as generic pointers will be essential, along with careful type conversions to access the stored data and next pointers.
+
+TR
+
+Bu problem, C dilinde ham bellek manipülasyonu, işaretçi aritmetiği ve dinamik bellek yönetimini `struct` ve `typedef` kullanımını açıkça yasaklayarak sınırlarını zorlayan bir meydan okumadır. Hiyerarşik bir veri yapısı uygulamanız istenmektedir: her düğümün başka bir bağlı listenin başına işaretçi içeren bir bağlı liste. Etkili bir şekilde, "Sıra Listeleri"nden oluşan bir "Koleksiyon Listesi" oluşturacaksınız.
+
+Her "Sıra Listesi" bir dizi tamsayı değeri depolayacaktır. Bir "Sıra Listesi"ndeki bir düğüm, bir tamsayıyı ve dizideki bir sonraki düğüme bir işaretçiyi tutmak için dinamik olarak bellek tahsis etmelidir. En önemlisi, bu düğümü tanımlamak için `struct` kullanamazsınız; bunun yerine, bellek düzenini manuel olarak yönetmeli, bir bellek bloğu tahsis etmeli ve belirli bayt ofsetlerini tamsayı verileri ve sonraki işaretçi olarak yorumlamalısınız. "Sonraki" işaretçi, başka bir sıra düğümünü temsil eden bir `char*`'a işaret etmelidir. Bu, dikkatli tür dönüştürme ve `char*` aritmetiği gerektirir.
+
+"Koleksiyon Listesi" bu "Sıra Listelerini" birbirine bağlayacaktır. Bir "Koleksiyon Listesi"ndeki bir düğüm, mevcut bir "Sıra Listesinin" başına bir işaretçiyi ve "Koleksiyon Listesindeki" bir sonraki düğüme bir işaretçiyi tutmak için dinamik olarak bellek tahsis etmelidir. Yine, `struct` kullanımı yasaktır. Uygulamanız, bu ham bellek bloklarını gezmek ve manipüle etmek için `malloc`, `free` ve açık işaretçi tür dönüştürme ve aritmetiğinin dikkatli kullanımını gerektirecektir. Bayt düzeyinde adresleme için birincil genel işaretçi türünüz olarak `char*` ile uğraşacaksınız.
+
+Çözümünüz aşağıdaki işlevleri sağlamalıdır:
+1.  **Sıra Listesine Ekleme ve Oluşturma**: Bir `char**` (bir sıra listesinin başını temsil eden) ve bir `int` değeri alan bir fonksiyon, yeni bir iç düğüm dinamik olarak tahsis eder, tamsayıyı depolar, sonraki işaretçisini `NULL` olarak ayarlar ve belirtilen sıra listesinin sonuna ekler.
+2.  **Koleksiyon Listesine Ekleme ve Oluşturma**: Bir `char**` (koleksiyon listesinin başını temsil eden) ve bir `char*` (tamamen oluşturulmuş bir sıra listesinin başını temsil eden) alan bir fonksiyon, yeni bir dış düğüm dinamik olarak tahsis eder, sıra listesi başına işaretçiyi depolar, sonraki işaretçisini `NULL` olarak ayarlar ve koleksiyon listesinin sonuna ekler.
+3.  **Tüm Koleksiyon Listesini Yazdırma**: Koleksiyon listesini yineleyen ve her giriş için karşılık gelen sıra listesini yineleyerek bu dizideki tüm tamsayıları yazdıran bir fonksiyon. Her sıra yeni bir satıra yazdırılmalı ve tamsayılar boşluklarla ayrılmalıdır.
+4.  **Tahsis Edilen Tüm Belleği Serbest Bırakma**: Hem koleksiyon listesi hem de içerdiği tüm sıra listeleri tarafından kullanılan tüm bellek bloklarını doğru bir şekilde serbest bırakan, bellek sızıntılarını önleyen bir fonksiyon.
+
+Bu problem, düşük seviyeli bellek yönetimi ve işaretçi manipülasyonu anlayışınızı titizlikle test etmek için tasarlanmıştır. Karmaşık tür dönüştürme senaryoları ve karmaşık işaretçi aritmetiği ile karşılaşmayı bekleyin. Genel işaretçiler olarak `void*` veya `char*` kullanımı, depolanan verilere ve sonraki işaretçilere erişmek için dikkatli tür dönüşümleri ile birlikte temel olacaktır.
