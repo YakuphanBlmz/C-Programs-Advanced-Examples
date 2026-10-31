@@ -1,0 +1,15 @@
+EN
+
+You are tasked with developing a simple program to track student performance in a class. The class has a fixed number of students, and for each student, you need to store their unique ID, name, and grades for three specific subjects: Math, Science, and History.
+
+Your program should define a `Student` data structure using `struct` and `typedef` to represent this information. You will then initialize an array of these `Student` structures with some sample data. The core task is to iterate through this list of students, calculate the average grade for each student across the three subjects, and ultimately identify the student who achieved the highest overall average grade.
+
+Finally, your program must print the details (ID, Name, and calculated average grade) of the student with the highest average. You must strictly avoid using pointers for dynamic memory allocation (`malloc`, `free`) or as general-purpose references within your structures or main logic, though character arrays within structs are permitted.
+
+TR
+
+Bir sınıftaki öğrenci performansını takip etmek için basit bir program geliştirmeniz isteniyor. Sınıfta sabit sayıda öğrenci bulunmaktadır ve her öğrenci için benzersiz kimliklerini, adlarını ve üç belirli dersin (Matematik, Fen ve Tarih) notlarını saklamanız gerekmektedir.
+
+Programınız, bu bilgileri temsil etmek üzere `struct` ve `typedef` kullanarak bir `Student` veri yapısı tanımlamalıdır. Daha sonra, bu `Student` yapılarından oluşan bir diziyi örnek verilerle başlatacaksınız. Ana görev, bu öğrenci listesi üzerinde yinelemek, her öğrencinin üç dersindeki notlarının ortalamasını hesaplamak ve nihayetinde en yüksek genel not ortalamasına sahip öğrenciyi belirlemektir.
+
+Son olarak, programınız en yüksek ortalamaya sahip öğrencinin detaylarını (ID, Ad ve hesaplanmış ortalama not) ekrana yazdırmalıdır. Programınızda dinamik bellek tahsisi için işaretçiler (`malloc`, `free`) veya yapılarınızda veya ana mantığınızda genel amaçlı referanslar olarak işaretçiler kullanmaktan kesinlikle kaçınmalısınız; ancak yapılar içindeki karakter dizileri serbestçe kullanılabilir.
